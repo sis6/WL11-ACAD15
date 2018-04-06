@@ -1,0 +1,83 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PostroenIzmen
+</name>
+</assembly>
+<members>
+<member name="T:PostroenIzmen.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:PostroenIzmen.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:PostroenIzmen.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="T:PostroenIzmen.LeseMod">
+ <summary>
+ Читает модель из словарей глобальной расстановки b jgthfwbb c ytq
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PostroenIzmen.LeseMod.LeseIsDwg">
+ <summary>
+ Читает расстановку из глобального словаря
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:PostroenIzmen.LeseMod.RastOp">
+ <summary>
+ Список расстояний опор от начала расстановки
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PostroenIzmen.LeseMod.Rasst">
+ <summary>
+ Возвращает расстановку(с профилем) 
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:PostroenIzmen.modImport">
+ <summary>
+ по точкам полученным при анализе полилинии строит иодель участка профиля
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:PostroenIzmen.PoSpPoint3dProf">
+ <summary>
+ По списку Point3D строит модель профиля в требуемом формате
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PostroenIzmen.PoSpPoint3dProf.Ugol(System.Collections.Generic.List{Autodesk.AutoCAD.Geometry.Point3d},System.Int32)">
+ <summary>
+ Определяет угол в плане в I точке полилинии
+ </summary>
+ <param name="iSp"> список точек  </param>
+ <param name="i"> номер точке</param>
+ <returns>угол в радианах </returns>
+ <remarks></remarks>
+</member>
+<member name="M:PostroenIzmen.Izwlechenie.WsePointPolyline3d(Autodesk.AutoCAD.DatabaseServices.Entity)">
+ <summary>
+ извлекает все точки трехмерной полилинии 
+ </summary>
+ <param name="el"> 3d-полилиния  </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

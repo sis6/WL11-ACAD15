@@ -1,0 +1,259 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+PlanDwg
+</name>
+</assembly>
+<members>
+<member name="T:PlanDwg.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:PlanDwg.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:PlanDwg.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="T:PlanDwg.dwgopor3D">
+ <summary>
+ класс реализующий непосредственный вывод в чертеж образа опоры3д
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.dwgopor3D.wiwestiOp">
+ <summary>
+ выводит опору в чертеж на поверхность трассы
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.dwgopor3D.WiwestiProwis(PlanDwg.dwgopor3D,System.Double,System.Double)">
+ <summary>
+ Выводит кривые провисания для всех фаз  пролета образуемого данной опорой и предыдущей с заданными сигма и гамма
+ </summary>
+ <param name="IopPred"> предыдущая опора </param>
+ <param name="iSigma"> сигма </param>
+ <param name="iGamma"> гамма</param>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.dwgopor3D.WiwestiProwisTr(PlanDwg.dwgopor3D,System.Double,System.Double)">
+ <summary>
+ Выводит кривые провисания для троса  пролета образуемого данной опорой и предыдущей с заданными сигма и гамма
+ </summary>
+ <param name="IopPred"></param>
+ <param name="iSigma"></param>
+ <param name="iGamma"></param>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.dwgOpRasstNaPlane.KoorPl(BazDwg.clsKoor,BazDwg.clsKoor)">
+ <summary>
+ устанавливает объекты класса координат для пересчета реальных координат в координаты плана и обратно
+ </summary>
+ <param name="iKoorX"> координаты по х </param>
+ <param name="iKoorY">координаты по y  </param>
+ <remarks> функция общая для всех опор трасы, достаточно установить при инициализации трассы   </remarks>
+</member>
+<member name="M:PlanDwg.dwgOpRasstNaPlane.GetDwg(Autodesk.AutoCAD.Geometry.Point2d)">
+ <summary>
+ нахождение координат чертежа любой реальной точки по правилу преобразования точек трассы
+ </summary>
+ <param name="iRealTchk"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:PlanDwg.ComparatorPlanList">
+ <summary>
+ для упорядочивания образа слоев по началу
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.dwgPlanPk.ReInit(System.Int32,System.Double,System.Double,System.Double,System.Double,System.Double)">
+ <summary>
+ Для пересчета плана после изменения параметров отображения
+ </summary>
+ <param name="Mashtab"> коэффициэнт масштаба </param>
+ <param name="Ugol"> начальный уголнаправления трассы</param>
+ <param name="Xdwg">координата X в чертеже начала трасы  </param>
+ <param name="Ydwg">координата y в чертеже начала трасы </param>
+ <param name="iXreal"> реальная координата X </param>
+ <param name="iYreal">реальная координата Y </param>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.dwgPlanPk.WiwPlana">
+ <summary>
+ Вывод плана со всеми пикетными точками
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.SwajzPolylineRasst.RastPoTraseToDistanzePolyline(System.Double)">
+ <summary>
+ по расстоянию по трассе профиля находит растояние на поллилинии
+ такое чтобы точка полилинии была на таком же расстояние от вершины полилинии как и от пикетной точки профиля  
+ </summary>
+ <param name="ir"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.DwgRasstNaPolyline.WiwestiNadSegmentomPolyline(System.Double,System.String,PlanDwg.SwajzPolylineRasst)">
+ <summary>
+ Выводит в  над точкой  полилинии соответсьтвующий заданой точки трасы расстановки надпись параллейно сегменту, которому принадежит эта точка 
+ </summary>
+ <param name="iR"> расстояние от начала трасы </param>
+ <param name="iTxt">выводимый тект </param>
+ <param name="iObjSwajzRasstPolyline"> объект обеспечивающий связь полилинии с профилем и   расстановкой на нем. </param>
+ <returns> возвращает примитив текста </returns>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.DwgRasstNaPolyline.RasstNaPolyline">
+ <summary>
+ Выводит расстановку на полилинии.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.DwgRasstNaPolyline.KoorOporNaPolyline(System.String)">
+ <summary>
+ Выводит расстановку на полилинии.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.Prolet3D.#ctor(modRasstOp.opor3D,modRasstOp.opor3D,Rashet.Rejm,modRasstOp.Fazi)">
+ <summary>
+ Конструктор создания образа пролета в 3D
+ </summary>
+ <param name="iopBeg"> начальная опора пролета  </param>
+ <param name="iopEnd"> конечная опора пролета </param>
+ <param name="iRej">  режим работы провода  </param>
+ <param name="ifaz"> фаза  </param>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.Prolet3D.OpredMinRastDoPow">
+ <summary>
+ Определение минимального расстояния до поверхности
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.Prolet3D.OpredPolSmeshPoFaziRejm(modRasstOp.Fazi,Rashet.Rejm)">
+ <summary>
+ Определение смещения провода в середине пролета
+ </summary>
+ <param name="iNumF"> фаза  с которым ищется смещение</param>
+ <param name="iRejRascheta"> режим работы провода скоторым ищется смещение </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.Prolet3D.bliz(BazDwg.myLine3D,System.Double[])">
+ <summary>
+ Находим минимальное расстояние  между точкой в пространстве и и прямой проходящей через пикет , а в случае пересечения через ее высшую отметку 
+ </summary>
+ <param name="iLinPersch"> отрезок линии пересекающий пикетную точку </param>
+ <param name="iTchk"> заданая точка в пространстве </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.Prolet3D.OpredRastPeresech(Rashet.wlperesech)">
+ <summary>
+ определяет минимальное расстояние от провода пролета  до пересечени
+ </summary>
+ <param name="iPeresech"> пересекаемый объект </param>
+ <returns></returns>
+ <remarks> полагаем что пересечение проходит под линией перпендикулярно трассе </remarks>
+</member>
+<member name="M:PlanDwg.Prolet3D.BlijajsheePeresechnie">
+ <summary>
+ находит в пролете ближайшее к проводу пересечение
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PlanDwg.RaspProvodProvod.Lambda">
+ <summary>
+ длина поддерживающей гирлянды
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PlanDwg.RaspProvodProvod.Delektr">
+ <summary>
+ Расстояние для внутренних перенапряжений
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PlanDwg.RaspProvodProvod.DgorPred">
+ <summary>
+ минимальное расстояние между несмещенными проводами при горисонтальном расположение 2.5.88
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PlanDwg.RaspProvodProvod.DvertPred">
+ <summary>
+ минимальное расстояние между несмещенными проводами при вертикальном  расположение 2.5.89
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PlanDwg.RaspProvodProvod.DgorMin">
+ <summary>
+ минимальное фактическое расстояние по горизонтали
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PlanDwg.RaspProvodProvod.DvertMin">
+ <summary>
+ минимальное фактическое расстояние по вертикали
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PlanDwg.RaspProvodProvod.DvertDopust">
+ <summary>
+ допустимое расстояние по вертикали
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:PlanDwg.RaspProvodProvod.DgorDopust">
+ <summary>
+ домустимое расстояние  по горизонтали
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.RaspProvodProvod.Sfazoj(modRasstOp.Fazi)">
+ <summary>
+ Определяет минимальное сближение между проводом с заданой фазой
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:PlanDwg.RaspProvodProvod.SfazojInojRejm(modRasstOp.Fazi,Rashet.Rejm)">
+ <summary>
+ Определяет минимальное сближение между проводом с заданой фазой
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:PlanDwg.ParamOform">
+ <summary>
+ Класс для чтения параметров оформления границ деталей
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

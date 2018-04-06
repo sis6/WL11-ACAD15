@@ -1,0 +1,471 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+GeologijDwg
+</name>
+</assembly>
+<members>
+<member name="T:GeologijDwg.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:GeologijDwg.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:GeologijDwg.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="M:GeologijDwg.ConsistenzRealDwg.WiwestiWDwg(System.Double,BazDwg.clsKoor,System.Double)">
+ <summary>
+ выводит консистенцию внутри скважины
+ </summary>
+ <param name="iXdwg"> координата в чертеже центра скважины </param>
+ <param name="ikoorgeo">  объект для пересчета координат образа геологии  </param>
+ <param name="iglubinaPosle"> глубина конца консистенции </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.SwajzPolylineTrassa.RastPoTraseToDistanzePolyline(System.Double)">
+ <summary>
+ по расстоянию по трассе профиля находит растояние на поллилинии
+ такое чтобы точка полилинии была на таком же расстояние от вершины полилинии как и от пикетной точки профиля  
+ </summary>
+ <param name="ir"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:GeologijDwg.KonturIge">
+ <summary>
+ класс представляющий контур игэ выводимый в чертеж
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.KonturIge.#ctor(GeologijDwg.GranizIge,System.Collections.Generic.List{Autodesk.AutoCAD.Geometry.Point2d},System.Collections.Generic.List{Autodesk.AutoCAD.Geometry.Point2d},System.Boolean)">
+ <summary>
+ контур штриховки
+ </summary>
+ <param name="iGran"> границы между которыми определяем контур штриховки </param>
+ <param name="iwerh"> список точек верхней границы </param>
+ <param name="iniz"> список точек нижней границы</param>
+ <param name="iPrWibGraniz"> параметры какой границы берем для определения параметров штриховки Истина - начальной </param>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.KonturIge.Obedenit(GeologijDwg.KonturIge)">
+ <summary>
+ объеденяет контура в один если имеют одинаковый ИГЭ и сопркасаеться нижняя граница одного и верхнея другого
+ </summary>
+ <param name="b"></param>
+ <returns> возвращает объедененый контур </returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.KonturIge.Peresechnie(System.Collections.Generic.List{Autodesk.AutoCAD.Geometry.Point2d},System.Double)">
+ <summary>
+ Возвращает отметки пересекаемых границ контура в порядке возрастания Y
+ </summary>
+ <param name="iSp"> список точек границ контура </param>
+ <param name="iX"> X  координата точки </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.KonturIge.Centr(System.Double@)">
+ <summary>
+ находит точку в ниболее широкой части слоя, желательно не меньше rdist
+ </summary>
+ <param name="rDist"> критерий после выполнение функции ширина слоя в найденой точке </param>
+ <returns> возвращает найденую точку </returns>
+ <remarks></remarks>
+</member>
+<member name="P:GeologijDwg.GranizIge.PointW">
+ <summary>
+ Точка на верхней границе игэ соответствующая точки выклинивания
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:GeologijDwg.GranizIge.PointN">
+ <summary>
+ Точка на нижней границе игэ соответствующая точки выклинивания
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:GeologijDwg.GranizIge.PointWstawki">
+ <summary>
+ точка выклинивания
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:GeologijDwg.GranizIge.Napr">
+ <summary>
+ Направление выклинивания
+ </summary>
+ <value></value>
+ <returns> 0 - нет выклинивания 1- выклинивание от начала -1 - выклинивание отконца  </returns>
+ <remarks></remarks>
+</member>
+<member name="T:GeologijDwg.ParaGranizTochek">
+ <summary>
+ Класс обеспечивающий работу с точками иге заданых на скважинах
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.ParaGranizTochek.Init(ProfilBaseDwg.DwgTr,modelGeo.GeologijReal)">
+ <summary>
+ Задает связь с модельэ трассы и геологии общая для всех экземпляров класса
+ </summary>
+ <param name="iTrassa"></param>
+ <param name="imodelGeo"></param>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.ParaGranizTochek.SozdatSpisokPar(System.Collections.Generic.List{GeologijDwg.GranizaSlojIgeRealDwg},System.Collections.Generic.List{GeologijDwg.GranizaSlojIgeRealDwg})">
+ <summary>
+ создает список пар границ начала отрисовки слоя Игэ(не пересекающихся)
+ </summary>
+ <param name="iSpOdin"> список границ на первой скважине включая дно </param>
+ <param name="iSpProt">  список границ на противоположной скважине включая дно </param>
+ <returns></returns>
+ <remarks>  2016-12-07  </remarks>
+</member>
+<member name="M:GeologijDwg.ParaGranizTochek.UtochnitKlin(GeologijDwg.ParaGranizTochek)">
+ <summary>
+ проверяем попадаетли выбраная точка в слой
+ </summary>
+ <param name="iSledPara"> нижняя пара границы слоя </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.ParaGranizTochek.fParamIge(System.String)">
+ <summary>
+ по индексу ИГЭ возвращает объект с параметрами ИГЭ
+ </summary>
+ <param name="IndexIge"> Индекс ИГЭ </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.ParaGranizTochek.SrawnitPoGlubine(GeologijDwg.ParaGranizTochek)">
+ <summary>
+ Сравнивает глубины пар Если ниже обе точки то 1 если выше -1 , если одна выше другая ниже то ноль
+ </summary>
+ <param name="iParaGraniz"></param>
+ <returns></returns>
+ <remarks> если линия соеденяющая пару точек идет ниже то 1 выше -1 , если пересекаеться то 0  </remarks>
+</member>
+<member name="M:GeologijDwg.ParaGranizTochek.RaspedKontur(GeologijDwg.ParaGranizTochek,System.Collections.Generic.List{GeologijDwg.KonturIge},System.Collections.Generic.List{GeologijDwg.KonturIge})">
+ <summary>
+ распределяет контура слоев ИГЭ по спискам внешний - контура полностью ограничивающие слой между точками и внутреними - граничная точка лежит внутри слоя (выклинивание)
+ </summary>
+ <param name="isledPara"> следущая пара в грничных точек(нижняя) </param>
+ <param name="iWnesch"> список внешних контуров </param>
+ <param name="iWnutr">список внутряных </param>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.ParaGranizTochek.SloiMejdu(GeologijDwg.ParaGranizTochek,clsPrf.PointReal)">
+ <summary>
+ Апроксимирует разрезы слоя ИГЭ между точками
+ </summary>
+ <param name="iSledPara">нижняя пара границ </param>
+ <param name="iTochkaMejdu"> точка на профиле в реальных координатах </param>
+ <returns> список разрезов слоя может содержать один или два элемента  </returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.ParaGranizTochek.IsSloj">
+ <summary>
+ проверяет совпадает ли иге слоев пары
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.ParaGranizTochek.IsSlojUroven">
+ <summary>
+ проверяет совпадает ли иге слоев пары с учетом уровня
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:GeologijDwg.ComparatorGranizSlojIgeRealGlubin">
+ <summary>
+ Сортировка в порядке возрастания глубин
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:GeologijDwg.GranizaSlojIgeRealDwg">
+ <summary>
+ класс по параметрам определенным в чертеже определяет параметры слоя в реальных координатах
+ </summary>
+ <remarks> может быть ассоциирован с каким ли бо объекьтом подкоторым находиться </remarks>
+</member>
+<member name="M:GeologijDwg.GranizaSlojIgeRealDwg.#ctor(ProfilBaseDwg.DwgTr,System.Double,clsPrf.PointReal,System.Double,System.String,System.Double)">
+ <summary>
+ Построение границы слоя в произвольной точки при заданой глубине
+ </summary>
+ <param name="itrassa"> трасса представленая в чертеже </param>
+ <param name="iKoeffGeo"> коеффициэнт Гео  </param>
+ <param name="iPointProfReal"> точка профиля  </param>
+ <param name="iGlubina"> глубина  </param>
+ <param name="iIndexIge"> индекс Игэ </param>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.GranizaSlojIgeRealDwg.#ctor(ProfilBaseDwg.DwgTr,System.Int32,LeseGeoIzDwg.RazrezSlojIgeDwg,System.String,clsPrf.PointReal)">
+ <summary>
+ конструктор для преобразования разреза слоя из чертежа 
+ </summary>
+ <param name="itrassa" > профиль трассы представленый в черт еже </param>
+ <param name="iMaschtabgeo">  параметры отображения геологии в чертеже  </param>
+ <param name="IGrDwg"> разрез слоя в чертеже  </param>
+ <param name="iNameObjekt"> имя объекта (опора скважина просто точка на профиле) под которым делаеться разрез  </param>
+ <param name="iPointProfReal"> реальные координаты точки профиля под которым определяеться разрез  </param>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.GranizaSlojIgeRealDwg.#ctor(ProfilBaseDwg.DwgTr,System.Double,OperBD.dsGeologij.geoSloiIgeRow,clsPrf.PointReal,modelGeo.SkwajnaReal,System.Double)">
+ <summary>
+ Конструктор для построения объекта по данным ДатаСет Геология 
+ </summary>
+ <param name="itrassa"> траса профиля в    </param>
+ <param name="idr"> данные по слою из  ДатаСет Геология  </param>
+ <param name="iPointProfReal">  точка профиля под которой строиться слой  </param>
+ <param name="iNameObjekt"></param>
+ <remarks></remarks>
+</member>
+<member name="P:GeologijDwg.GranizaSlojIgeRealDwg.Otmetka">
+ <summary>
+ Отметка верхней границы слоя реальная
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.GranizaSlojIgeRealDwg.LinijGraniz(System.Collections.Generic.List{GeologijDwg.GranizaSlojIgeRealDwg},System.Collections.Generic.List{System.Double})">
+ <summary>
+ по списку границ и списку глубин возвращает нижнею и верхнею границу профиля в координатах чертежа.
+ </summary>
+ <param name="ispGraniz"> список границ </param>
+ <param name="iSpGlubin"> список глубин </param>
+ <returns> возвращает два списка 0 точки верхнего  слоя 1- точки нижнего слоя </returns>
+ <remarks>  список глубин должен быть в той же точке что и разрез  </remarks>
+</member>
+<member name="M:GeologijDwg.GranizaSlojIgeRealDwg.KonturDlaHatch(GeologijDwg.GranizaSlojIgeRealDwg,System.Double,System.Double)">
+ <summary>
+ Формирует коллекцию точек образующую границу образа слоя ИГЭ , апроксимация границы слоя зависит от глубины
+ </summary>
+ <param name="iRazrEnd"> разрез конечной скважины</param>
+ <param name="iGlubina"> начальная глубина нижней границы слоя  </param>
+ <param name="iglubinaEnd"> конечная глубина нижней границы слоя  </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.GranizaSlojIgeRealDwg.PointNaGranizDlaHatch(GeologijDwg.GranizaSlojIgeRealDwg,System.Double)">
+ <summary>
+ Формирует cписки точек точек образующую границу образа слоя ИГЭ , апроксимация границы слоя зависит от глубины
+ </summary>
+ <param name="iRazrEnd"> разрез конечной скважины</param>
+ <param name="iRast"> Растояние на от начала слоя.  </param>
+ <returns> возвращает массив списков точек 0 - верхняя граница 1-нижняя граница</returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.GranizaSlojIgeRealDwg.GranizDlaHatch(GeologijDwg.GranizaSlojIgeRealDwg,System.Double,System.Double)">
+ <summary>
+ Формирует cписки точек точек образующую границу образа слоя ИГЭ , апроксимация границы слоя зависит от глубины
+ </summary>
+ <param name="iRazrEnd"> разрез конечной скважины</param>
+ <param name="iGlubinaNijn"> начальная глубина нижней границы слоя  </param>
+ <param name="iglubinaEndNijn"> конечная глубина нижней границы слоя  </param>
+ <returns> возвращает массив списков точек 0 - верхняя граница 1-нижняя граница</returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.GranizaSlojIgeRealDwg.GranizDlaHatch(System.Double,BazDwg.GrebenProfilDwg,System.Double,System.Double,System.Double,System.Double)">
+<summary>  ФФормирует cписки точек точек образующую границу образа слоя ИГЭ , апроксимация границы слоя зависит от глубины
+ </summary>
+<param name="iKoeffGeo"> коэффициэнт преобразования геологии </param>
+ <param name="iperesUch"> образ профиля в чертеже </param> 
+<param name="iglubinaEndWerh"> начальная глубина нижней границы слоя  </param>
+<param name="iGlubinaNijn"> начальная глубина нижней границы слоя  </param>
+ <param name="iglubinaEndNijn"> конечная глубина нижней границы слоя  </param>
+ <returns> возвращает массив списков точек 0 - верхняя граница 1-нижняя граница</returns>
+ <remarks></remarks>
+</member>
+<member name="T:GeologijDwg.SlojIgeRealDwg">
+ <summary>
+ определение реальных параметров слоев под скважинами.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.SlojIgeRealDwg.PointProfilPoXdwg(ProfilBaseDwg.DwgTr,System.Double)">
+ <summary>
+ Находит точку профиля по координате X в чертеже
+ </summary>
+ <param name="iTrassa"> модель трассы выведеная в чертеж </param>
+ <param name="iXdwg">  координата X точки чертежа  </param>
+ <returns>  возвращает точку в системе координат профиля (растояние от начала, отметка) </returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.SlojIgeRealDwg.GetObjektKoor(System.Int32,System.Double,ProfilBaseDwg.DwgTr)">
+ <summary>
+ формирует объект для пересчета отметок геологии в координаты чертежа
+ </summary>
+ <param name="imaschtabGeo"> масштаб целое(200, 500, 1000) </param>
+ <param name="iOtmetkaProf"> отметка профиля в координатах профиля </param>
+ <param name="iTrassa"> модель трассы выведеная в чертеж  </param>
+ <returns> возвращает объект для пересчета метрических параметров геологии в координаты чертежа </returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.SlojIgeRealDwg.#ctor(ProfilBaseDwg.DwgTr,GeologijDwg.ParamImageGeo,LeseGeoIzDwg.SlojIgeDwg,clsPrf.PointReal,clsPrf.PointReal)">
+ <summary>
+ Пересчет слоя ИГЭ полученого  из чертежа к реальным координатам
+ </summary>
+ <param name="iparam">  Параметры образа геологии  </param>
+ <param name="iSlojIgeDwg"> Слой Иге в чертеже    </param>
+ <param name="iTrassa">  трасса профиля </param>
+ <remarks></remarks>
+</member>
+<member name="T:GeologijDwg.ObrazGeologiiRealDwg">
+ <summary>
+ КЛАСС связи растановки  на профили и геологии связь реальные и dwg координаты 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.ObrazGeologiiRealDwg.GetSloiIgePodOporami(LeseGeoIzDwg.ObrazGeologii)">
+ <summary>
+ Возвращает Список слоев ИГЭ под опорй с привязкой к реальным координатам.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.ObrazGeologiiRealDwg.GetSkwajnRealDwg">
+ <summary>
+ Возвращает список скважин с привязкой к реальным координатам.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.ObrazGeologiiRealDwg.OpredWTochkeReal(System.Double)">
+ <summary>
+ Определяет образ скважины после заданому растоянию  от начала профиля .
+ </summary>
+ <param name="iRast">  заданая координата  </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.ObrazGeologiiRealDwg.IzwlechParamIgeWDataSet(OperBD.dsGeologij)">
+ <summary>
+ Извлекает параметры отображения в чертеже и сохраняет в DataSet
+ </summary>
+ <param name="ids">  Сохраненая модель геологии   </param>
+ <remarks></remarks>
+</member>
+<member name="F:GeologijDwg.SkwajnaRealDwg.NameSlojDwgSkwaj">
+ <summary>
+ слой в которой нарисована скважин
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:GeologijDwg.SkwajnaRealDwg.NameSlojDwgIGE">
+ <summary>
+ Слои ИгЭ штриховки
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:GeologijDwg.SkwajnaRealDwg.NameSlojDwGIndexIGE">
+ <summary>
+ условные обозначения слоев игэ глубин отметок
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.SkwajnaRealDwg.#ctor(ProfilBaseDwg.DwgTr,LeseGeoIzDwg.ObrazSkwajn,GeologijDwg.ParamImageGeo)">
+ <summary>
+ Конструктор создающий объект связи образа скважины в чертеже и в моделе
+ </summary>
+ <param name="iTrassa"> трасса профиля  </param>
+ <param name="iSkwaj">  образ скважины по чертежу  </param>
+ <param name="iParamGeo"> парамеры представления геологие в чертеже  </param>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.SkwajnaRealDwg.#ctor(ProfilBaseDwg.DwgTr,modelGeo.SkwajnaReal,GeologijDwg.ParamImageGeo)">
+ <summary>
+ Конструктор создающий объект связи модели скважины и ее образа скважины в чертеже 
+ </summary>
+ <param name="iTrassa">трасса профиля </param>
+ <param name="iSkwaj"> предсравление скважины в моделе  </param>
+ <param name="iParamGeo"></param>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.SkwajnaRealDwg.SetRastojnie(System.Double)">
+ <summary>
+ устанавливает новое расстояние от начала трассы
+ </summary>
+ <param name="iR"></param>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.SkwajnaRealDwg.GetSloiIgePosle">
+ <summary>
+ Конец слоя который ннчинаеться на скважине
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.SkwajnaRealDwg.GetSloiIgeDo">
+ <summary>
+ начало слоя который заканчиваеться на скважине
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.SkwajnaRealDwg.GetWseGraniz">
+ <summary>
+ Все слои на скважине +  дно
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="F:GeologijDwg.ParamImageGeo.LayerSkwaj">
+ <summary>
+ слой в которой нарисована скважин
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:GeologijDwg.ParamImageGeo.LayerIGE">
+ <summary>
+ Слои ИгЭ штриховки
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:GeologijDwg.ParamImageGeo.LayerUslow">
+ <summary>
+ условные обозначения слоев игэ глубин отметок
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.WiwodGeologii.WiwestiWDwg">
+ <summary>
+ Выводит без учета внутрених контуров 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.WiwodGeologii.WiwestiWDwgA">
+ <summary>
+ Выводит с обработкой внутрених контуров
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:GeologijDwg.WiwParSkwaj.#ctor(ProfilBaseDwg.DwgTr,modelGeo.GeologijReal,System.Int32,GeologijDwg.ParamImageGeo)">
+ <summary>
+ объект 2 смежных скважины с расположеными между ними слоями
+ </summary>
+ <param name="iTrassa"></param>
+ <param name="iModelGeo"></param>
+ <param name="IIndex"></param>
+ <param name="iparamGeo"></param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

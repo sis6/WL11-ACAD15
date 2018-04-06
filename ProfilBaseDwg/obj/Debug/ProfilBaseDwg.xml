@@ -1,0 +1,80 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+ProfilBaseDwg
+</name>
+</assembly>
+<members>
+<member name="T:ProfilBaseDwg.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:ProfilBaseDwg.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:ProfilBaseDwg.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="M:ProfilBaseDwg.clsPodpis.Osi(System.Double,System.Double)">
+ <summary>
+ Выводит координатные оси в чертеже с центром (X-OsY , Y - osX
+ </summary>
+ <param name="EndX"></param>
+ <param name="EndY"></param>
+ <remarks></remarks>
+</member>
+<member name="M:ProfilBaseDwg.dwgObrazOporRasst.wiwestiOP_Profil">
+ <summary>
+ Выводит опору на профиль трассы
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:ProfilBaseDwg.dwgObrazOporRasst.StrDan">
+ <summary>
+ Возвращает и записывает данные ассоциированные с опорой
+ </summary>
+ <value></value>
+ <returns> массив строк в которые записаны данные </returns>
+ <remarks>для обычных расчетов  важны только приведеные центры, остальное параметры расчетных режимов  </remarks>
+</member>
+<member name="M:ProfilBaseDwg.DwgTr.GetLinijProfil">
+ <summary>
+ Берет основной образ профили представленого в чертеже
+ </summary>
+ <returns></returns>
+</member>
+<member name="M:ProfilBaseDwg.DwgTr.ObrazPrfw">
+ <summary>
+ Выводит образ профиля в модель
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:ProfilBaseDwg.DwgTr.ObrazPrfw(clsPrf.ClsPiket,clsPrf.ClsPiket)">
+ <summary>
+ Выводит участок трасы профиля
+ </summary>
+ <param name="iPikBeg">  начальный пикет участка </param>
+ <param name="iPikEnd"> конечный пикет участка</param>
+ <remarks></remarks>
+</member>
+<member name="M:ProfilBaseDwg.DwgTr.ObrazPrf">
+ <summary>
+ Выводит образ профиля в зависимости от представления деталь или весь профиль
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:ProfilBaseDwg.DwgTr.SootNameDwg">
+ <summary>
+ Записывает имя чертежа в образ трассы. При переименовании чертежа
+ </summary>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

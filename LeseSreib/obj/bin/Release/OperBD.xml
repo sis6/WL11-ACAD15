@@ -1,0 +1,816 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+OperBD
+</name>
+</assembly>
+<members>
+<member name="T:OperBD.ElemRasst.oporiDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.ElemRasst.TipOpDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.ElemRasst.UnomDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.ElemRasst.GirjlandDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.ElemRasst.TipPrDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.ElemRasst.prowodaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.ElemRasst.oporiRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.ElemRasst.TipOpRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.ElemRasst.UnomRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.ElemRasst.GirjlandRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.ElemRasst.TipPrRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.ElemRasst.prowodaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.ElemRasst.oporiRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.ElemRasst.TipOpRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.ElemRasst.UnomRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.ElemRasst.GirjlandRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.ElemRasst.TipPrRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.ElemRasst.prowodaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.ElemRasst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:OperBD.ElemRasstTableAdapters.oporiTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.ElemRasstTableAdapters.TipOpTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.ElemRasstTableAdapters.UnomTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.ElemRasstTableAdapters.GirjlandTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.ElemRasstTableAdapters.TipPrTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.ElemRasstTableAdapters.prowodaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:OperBD.ElemRasstTableAdapters.TableAdapterManager.UpdateUpdatedRows(OperBD.ElemRasst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:OperBD.ElemRasstTableAdapters.TableAdapterManager.UpdateInsertedRows(OperBD.ElemRasst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:OperBD.ElemRasstTableAdapters.TableAdapterManager.UpdateDeletedRows(OperBD.ElemRasst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:OperBD.ElemRasstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:OperBD.ElemRasstTableAdapters.TableAdapterManager.UpdateAll(OperBD.ElemRasst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:OperBD.ElemRasstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:OperBD.ElemRasstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:OperBD.ElemRasstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:OperBD.dsRasst.rastOpNDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsRasst.ParamUchNDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsRasst.MechUslDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsRasst.rastOpNRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsRasst.ParamUchNRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsRasst.MechUslRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsRasst.rastOpNRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsRasst.ParamUchNRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsRasst.MechUslRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsRasst">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:OperBD.dsRasstTableAdapters.rastOpNTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsRasstTableAdapters.ParamUchNTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsRasstTableAdapters.MechUslTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:OperBD.dsRasstTableAdapters.TableAdapterManager.UpdateUpdatedRows(OperBD.dsRasst,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:OperBD.dsRasstTableAdapters.TableAdapterManager.UpdateInsertedRows(OperBD.dsRasst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:OperBD.dsRasstTableAdapters.TableAdapterManager.UpdateDeletedRows(OperBD.dsRasst,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:OperBD.dsRasstTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:OperBD.dsRasstTableAdapters.TableAdapterManager.UpdateAll(OperBD.dsRasst)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:OperBD.dsRasstTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:OperBD.dsRasstTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:OperBD.dsRasstTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:OperBD.DsPrav.wspGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.DsPrav.wspPolzBDDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.DsPrav.wspStatusDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.DsPrav.wspGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.DsPrav.wspPolzBDRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.DsPrav.wspStatusRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.DsPrav.wspGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.DsPrav.wspPolzBDRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.DsPrav.wspStatusRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.DsPrav">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:OperBD.DsPravTableAdapters.wspGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.DsPravTableAdapters.wspPolzBDTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.DsPravTableAdapters.wspStatusTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:OperBD.DsPravTableAdapters.TableAdapterManager.UpdateUpdatedRows(OperBD.DsPrav,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:OperBD.DsPravTableAdapters.TableAdapterManager.UpdateInsertedRows(OperBD.DsPrav,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:OperBD.DsPravTableAdapters.TableAdapterManager.UpdateDeletedRows(OperBD.DsPrav,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:OperBD.DsPravTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:OperBD.DsPravTableAdapters.TableAdapterManager.UpdateAll(OperBD.DsPrav)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:OperBD.DsPravTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:OperBD.DsPravTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:OperBD.DsPravTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:OperBD.My.Resources.Resources.ResourceManager">
+	<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member><member name="P:OperBD.My.Resources.Resources.Culture">
+	<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member><member name="T:OperBD.My.Resources.Resources">
+	<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member><member name="T:OperBD.dsUpr.uchastkiNDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsUpr.UnomNDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsUpr.pObjectESSlDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsUpr.tESSDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsUpr.TrassLinDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsUpr.fSpLinRegionpDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsUpr.pObjectESSpDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsUpr.RegPsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsUpr.FileExcelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsUpr.ProektRabDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsUpr.uchastkiRasstDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsUpr.uchastkiNRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsUpr.UnomNRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsUpr.pObjectESSlRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsUpr.tESSRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsUpr.TrassLinRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsUpr.fSpLinRegionpRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsUpr.pObjectESSpRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsUpr.RegPsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsUpr.FileExcelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsUpr.ProektRabRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsUpr.uchastkiRasstRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsUpr.uchastkiNRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsUpr.UnomNRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsUpr.pObjectESSlRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsUpr.tESSRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsUpr.TrassLinRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsUpr.fSpLinRegionpRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsUpr.pObjectESSpRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsUpr.RegPsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsUpr.FileExcelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsUpr.ProektRabRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsUpr.uchastkiRasstRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsUpr">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.uchastkiNTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.UnomNTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.pObjectESSlTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.tESSTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.TrassLinTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.fSpLinRegionpTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.pObjectESSpTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.RegPsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.FileExcelTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.ProektRabTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.uchastkiRasstTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:OperBD.dsUprTableAdapters.TableAdapterManager.UpdateUpdatedRows(OperBD.dsUpr,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:OperBD.dsUprTableAdapters.TableAdapterManager.UpdateInsertedRows(OperBD.dsUpr,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:OperBD.dsUprTableAdapters.TableAdapterManager.UpdateDeletedRows(OperBD.dsUpr,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:OperBD.dsUprTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:OperBD.dsUprTableAdapters.TableAdapterManager.UpdateAll(OperBD.dsUpr)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:OperBD.dsUprTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:OperBD.ElemRasstUch.prowodaUchDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.ElemRasstUch.oporIUchDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.ElemRasstUch.GirjlanduchDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.ElemRasstUch.prowodaUchRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.ElemRasstUch.oporIUchRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.ElemRasstUch.GirjlanduchRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.ElemRasstUch.prowodaUchRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.ElemRasstUch.oporIUchRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.ElemRasstUch.GirjlanduchRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.ElemRasstUch">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:OperBD.ElemRasstUchTableAdapters.prowodaUchTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.ElemRasstUchTableAdapters.oporIUchTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.ElemRasstUchTableAdapters.GirjlanduchTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:OperBD.ElemRasstUchTableAdapters.TableAdapterManager.UpdateUpdatedRows(OperBD.ElemRasstUch,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:OperBD.ElemRasstUchTableAdapters.TableAdapterManager.UpdateInsertedRows(OperBD.ElemRasstUch,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:OperBD.ElemRasstUchTableAdapters.TableAdapterManager.UpdateDeletedRows(OperBD.ElemRasstUch,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:OperBD.ElemRasstUchTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:OperBD.ElemRasstUchTableAdapters.TableAdapterManager.UpdateAll(OperBD.ElemRasstUch)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:OperBD.ElemRasstUchTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:OperBD.ElemRasstUchTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:OperBD.ElemRasstUchTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:OperBD.dsProfil.ProfilNDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsProfil.UgolPoworotaDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsProfil.ProfilADataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsProfil.OsobDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsProfil.TipSoorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsProfil.TablKlimNDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsProfil.FileExcelDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsProfil.PikUgodNDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsProfil.TipUgodDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsProfil.TipMestDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:OperBD.dsProfil.ProfilNRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsProfil.UgolPoworotaRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsProfil.ProfilARow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsProfil.OsobRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsProfil.TipSoorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsProfil.TablKlimNRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsProfil.FileExcelRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsProfil.PikUgodNRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsProfil.TipUgodRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsProfil.TipMestRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:OperBD.dsProfil.ProfilNRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsProfil.UgolPoworotaRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsProfil.ProfilARowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsProfil.OsobRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsProfil.TipSoorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsProfil.TablKlimNRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsProfil.FileExcelRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsProfil.PikUgodNRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsProfil.TipUgodRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsProfil.TipMestRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:OperBD.dsProfil">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.ProfilNTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.UgolPoworotaTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.ProfilATableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.OsobTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.TipSoorTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.TablKlimNTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.FileExcelTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.PikUgodNTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.TipUgodTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.TipMestTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:OperBD.dsProfilTableAdapters.TableAdapterManager.UpdateUpdatedRows(OperBD.dsProfil,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:OperBD.dsProfilTableAdapters.TableAdapterManager.UpdateInsertedRows(OperBD.dsProfil,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:OperBD.dsProfilTableAdapters.TableAdapterManager.UpdateDeletedRows(OperBD.dsProfil,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:OperBD.dsProfilTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:OperBD.dsProfilTableAdapters.TableAdapterManager.UpdateAll(OperBD.dsProfil)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:OperBD.dsProfilTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+</members>
+</doc>

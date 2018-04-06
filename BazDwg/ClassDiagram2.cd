@@ -1,0 +1,274 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="BazfunNet.bazSobutij" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AgCQAAAAgAAAAAgAAAACAAAAAAAAAAAAAAEAAIAAAAA=</HashCode>
+      <FileName>bazSobutij.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.ExspSob" Collapsed="true">
+    <Position X="14.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAgAAAACAAAAAAAAAAAAAAkACIAAAAA=</HashCode>
+      <FileName>bazSobutij.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.clsKoor" Collapsed="true">
+    <Position X="7.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQBAAAAEIAAAAAAAkAAAAAAAAAAAAACAAEAAIEAAAAA=</HashCode>
+      <FileName>clsKoor.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.clsList" Collapsed="true">
+    <Position X="9.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAEgAAAAAAAAADAAAAAAAAAAAAAAAAAAEABAAAAAAA=</HashCode>
+      <FileName>clsList.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.PointPoly3dProf" Collapsed="true">
+    <Position X="13" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsPoly3dProf.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.clsPoly3dProf" Collapsed="true">
+    <Position X="11.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>clsPoly3dProf.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.ComparatorPoint" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="14.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>ComparatorPoint.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BazfunNet.dbPrim" Collapsed="true">
+    <Position X="9.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAASBAIAAAAAAAAAgAAAAAAAAgABAIAAIAEJQgAAAAA=</HashCode>
+      <FileName>dbPrim.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.Znaki" Collapsed="true">
+    <Position X="11.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAACAAAAwAAAAACCAAAAAAAAAAAAAEAAAAAAAAA=</HashCode>
+      <FileName>dbPrim.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.dwgSlowar" Collapsed="true">
+    <Position X="0.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAACAgABBAFAIICAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>dwgSlowar.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.dwgSlowarMas" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAYAAAAAAACAAAAAgAAAAAEAA=</HashCode>
+      <FileName>dwgSlowar.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.bazeStatus" Collapsed="true">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAQAACAAAAA=</HashCode>
+      <FileName>dwgStatus.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.dwgStatus" Collapsed="true">
+    <Position X="3.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IgABQIAEAAIAIAACAQQACEAAIBAABAAAAAAAIAiAAAA=</HashCode>
+      <FileName>dwgStatus.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.dwgWidEkran" Collapsed="true">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAABAAQABAAAAAAAAAAAEAJAAACAAAAA=</HashCode>
+      <FileName>dwgWidEkran.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.dwgWidEkranScale" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAkAAAAAAIgAAAAAAAAAAAAAAAAAEAAAAA=</HashCode>
+      <FileName>dwgWidEkran.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.PointMon" Collapsed="true">
+    <Position X="11.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAACIAAAEAAAACAAABAAAAAABQAAAAAAAAAAAA=</HashCode>
+      <FileName>KoorKurs.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.SrawPoUgluPoint2d" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAACAA=</HashCode>
+      <FileName>myElement.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BazfunNet.SrawPoUgluPoint2dZentr" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAACAACAA=</HashCode>
+      <FileName>myElement.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BazfunNet.myKontur" Collapsed="true">
+    <Position X="11.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAIASAAEAAoAAAAAAAIAAAAQAAAGAAAACBBAAA=</HashCode>
+      <FileName>myElement.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.myLine3D" Collapsed="true">
+    <Position X="14.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>myElement.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.myLine2D" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAAAgAAAAABgAAAAAAAAAAA=</HashCode>
+      <FileName>myElement.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BazfunNet.myPolyline3d" Collapsed="true">
+    <Position X="6" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAIAAAAAAAABAAAAEAAAAAAAAABAAAAAAAAQAAA=</HashCode>
+      <FileName>myElement.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.netSelectSet" Collapsed="true">
+    <Position X="9.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABDAAAAEAAAAAAAAAAAAAAABAAAAAAAAAEAAAAQAIA=</HashCode>
+      <FileName>netSelectSet.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.clsXDATA" Collapsed="true">
+    <Position X="13" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIQACAAAAAAAAAAAAAgAgAAAAAAAAAACAABAAAA=</HashCode>
+      <FileName>netXdata.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.ComparatorPrOtrezok" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="6" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>prbOtrezok.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BazfunNet.ComparatorPrOtrezokW" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="7.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAA=</HashCode>
+      <FileName>prbOtrezok.vb</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="BazfunNet.prbOtrezok" Collapsed="true">
+    <Position X="14.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAACAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>prbOtrezok.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.SystemKommand" Collapsed="true">
+    <Position X="9.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAACAgAAAAEABAAEAAYAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>SystemKommand.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.CreateEntities.dwgText" Collapsed="true">
+    <Position X="13" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAABAIAAAAAAAAAgAAAAAAAAAAIAIAAIAgAAAAAAAA=</HashCode>
+      <FileName>dwgText.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.CreateEntities.MakeEntities" Collapsed="true">
+    <Position X="7.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAACAEAIQAUAAAAAAIAAAggJAAAAIAAAQAAAAAA=</HashCode>
+      <FileName>ents.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.CreateEntities.MakeNeGraf" Collapsed="true">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAEAAAAAAAAAAAAAAAAAAAAQAAABQ=</HashCode>
+      <FileName>ents.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.CreateEntities.MakeEntitesLista" Collapsed="true">
+    <Position X="6" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAAAAAABAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ents.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BazfunNet.My.MySettings" Collapsed="true">
+    <Position X="7.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Settings.vb</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="BazfunNet.VarStatus" Collapsed="true">
+    <Position X="6" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAABACAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA=</HashCode>
+      <FileName>dwgStatus.vb</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Module Name="BazfunNet.Kommand" Collapsed="true">
+    <Position X="6" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAFAIAQCAAACAAAAAEIlAAAAAiAAAShCBAKBQCAEAQI=</HashCode>
+      <FileName>Kommand.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="BazfunNet.Otlad" Collapsed="true">
+    <Position X="9.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAAAAAAQASAAAAAAAAAAAQAAAAAAAA=</HashCode>
+      <FileName>Otlad.vb</FileName>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="BazfunNet.My.Resources.Resources" Collapsed="true">
+    <Position X="11.25" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Module Name="BazfunNet.My.MySettingsProperty" Collapsed="true">
+    <Position X="7.75" Y="5.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Module>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

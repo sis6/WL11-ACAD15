@@ -1,0 +1,14 @@
+C:\WL11-ACAD15\ISP\BD_WL_O6.dll.config
+C:\WL11-ACAD15\ISP\BD_WL_O6.dll
+C:\WL11-ACAD15\ISP\BD_WL_O6.pdb
+C:\WL11-ACAD15\ISP\BD_WL_O6.xml
+C:\VSP\WL11-ACAD15\BD_WL_O6\obj\Debug\BD_WL_O6.FormProsmotr06.resources
+C:\VSP\WL11-ACAD15\BD_WL_O6\obj\Debug\BD_WL_O6.FrmOpora.resources
+C:\VSP\WL11-ACAD15\BD_WL_O6\obj\Debug\BD_WL_O6.FrmProwod.resources
+C:\VSP\WL11-ACAD15\BD_WL_O6\obj\Debug\BD_WL_O6.Resources.resources
+C:\VSP\WL11-ACAD15\BD_WL_O6\obj\Debug\B_WL_O6.vbproj.GenerateResource.Cache
+C:\VSP\WL11-ACAD15\BD_WL_O6\obj\Debug\B_WL_O6.vbproj.CoreCompileInputs.cache
+C:\VSP\WL11-ACAD15\BD_WL_O6\obj\Debug\BD_WL_O6.dll
+C:\VSP\WL11-ACAD15\BD_WL_O6\obj\Debug\BD_WL_O6.xml
+C:\VSP\WL11-ACAD15\BD_WL_O6\obj\Debug\BD_WL_O6.pdb
+C:\VSP\WL11-ACAD15\BD_WL_O6\obj\Debug\B_WL_O6.vbprojResolveAssemblyReference.cache

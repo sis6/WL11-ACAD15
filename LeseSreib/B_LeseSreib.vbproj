@@ -1,0 +1,290 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6922005A-E5F0-49D6-817C-6DBBCA2D4C0E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <StartupObject>
+    </StartupObject>
+    <RootNamespace>LeseSreib</RootNamespace>
+    <AssemblyName>LeseSreib</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <ApplicationManifest>My Project\app.manifest</ApplicationManifest>
+    <TargetZone>LocalIntranet</TargetZone>
+    <GenerateManifests>true</GenerateManifests>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>7A72D232AEB82092E15D057602004A3E33544EB6</ManifestCertificateThumbprint>
+    <ManifestKeyFile>LeseSreib_TemporaryKey.pfx</ManifestKeyFile>
+    <SignManifests>false</SignManifests>
+    <PublishUrl>\\Ugenergo\Ugespog\WL_11\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Unc</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <ExcludedPermissions>
+    </ExcludedPermissions>
+    <SignAssembly>false</SignAssembly>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\WL11-ACAD15\ISP\</OutputPath>
+    <DocumentationFile>LeseSreib.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42032,42036,42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42020,42021,42022</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LeseSreib.xml</DocumentationFile>
+    <NoWarn>42017,42018,42019,42032,42036,42353,42354,42355</NoWarn>
+    <WarningsAsErrors>41999,42016,42020,42021,42022</WarningsAsErrors>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb">
+    </Compile>
+    <Compile Include="BufferSohrDljOtmen.vb" />
+    <Compile Include="clsLeseSreibUsl.vb" />
+    <Compile Include="clsLeseSrejbRasstDwg.vb" />
+    <Compile Include="clsSreibeBD.vb" />
+    <Compile Include="clsSwExel.vb">
+    </Compile>
+    <Compile Include="FrmKorrProfilWlUch.Designer.vb">
+      <DependentUpon>FrmKorrProfilWlUch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKorrProfilWlUch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmKorrRasstWlUch.Designer.vb">
+      <DependentUpon>FrmKorrRasstWlUch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmKorrRasstWlUch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRastUsl.Designer.vb">
+      <DependentUpon>FrmRastUsl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRastUsl.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSoob.Designer.vb">
+      <DependentUpon>frmSoob.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmSoob.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUchastki.Designer.vb">
+      <DependentUpon>frmUchastki.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmUchastki.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUchastkiKorr.Designer.vb">
+      <DependentUpon>FrmUchastkiKorr.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUchastkiKorr.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWiborFile.Designer.vb">
+      <DependentUpon>frmWiborFile.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWiborFile.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModIsp.vb" />
+    <Compile Include="OperUch.vb" />
+    <Compile Include="OperUchCls.vb" />
+    <Compile Include="Settings.vb">
+    </Compile>
+    <Compile Include="Sw_ParamUchBD.vb" />
+    <Compile Include="sw_UchBdSowmest.vb" />
+    <Compile Include="Sw_IzBD_ConstTabl.vb" />
+    <Compile Include="Sw_UchPrfDs.vb" />
+    <Compile Include="Sw_UchPrfExel.vb">
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmKorrProfilWlUch.resx">
+      <DependentUpon>FrmKorrProfilWlUch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKorrProfilWlUch.ru-RU.resx">
+      <DependentUpon>FrmKorrProfilWlUch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmKorrRasstWlUch.resx">
+      <DependentUpon>FrmKorrRasstWlUch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRastUsl.resx">
+      <DependentUpon>FrmRastUsl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSoob.resx">
+      <DependentUpon>frmSoob.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUchastki.resx">
+      <DependentUpon>frmUchastki.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUchastkiKorr.resx">
+      <DependentUpon>FrmUchastkiKorr.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWiborFile.resx">
+      <DependentUpon>frmWiborFile.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+    </None>
+    <None Include="My Project\app.manifest" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\clsGraniz.datasource" />
+    <None Include="My Project\DataSources\clsLeseSreibUsl.datasource" />
+    <None Include="My Project\DataSources\clsPrf.clsPiket.datasource" />
+    <None Include="My Project\DataSources\Sw_UchPrfExel.datasource" />
+    <None Include="My Project\DataSources\UslRaschetaCls.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WL_11-13_Code\clsPrf\AA_clsPrf.vbproj">
+      <Project>{c12a74b4-6b78-47f4-9f86-bb28bd224423}</Project>
+      <Name>AA_clsPrf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WL_11-13_Code\modRasstOp\AA_modRasstOp.vbproj">
+      <Project>{1b9ad9af-d8b5-4c09-95b9-cdf294e06141}</Project>
+      <Name>AA_modRasstOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WL_11-13_Code\WpfDokOborot\AA_WpfDokOborot.vbproj">
+      <Project>{6bd07867-b1a9-450d-a861-d66a9733cf2f}</Project>
+      <Name>AA_WpfDokOborot</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BazDwg\BazDwg.vbproj">
+      <Project>{d9a3cbf9-078f-45a4-8f01-95f156f2c293}</Project>
+      <Name>BazDwg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WL_11-Brics_Code\OperDann\AA_OperBD.vbproj">
+      <Project>{9c85d010-5d8c-4156-9c24-1e97057cf901}</Project>
+      <Name>AA_OperBD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

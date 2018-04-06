@@ -1,0 +1,465 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LeseSreib
+</name>
+</assembly>
+<members>
+<member name="T:LeseSreib.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:LeseSreib.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:LeseSreib.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="P:LeseSreib.My.Resources.Resources.openHS">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:LeseSreib.My.Resources.Resources.saveHS">
+<summary>
+  Поиск локализованного ресурса типа System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:LeseSreib.ZapisBufferSohrDljOtmen">
+ <summary>
+ Класс предназначен для сохранения старых значений измененных величин и их восстановления(отмена операций редактирования в DataGridVien)
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:LeseSreib.clsLeseSrejbRasstDwg">
+ <summary>
+ класс обеспечивающий сохранение считанной модели в словаре чертежа
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.clsLeseSrejbRasstDwg.#ctor(System.String,modRasstOp.wlRasst)">
+ <summary>
+ создает объект для операций с данными профиля и расстановки хранящихся в солварях чертежа
+ </summary>
+ <param name="iNameKorenSlowaUch"> корень слова=названия словаря участка  </param>
+ <param name="iRasst"> профиль и расстановка </param>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.clsLeseSrejbRasstDwg.SaveOSostave">
+ <summary>
+ Сохранение данных о составе трассы и расстановке и идентификаторов участков.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.clsLeseSrejbRasstDwg.Save">
+ <summary>
+  сохранение всей модели и данных о времени и пользователях последних изменений
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.clsLeseSrejbRasstDwg.SaveTr">
+ <summary>
+ сохранени модели трассы 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.clsLeseSrejbRasstDwg.SaveRasst">
+ <summary>
+ сохранени модели только расстановки 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:LeseSreib.RejmSohranenij.RejmSowmest">
+ <summary>
+ устанавливает режим совместной работы
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.RejmSohranenij.Save">
+ <summary>
+ Сохранение в словаре записи о режимах работы и указателей на участки в бД совместной работы
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.RejmSohranenij.#ctor">
+ <summary>
+ создание класса режиме и указателях в текущем чертеже 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:LeseSreib.clsSreibeBD">
+ <summary>
+ класс инкапсулирует функции обеспечивающии сохранение и чтение данных модели расстановки в совместном режиме
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.clsSreibeBD.SchreibeWSowmestOSostawe(modRasstOp.wlRasst,OperBD.dostup)">
+ <summary>
+ записывает В БД данные о составе трассы по записям участкам
+ </summary>
+ <param name="iRasst"> модель профиля и расстановки </param>
+ <param name="idostup"> характеристики доступа пользователя  </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.clsSreibeBD.SchreibeWSowmest(modRasstOp.wlRasst,OperBD.dostup)">
+ <summary>
+ запись в БД совместной работы профиля и расстановки 
+ </summary>
+ <param name="iRasst"> модель профиля и расстановки </param>
+ <param name="idostup"> характеристики доступа пользователя </param>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.clsSreibeBD.SchreibeRasstWSowmest(modRasstOp.wlRasst,OperBD.dostup)">
+ <summary>
+ запись в БД совместной работы  расстановки 
+ </summary>
+ <param name="iRasst"> модель профиля и расстановки</param>
+ <param name="idostup"> характеристики доступа пользователя</param>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.clsSreibeBD.SchreibeTrassWSowmest(modRasstOp.wlRasst,OperBD.dostup)">
+ <summary>
+ запись в БД совместной работы профиля 
+ </summary>
+ <param name="iRasst"> модель профиля и расстановки</param>
+ <param name="idostup"> характеристики доступа пользователя</param>
+ <remarks></remarks>
+</member>
+<member name="T:LeseSreib.FrmKorrProfilWlUch">
+ <summary>
+ Форма используеться для корректировки данных участка профиля
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LeseSreib.FrmKorrProfilWlUch.wPikBeg">
+ <summary>
+  Вспогательные переменные: начальный и конечный пикетаж участка, текуший пикет и и средняя отметка участка профиля  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LeseSreib.FrmKorrProfilWlUch.wPikEnd">
+ <summary>
+  Вспогательные переменные: начальный и конечный пикетаж участка, текуший пикет и и средняя отметка участка профиля  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LeseSreib.FrmKorrProfilWlUch.wPikTek">
+ <summary>
+  Вспогательные переменные: начальный и конечный пикетаж участка, текуший пикет и и средняя отметка участка профиля  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LeseSreib.FrmKorrProfilWlUch.wOtmSr">
+ <summary>
+  Вспогательные переменные: начальный и конечный пикетаж участка, текуший пикет и и средняя отметка участка профиля  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:LeseSreib.FrmKorrProfilWlUch.IzmUch">
+ <summary>
+ Задает и читает изменяемый участок расстановки 
+ </summary>
+ <value> </value>
+ <returns></returns>
+ <remarks></remarks>
+ 
+</member>
+<member name="T:LeseSreib.FrmKorrRasstWlUch">
+ <summary>
+ Форма используеться для корректировки данных участка профиля
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LeseSreib.FrmKorrRasstWlUch.wPikBeg">
+ <summary>
+  Вспогательные переменные: начальный и конечный пикетаж участка, текуший пикет и и средняя отметка участка профиля  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LeseSreib.FrmKorrRasstWlUch.wPikEnd">
+ <summary>
+  Вспогательные переменные: начальный и конечный пикетаж участка, текуший пикет и и средняя отметка участка профиля  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LeseSreib.FrmKorrRasstWlUch.wPikTek">
+ <summary>
+  Вспогательные переменные: начальный и конечный пикетаж участка, текуший пикет и и средняя отметка участка профиля  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LeseSreib.FrmKorrRasstWlUch.wOtmSr">
+ <summary>
+  Вспогательные переменные: начальный и конечный пикетаж участка, текуший пикет и и средняя отметка участка профиля  
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="F:LeseSreib.FrmKorrRasstWlUch.wElemRastUch">
+ <summary>
+ ДатаСет данных о опорах и проводах используемых на участке
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.FrmKorrRasstWlUch.UstProsmotr">
+ <summary>
+ Форма переводиться в режим просмотра
+ </summary>
+</member>
+<member name="P:LeseSreib.FrmKorrRasstWlUch.IzmUch">
+ <summary>
+ Задает и читает изменяемый участок расстановки 
+ </summary>
+ <value> </value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:LeseSreib.FrmRastUsl">
+ <summary>
+ В словаре сохраняються параметры заданого режима, для реальных расчетов важен приведеный центр 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:LeseSreib.frmSoob">
+ <summary>
+ Форма для выдачи ообщений при чтение замиси данных Excel
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:LeseSreib.frmUchastki.Rasst">
+ <summary>
+ Задание полной модели расстановки
+ </summary>
+ <value>рсстановка с которой надо произвести действия  </value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:LeseSreib.FrmUchastkiKorr">
+ <summary>
+ Форма для выбора участка. Корректирвка параметров участка
+ Корректирвка данных участка
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.ModIsp.LeseDannRasst(System.String[],modRasstOp.wlRasst)">
+ <summary>
+ Cчитывает только расстановку из ассоцированых файлов
+ </summary>
+ <param name="PutiK_File">пути к ассоциированным файлам</param>
+ <param name="iRasst">модель трасы и расстановки в которой нужно заменить расстановку </param>
+ <returns> возвращает массив участков </returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.ModIsp.LeseDann(System.String[])">
+ <summary>
+ Считывает трассу и расстановку из ассоциированных с чертежом файлов и формирует коллекцию участков
+ </summary>
+ <param name="PutiK_File">пути к ассоциированным файлам </param>
+ <returns> возвращает коллекцию участков </returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.ModIsp.CreateIzSlowara">
+ <summary>
+ Создает из словаря профиль  расстановку
+ </summary>
+ <returns></returns>
+ <remarks>дублирует функцию из clsLeseSreib </remarks>
+</member>
+<member name="M:LeseSreib.OperUchCls.#ctor(modRasstOp.wlUch,modRasstOp.wlUch,System.Double,System.Double)">
+ <summary>
+ Coздает класс для операций с участками
+ </summary>
+ <param name="iOsnUch">  основной участок  </param>
+ <param name="iDop"> участок для вставки  </param>
+ <param name="iBegPiketaj"> начальный пикетаж выделение части основного участка </param>
+ <param name="iEndPiketaj"> конечный пикетаж выделения частей основного участка </param>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.OperUchCls.RazdelenieTabl(System.Data.DataTable,System.Double,System.Data.DataRow[]@,System.Data.DataRow[]@)">
+ <summary>
+ разделение таблиц по пикетажу
+ </summary>
+ <param name="iTabl"> исходная таблица </param>
+ <param name="iPikGr">  пикетаж разделения </param>
+ <param name="irowsDo">массив DataRow до точки разделения </param>
+ <param name="irowsposle"> массив DataRow после точки разделения  </param>
+ <remarks>  если есть запись с пикатажем равным точке разделения то входит в массив после </remarks>
+</member>
+<member name="T:LeseSreib.sw_ParamuchBdSowmest">
+ <summary>
+ класс чтения,записи данных о участке трассы ВЛ 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:LeseSreib.sw_ParamuchBdSowmest.IsUchastok">
+ <summary>
+ Проверяет есть ли запись о участке.
+ </summary>
+ <value></value>
+ <returns> возвращает True если есть</returns>
+ <remarks></remarks>
+</member>
+<member name="P:LeseSreib.sw_ParamuchBdSowmest.Uchastok">
+ <summary>
+ возвращает созданный объект модели участка
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="P:LeseSreib.sw_ParamuchBdSowmest.UidUch">
+ <summary>
+ индентификатор участка в базе данных совместнгй работы
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.sw_ParamuchBdSowmest.ProverkaNeUnikfkalnosti(System.String,System.String,System.String)">
+ <summary>
+ Проверяет есть ли запись с такими параметрами в БД
+ </summary>
+ <param name="iNameWl"> имя ВЛ </param>
+ <param name="iNameUch"> имя участка </param>
+ <param name="iNameRab">имя работы </param>
+ <returns>Возвращает истнуесли такая запись есть </returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.sw_ParamuchBdSowmest.#ctor(System.Guid,OperBD.dostup,clsPrf.clsUchPrf)">
+ <summary>
+ Конструктор для создания объекта обеспечивающего запись данных участка в временную  базу данных
+ </summary>
+ <param name="iUiduch">Guid участка во временной базе данных </param>
+ <param name="iDostup"> характеристики пользователя и строки подключения </param>
+ <param name="IUch"> участок который будет записан во временню БД </param>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.sw_ParamuchBdSowmest.#ctor(System.Guid,OperBD.dostup)">
+ <summary>
+ Конструктор для создания объекта обеспечивающего создание участка из временой БД 
+ </summary>
+ <param name="iUiduch"></param>
+ <param name="iDostup"></param>
+ <remarks> Данные по участку должны присутствовать в БД</remarks>
+</member>
+<member name="T:LeseSreib.sw_UchIzBdSowmest">
+ <summary>
+ Класс обеспечивает чтение данных из БД формирование модели участка
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.sw_UchIzBdSowmest.IzBdUchastok">
+ <summary>
+ Параметры участка бeруться по гуиду участка базы данных
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.sw_UchIzBdSowmest.IzBdUchastok(System.String)">
+ <summary>
+ когда имя известно или ннужно присвоить отличное от имени в БД
+ </summary>
+ <param name="iNameUch"></param>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.sw_UchIzBdSowmest.IzBD_Wse">
+ <summary>
+ Параметры участка бeруться по гуиду участка базы данных
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.sw_UchIzBdSowmest.IzBD_Wse(System.String)">
+ <summary>
+ когда имя известно или ннужно присвоить отличное от имени в БД
+ </summary>
+ <param name="iNameUch"></param>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.sw_UchIzBdSowmest.#ctor(System.Guid,OperBD.dostup)">
+ <summary>
+ Для чтения из бд
+ </summary>
+ <param name="iUkNaUch"> Guid участка во БД совместной работы </param>
+ <param name="idostup"> доступ и прочее </param>
+ <remarks></remarks>
+</member>
+<member name="T:LeseSreib.sw_UchWBdSowmest">
+ <summary>
+ записывает данные участка трассы в БД совместной работы 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:LeseSreib.sw_UchWBdSowmest.GuidUch">
+ <summary>
+ Guid участка записаного в БД
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.sw_UchWBdSowmest.#ctor(modRasstOp.wlUch,LeseSreib.sw_ParamuchBdSowmest,OperBD.dostup)">
+ <summary>
+ для записи данных  участка в   БД
+ </summary>
+ <param name="iRasstnauch"> участок ВЛ </param>
+ <param name="iParamUch"> данные о записи параметров участка в бД(запись в таблице участков)   </param>
+ <param name="idostup">  свединее о пользователе  </param>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.sw_UchWBdSowmest.RasstanowkuWBDUpdate">
+ <summary>
+ записывает данные растановки в бд
+ </summary>
+ <remarks> Проверяет на совпадение Guidow </remarks>
+</member>
+<member name="M:LeseSreib.sw_UchWBdSowmest.RasstanowkuWBDNewGuid">
+ <summary>
+ записывает данные растановки в бд
+ </summary>
+ <remarks> Устанавливает Guid элементов по guid участка </remarks>
+</member>
+<member name="M:LeseSreib.sw_UchWBdSowmest.ProfilWBD">
+ <summary>
+ записывает данные профиля в БД
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.sw_UchWBdSowmest.ProfilwBDNewGuid">
+ <summary>
+ записывает данные профиля в БД
+ </summary>
+ <remarks> В случае если в бд с guidom записи участка есть данные и Guid записи и Guid участка не совпадают то запись не производиться   </remarks>
+</member>
+<member name="T:LeseSreib.Sw_IzDs_Rasst">
+ <summary>
+ 'формируем из  DataSet профиля и расстановки модель профиля и расстановки
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.Sw_IzDs_Rasst.#ctor(OperBD.dsProfil,OperBD.dsRasst,OperBD.ElemRasstUch,System.String)">
+ <summary>
+ формируем по DataSetам данным  участок трасы ВЛ
+ </summary>
+ <param name="dsPrfA"> объедененные данные профиля </param>
+ <param name="idsRasst"> расстановка </param>
+ <param name="dsElem"> опоры провода гирлянды  участка </param>
+ <param name="iNameUch"></param>
+ <remarks></remarks>
+</member>
+<member name="M:LeseSreib.Sw_IzRasst_DS.#ctor(modRasstOp.wlUch)">
+ <summary>
+ для заполнения данных в ДатаСет для коррекции
+ </summary>
+ <param name="iRasstnauch"></param>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

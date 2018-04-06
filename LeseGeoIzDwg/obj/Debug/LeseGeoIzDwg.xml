@@ -1,0 +1,259 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LeseGeoIzDwg
+</name>
+</assembly>
+<members>
+<member name="T:LeseGeoIzDwg.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:LeseGeoIzDwg.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:LeseGeoIzDwg.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="M:LeseGeoIzDwg.ObrazGeologii_Bas.SrawneniePoY(LeseGeoIzDwg.clsHatch,LeseGeoIzDwg.clsHatch)">
+ <summary>
+ Сравнение двух штриховок для упорядочивания по возрастанию
+ </summary>
+ <param name="xHatch"> первая штриховка  </param>
+ <param name="yHatch">вторая штриховка </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:LeseGeoIzDwg.SlojIgeDwg">
+ <summary>
+ Образ слоя в чертеже по штриховки строиться контур определяеться номерт ИГЭ и граничнвые скважины
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.SlojIgeDwg.OpredGranSloj(System.Collections.Generic.List{LeseGeoIzDwg.ObrazSkwajn},System.Collections.Generic.List{System.Int32})">
+ <summary>
+ определяет условия на границах слоя скважины если они есть 
+ определяет точки выклинивая и ограничения в 
+ </summary>
+ <param name="SpSkwaj"> список образов скважин по линейным примитивам </param>
+ <param name="SpProm"> список точек в координатах профиля граничных точек слоев несовпадающих с скважинами   </param>
+ <remarks></remarks>
+</member>
+<member name="T:LeseGeoIzDwg.RazrezSlojIgeDwg">
+ <summary>
+ Разрез слоя   в чертеже, по  заданой координате Ч 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="P:LeseGeoIzDwg.RazrezSlojIgeDwg.YnizDwg">
+ <summary>
+ координата нижней точки в чертеже
+ </summary>
+ <value></value>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.clsHatch.WnutriPolyline(Autodesk.AutoCAD.Geometry.Point2d)">
+ <summary>
+ Проверяет находиться данная точка внутри штриховки
+ </summary>
+ <param name="iPoint"> точка чертежа </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.clsHatch.LinijBegLi">
+ <summary>
+ проверяет являеться ли линия границы ровной линией или она изломана
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.clsHatch.Rajdom(LeseGeoIzDwg.clsHatch)">
+ <summary>
+ Определяет имеют ли  слои общие границы  1 слой перед isled -1 слой после iSled 0 - не имеют общих границ
+ </summary>
+ <param name="iSled"> слой для сравнений </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:LeseGeoIzDwg.KommandNew.ComparatorSlojIgeDwg">
+ <summary>
+ для упорядочивания образа слоев по началу
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:LeseGeoIzDwg.KommandNew.ComparatorSlojIgeDwgEnd">
+ <summary>
+ упорядочивание образов слоев по конечной границы
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:LeseGeoIzDwg.KommandNew.ComparatorRazrezSlojIgeDwgY">
+ <summary>
+ Упорядочивание образов разрезов слоев в чертеже по Y.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:LeseGeoIzDwg.KommandNew.ComparatorObrazSkwajnPoX">
+ <summary>
+ упорядочивание образов скважин по X 
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="T:LeseGeoIzDwg.KommandNew.ComparatorSkwajn">
+ <summary>
+ Упорядочивание построеных по примитивам скважин.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.KommandNew.PeresechenieLineHatch(LeseGeoIzDwg.SlojIgeDwg,Autodesk.AutoCAD.Geometry.Point3d)">
+ <summary>
+ находит пересечения со штриховкой представляющей геологический слой 
+ прямо проходящей через заданную точку параллейно оси OX
+ </summary>
+ <param name="iHatchIdentfikator"> обертка штриховка(HatchIdentifikator) приведеная  представляющая геологический слой c определенным идентификатором слоя </param>
+ <param name="iPoint"> заданая точка </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.ObrazGeologii.GetSpisokNaimenowanij">
+ <summary>
+ Список всех наименований Игэ.
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.ObrazGeologii.#ctor(System.Collections.Generic.List{Autodesk.AutoCAD.DatabaseServices.Entity},System.Collections.Generic.List{Autodesk.AutoCAD.DatabaseServices.Entity},System.Collections.Generic.List{Autodesk.AutoCAD.DatabaseServices.Entity},System.Collections.Generic.List{LeseGeoIzDwg.PostroenijSkwajEntity})">
+ <summary>
+ Построение по примитивам представляющем геологию модели образа геологии
+ </summary>
+ <param name="SpEntHatcH"> Список штриховок в слое Гео_штрих </param>
+ <param name="SpMtext"> Список мультитекстов слоя гео условные  </param>
+ <param name="iSpObraz"> список  образов скважин созданых из примитивов чертежа  </param>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.ObrazGeologii.UstanowitMej(BazDwg.GrebenProfilDwg)">
+ <summary>
+ 
+ </summary>
+ <param name="iGreben"></param>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.ObrazGeologii.SpisokSlojIgeDwgWTochke(Autodesk.AutoCAD.Geometry.Point3d)">
+ <summary>
+ Находит слои Игэ расположеные под заданой точкой разрез по X
+ </summary>
+ <param name="iPoint"> заданая точка чертежа </param>
+ <returns>  Список образ разрезов слоев ИГэ в точке упорядоченый по возрастанию отметок. </returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.ObrazGeologii.IsSlojIgeDwgWTochke(System.Double)">
+ <summary>
+ проверяет есть ли слои Игэ в точке
+ </summary>
+ <param name="iXdwg"> заданая точка чертежа </param>
+ <returns>  Список образ разрезов слоев ИГэ в точке </returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.ObrazGeologii.OpredSkwajnuPosle(System.Double)">
+ <summary>
+ Определяет образ скважины после заданой координаты по X чертежа .
+ </summary>
+ <param name="iXdwg">  заданая координата  </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="T:LeseGeoIzDwg.ObrazSkwajn">
+ <summary>
+ Образ скважины в чертеже (имя береться из надписи в подвале профиля ) положение центра и глубина из анализа полилиний представляющую скважину.
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.ObrazSkwajn.SlojBeg">
+ <summary>
+ Слои начало которых совладает с  скважиной
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.ObrazSkwajn.SlojEnd">
+ <summary>
+ Слои конец которых совпадает со скважиной
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.ObrazSkwajn.GetOtmetkiPoTxt">
+ <summary>
+ Отметки слоев по считаным мтекстовым примитивам. Последняя должна быть отметка низа скважины 
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.ObrazSkwajn.GetGlubinReal">
+ <summary>
+ Глубины слоев по считаным  примитивам. Последняя должна быть глубина скважины  
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.ObrazSkwajn.ProwImeniSkwaj(Autodesk.AutoCAD.DatabaseServices.MText)">
+ <summary>
+ ищет текстовой маркер скважины 
+ </summary>
+ <param name="iLm"> мультитекст  </param>
+ <returns> возвращает номер в строке скоторого начинаеться марке , если маркера нет то 0 </returns>
+ <remarks></remarks>
+</member>
+<member name="T:LeseGeoIzDwg.PostroenijSkwajEntity">
+ <summary>
+ находит группы близких полилиний и линий и по ним определяет параметры  скважины
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.PostroenijSkwajEntity.AddMtextOtmetokGlubin(Autodesk.AutoCAD.DatabaseServices.MText)">
+ <summary>
+ Выбор мультитекста в котором записана или отметка слоя или глубина.   Добавляет мультитексты отметок и глубин 
+ </summary>
+ <param name="el"></param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.PostroenijSkwajEntity.addOtmetGruntWod(Autodesk.AutoCAD.DatabaseServices.MText,System.Double)">
+ <summary>
+ Esli есть признак отметки и он лежит в допустимой позиции то положительное число  если в недопустимой -0.1   иначе -1
+ </summary>
+ <param name="izapis"> анализируемый мульти текст   </param>
+ <param name="ikrit"> критерий близости. </param>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.PostroenijSkwajEntity.GetSpPrim">
+ <summary>
+ Возвращает список примитивовов представляющих скважину
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.PostroenijSkwajEntity.GetSpProb">
+ <summary>
+ список проб на скважине
+ </summary>
+ <remarks></remarks>
+</member>
+<member name="M:LeseGeoIzDwg.PostroenijSkwajEntity.GetOtmetki">
+ <summary>
+ Возвращает список Мтехт которым записаны глубины
+ </summary>
+ <returns></returns>
+ <remarks></remarks>
+</member>
+</members>
+</doc>

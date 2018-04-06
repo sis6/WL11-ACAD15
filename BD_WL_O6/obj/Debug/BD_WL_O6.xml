@@ -1,0 +1,501 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BD_WL_O6
+</name>
+</assembly>
+<members>
+<member name="T:BD_WL_O6.My.Resources.Resources">
+<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+<member name="P:BD_WL_O6.My.Resources.Resources.ResourceManager">
+<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member>
+<member name="P:BD_WL_O6.My.Resources.Resources.Culture">
+<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.ProfilNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.TablKlimNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.UgolPoworotaDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.PikUgodNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.OsobDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.LinijDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.ProfilNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.TablKlimNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.UgolPoworotaRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.PikUgodNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.OsobRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.LinijRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.ProfilNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.TablKlimNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.UgolPoworotaRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.PikUgodNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.OsobRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06.LinijRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06TableAdapters.ProfilNTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06TableAdapters.TablKlimNTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06TableAdapters.UgolPoworotaTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06TableAdapters.PikUgodNTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06TableAdapters.OsobTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06TableAdapters.LinijTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:BD_WL_O6.DsPrf_06TableAdapters.TableAdapterManager.UpdateUpdatedRows(BD_WL_O6.DsPrf_06,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:BD_WL_O6.DsPrf_06TableAdapters.TableAdapterManager.UpdateInsertedRows(BD_WL_O6.DsPrf_06,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:BD_WL_O6.DsPrf_06TableAdapters.TableAdapterManager.UpdateDeletedRows(BD_WL_O6.DsPrf_06,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:BD_WL_O6.DsPrf_06TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:BD_WL_O6.DsPrf_06TableAdapters.TableAdapterManager.UpdateAll(BD_WL_O6.DsPrf_06)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsPrf_06TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.rastOpNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.ParamGirlDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.ParamGirlTDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.MechUslDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.ParamUchNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.WseTipOporDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.WseMarkiProvod1DataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.rastOpNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.ParamGirlRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.ParamGirlTRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.MechUslRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.ParamUchNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.WseTipOporRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.WseMarkiProvod1Row">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.rastOpNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.ParamGirlRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.ParamGirlTRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.MechUslRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.ParamUchNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.WseTipOporRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06.WseMarkiProvod1RowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06TableAdapters.rastOpNTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06TableAdapters.ParamGirlTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06TableAdapters.ParamGirlTTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06TableAdapters.MechUslTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06TableAdapters.ParamUchNTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06TableAdapters.WseTipOporTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06TableAdapters.WseMarkiProvod1TableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:BD_WL_O6.DsRass_06TableAdapters.TableAdapterManager.UpdateUpdatedRows(BD_WL_O6.DsRass_06,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:BD_WL_O6.DsRass_06TableAdapters.TableAdapterManager.UpdateInsertedRows(BD_WL_O6.DsRass_06,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:BD_WL_O6.DsRass_06TableAdapters.TableAdapterManager.UpdateDeletedRows(BD_WL_O6.DsRass_06,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:BD_WL_O6.DsRass_06TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:BD_WL_O6.DsRass_06TableAdapters.TableAdapterManager.UpdateAll(BD_WL_O6.DsRass_06)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:BD_WL_O6.DsRass_06TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06.oporiDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06.prowodaNDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06.TipOpDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06.UnomDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06.oporiRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06.prowodaNRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06.TipOpRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06.UnomRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06.oporiRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06.prowodaNRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06.TipOpRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06.UnomRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06TableAdapters.oporiTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06TableAdapters.prowodaNTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06TableAdapters.TipOpTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06TableAdapters.UnomTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06TableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:BD_WL_O6.TipElWl_06TableAdapters.TableAdapterManager.UpdateUpdatedRows(BD_WL_O6.TipElWl_06,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:BD_WL_O6.TipElWl_06TableAdapters.TableAdapterManager.UpdateInsertedRows(BD_WL_O6.TipElWl_06,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:BD_WL_O6.TipElWl_06TableAdapters.TableAdapterManager.UpdateDeletedRows(BD_WL_O6.TipElWl_06,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:BD_WL_O6.TipElWl_06TableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:BD_WL_O6.TipElWl_06TableAdapters.TableAdapterManager.UpdateAll(BD_WL_O6.TipElWl_06)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06TableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:BD_WL_O6.TipElWl_06TableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>

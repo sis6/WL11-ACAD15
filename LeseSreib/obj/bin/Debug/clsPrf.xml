@@ -1,0 +1,245 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+clsPrf
+</name>
+</assembly>
+<members>
+<member name="T:clsPrf.DataSetw.TipSoorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:clsPrf.DataSetw.TipUgodDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:clsPrf.DataSetw.TipSoorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:clsPrf.DataSetw.TipUgodRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:clsPrf.DataSetw.TipSoorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:clsPrf.DataSetw.TipUgodRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:clsPrf.DataSetw">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:clsPrf.DataSetwTableAdapters.TipSoorTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:clsPrf.DataSetwTableAdapters.TipUgodTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:clsPrf.DataSetwTableAdapters.TableAdapterManager.UpdateUpdatedRows(clsPrf.DataSetw,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:clsPrf.DataSetwTableAdapters.TableAdapterManager.UpdateInsertedRows(clsPrf.DataSetw,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:clsPrf.DataSetwTableAdapters.TableAdapterManager.UpdateDeletedRows(clsPrf.DataSetw,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:clsPrf.DataSetwTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:clsPrf.DataSetwTableAdapters.TableAdapterManager.UpdateAll(clsPrf.DataSetw)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:clsPrf.DataSetwTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:clsPrf.DataSetwTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:clsPrf.DataSetwTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:clsPrf.clsPiket3d.KoorPk(System.Double)">
+	<summary>
+ Определяет  пространственные координаты  для  точки трассы
+</summary>
+	<value>  ras -расстояние от начала трассы должно быть в пределах пикета от данного до предыдущего  </value>
+</member><member name="P:clsPrf.clsPiket3d.KoorPk">
+	<summary>
+ пространственные координаты пикетной точки
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:clsPrf.clsPiket3d.DirectUgol">
+	<summary>
+ угол направления на следующий пикет
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:clsPrf.clsPiket3d.Ugol">
+	<summary>
+ Угол под которым направлена линия соеденяющая предыдущий пикет и данный
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:clsPrf.clsPiket3d.PodUglom(System.Double,System.Double)">
+	<summary>
+ определяет координаты пересекаемого объекта на границе зоны профиля
+ </summary>
+	<param name="UgolPersch"> угол между осьэ основного профиля и пересекаемого объелкта </param>
+	<param name="iOtm"></param>
+	<returns></returns>
+	<remarks> если объект поперек трассы то  UgolPersch Pi/2 на правой -pi/2  на левой </remarks>
+</member><member name="M:clsPrf.clsPiket3d.OrtoTchkPlan(System.Double,System.Int32)">
+	<summary>
+ Определяет координаты границы профиля в плане в данной точке профиля
+ </summary>
+	<param name="iRas"></param>
+	<param name="PrNapr"></param>
+	<returns></returns>
+	<remarks>
+ на ортогональной отрезку от предыдущего пикета прямой
+ </remarks>
+</member><member name="T:clsPrf.clsPiket3d">
+	<summary>
+ Представляет пикетную точку в пространстве
+ </summary>
+	<remarks></remarks>
+</member><member name="M:clsPrf.Powerhnost.OpredSet">
+	<summary>
+ по данным профиля строит полигональную сеть и определяет на не координаты пересечений.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:clsPrf.Powerhnost.NajtiKoor(System.Double,System.Double,clsPrf.clsPiket3d@)">
+	<summary>
+ находит координаты точки на поверхности трасы по заданому расстоянию и сдвигу от оси профиля
+ </summary>
+	<param name="irast"> расстояние от начала профиля </param>
+	<param name="isdwig"> сдвиг от оси профиля </param>
+	<param name="BegPiket3d"> пикет откоторого мы начинаем искать ближайшей сверху к заданой точке </param>
+	<returns> возвращает координаты искомой точки в BegPiket3d ближайший сверху  к заданой точки пикет  </returns>
+	<remarks></remarks>
+</member><member name="P:clsPrf.My.Resources.Resources.ResourceManager">
+	<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member><member name="P:clsPrf.My.Resources.Resources.Culture">
+	<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member><member name="T:clsPrf.My.Resources.Resources">
+	<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member><member name="M:clsPrf.clsUchPrf.KorrParamPiket(clsPrf.clsPiket,System.String,System.String,System.String,clsPrf.HorPeresech,System.String)">
+	<summary>
+ Корректировка параметров пикета
+ </summary>
+	<param name="iPik"></param>
+	<param name="Sotmetka"></param>
+	<param name="sOtmetkaPr"></param>
+	<param name="sOtmetkaLw"></param>
+	<param name="iPeresech"></param>
+	<param name="sUgol"></param>
+	<remarks></remarks>
+</member><member name="M:clsPrf.clsUchPrf.DobIzm(clsPrf.clsPiket)">
+	<summary>
+ Добавление пикета в процессе корректировки профиля в чертеже
+ </summary>
+	<param name="pPik">Пикет выбраный для корректировки </param>
+	<remarks></remarks>
+</member><member name="M:clsPrf.clsUchPrf.WstawitKlimZon(System.Double)">
+	<summary>
+ Добавление климатической зоны в процессе корректировки профиля в чертеже
+ </summary>
+	<param name="R">Заданное растояеие </param>
+	<remarks></remarks>
+</member><member name="M:clsPrf.clsUgolPoworot.PredG_M_S(System.Double,System.Int32@,System.Int32@,System.Int32@)">
+	<summary>
+ преобразование угла из радианной формы в (град,мин,сек)
+ </summary>
+	<param name="ug"> угол в радианах</param>
+	<param name="Grad"></param>
+	<param name="Min"></param>
+	<param name="Sec"></param>
+	<remarks></remarks>
+</member><member name="M:clsPrf.clsUgolPoworot.PreobrStr_G_M_S(System.String,System.Char@,System.Int32@,System.Int32@,System.Int32@)">
+	<summary>
+ преобразование строки в представление(град,мин,сек)
+ </summary>
+	<param name="iStrUgolPoworota"></param>
+	<param name="CharZn"></param>
+	<param name="Grad"></param>
+	<param name="Min"></param>
+	<param name="Sec"></param>
+	<remarks></remarks>
+</member><member name="M:clsPrf.clsZon.Dob(clsPrf.clsZon@,System.Int32@,clsPrf.clsUchPrf)">
+	<summary>
+ добавление зоны климата пик угодий, мехусловий
+ </summary>
+	<param name="bZon"></param>
+	<param name="MaxNum"></param>
+	<param name="Uch"></param>
+	<remarks> Предполагаеться чо добавляемые зоны упорядочены по возрастанию пикетажа
+   </remarks>
+</member><member name="M:clsPrf.clsPiket.Sraw(System.Double,System.Double)">
+	<summary>
+ Сравнение с допуском Возвращает 1 если а больше b + допуск -1 если а меньше и-допуск и 0 в остальных случаях
+ </summary>
+	<param name="a"></param>
+	<param name="b"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:clsPrf.clsPiket.mensheP(System.Double)">
+	<summary>
+ Сравнение Заданый пикетаж  меньше пикетажа пикета  то 1
+ </summary>
+	<param name="iPiketaj">
+ заданый пикетаж</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:clsPrf.clsPiket.MensheR(System.Double)">
+	<summary>
+ Сравнение Заданое растояние меньше растояние пикета  то 1
+ </summary>
+	<param name="iRasstojnie">
+ заданное расстояние  </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="P:clsPrf.clsPeresech.Razm">
+	<summary>
+ наибольший порядковый номер введеной отметки 
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks> если не введено никаких отметок то -1 </remarks>
+</member><member name="P:clsPrf.HorPeresech.Otmetka(System.Double)">
+	<summary>
+ Определение отметок профиля в окрестностях пикета пересечения
+ </summary>
+	<param name="iRast"> растояние от пикетной точки </param>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

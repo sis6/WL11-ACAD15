@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{B4F5129A-F862-417E-8EFE-B761A0C241CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>LeseGeoIzDwg</RootNamespace>
+    <AssemblyName>LeseGeoIzDwg</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\WL_11-Brics\ISP\Debug\</OutputPath>
+    <DocumentationFile>LeseGeoIzDwg.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LeseGeoIzDwg.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BrxMgd">
+      <HintPath>..\..\..\..\Program Files\Bricsys\BricsCAD V17 ru_RU\BrxMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="TD_Mgd">
+      <HintPath>..\..\..\..\Program Files\Bricsys\BricsCAD V17 ru_RU\TD_Mgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="TD_MgdBrep">
+      <HintPath>..\..\..\..\Program Files\Bricsys\BricsCAD V17 ru_RU\TD_MgdBrep.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="fizMechIge.vb" />
+    <Compile Include="frmFileParamGeo.Designer.vb">
+      <DependentUpon>frmFileParamGeo.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmFileParamGeo.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObrazGeologii_Bas.vb" />
+    <Compile Include="ProbaDwg.vb" />
+    <Compile Include="SlojIgeDwg.vb" />
+    <Compile Include="clsHatch.vb" />
+    <Compile Include="FrmGeologijIzdwg.Designer.vb">
+      <DependentUpon>FrmGeologijIzdwg.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmGeologijIzdwg.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KommandNew.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="ObrazGeoloGii.vb" />
+    <Compile Include="ObrazSkwajIzdwg.vb" />
+    <Compile Include="UgwDwgClass.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmGeologijIzdwg.resx">
+      <DependentUpon>FrmGeologijIzdwg.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmFileParamGeo.resx">
+      <DependentUpon>frmFileParamGeo.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\HatchIdentifikator.datasource" />
+    <None Include="My Project\DataSources\ObrazSkwajPoEntity.datasource" />
+    <None Include="My Project\DataSources\ParamIge.datasource" />
+    <None Include="My Project\DataSources\SkwajIzDwgPoMText.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WL_11-13_Code\modelGeo\A_modelGeo.vbproj">
+      <Project>{992aa490-c173-49a5-ba8b-72131ceeb480}</Project>
+      <Name>A_modelGeo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BazDwg\BazDwg.vbproj">
+      <Project>{d9a3cbf9-078f-45a4-8f01-95f156f2c293}</Project>
+      <Name>BazDwg</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

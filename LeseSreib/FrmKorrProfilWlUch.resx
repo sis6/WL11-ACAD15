@@ -1,0 +1,1923 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn20.HeaderText" xml:space="preserve">
+    <value>NameTipOpor</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewProfil.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;UIdTchk1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="ButtonObmPrnaLew.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn52.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;Profil.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripLabelPikEnd.Text" xml:space="preserve">
+    <value>Конечный пикет</value>
+  </data>
+  <data name="&gt;&gt;NameTchkDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Param1DataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Label1.Parent" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn7.HeaderText" xml:space="preserve">
+    <value>StGolEkw</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn46.HeaderText" xml:space="preserve">
+    <value>Name_mark</value>
+  </data>
+  <data name="&gt;&gt;LabelWibrPik.Parent" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="&gt;&gt;TabControl1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn9.HeaderText" xml:space="preserve">
+    <value>Texsp</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn44.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn29.HeaderText" xml:space="preserve">
+    <value>Gabarit</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn21.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn21</value>
+  </data>
+  <data name="&gt;&gt;HelpProvider1.Name" xml:space="preserve">
+    <value>HelpProvider1</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn44.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn44</value>
+  </data>
+  <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TexspDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="NaporVetraDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <data name="LabelWibrPik.Text" xml:space="preserve">
+    <value>от</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn57.HeaderText" xml:space="preserve">
+    <value>WesPogon</value>
+  </data>
+  <data name="NameTchkDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn48.HeaderText" xml:space="preserve">
+    <value>SigGol</value>
+  </data>
+  <data name="ToolStripLabel2.Text" xml:space="preserve">
+    <value>Выбраный пикет</value>
+  </data>
+  <data name="&gt;&gt;Param3DataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>Param3DataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator4.Name" xml:space="preserve">
+    <value>ToolStripSeparator4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="ToolStripLabelGr.Size" type="System.Drawing.Size, System.Drawing">
+    <value>109, 22</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn28.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn28</value>
+  </data>
+  <data name="PolzDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Polz</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn31.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TgolDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Tгол.</value>
+  </data>
+  <data name="&gt;&gt;ToolStripLabel2.Name" xml:space="preserve">
+    <value>ToolStripLabel2</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn38.HeaderText" xml:space="preserve">
+    <value>DlGirl</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn19.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn19</value>
+  </data>
+  <data name="TabControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="ButtonInversij.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="TipDataGridViewComboBoxColumn.HeaderText" xml:space="preserve">
+    <value>Тип угодия</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="DataGridViewProfil.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Bottom, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;TmaxDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>TmaxDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;ButtonInversij.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn15.HeaderText" xml:space="preserve">
+    <value>TipMesta</value>
+  </data>
+  <data name="ButtonIzmOtm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>785, 0</value>
+  </data>
+  <data name="&gt;&gt;IdTipSoor1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator5.Name" xml:space="preserve">
+    <value>ToolStripSeparator5</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn29.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn29</value>
+  </data>
+  <data name="&gt;&gt;NameUch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripButtonSohrDwg.Text" xml:space="preserve">
+    <value> Не сохранить в чертеже</value>
+  </data>
+  <data name="NameFileUch.Text" xml:space="preserve">
+    <value>ToolStripLabel1</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn16.HeaderText" xml:space="preserve">
+    <value>FiVetPr</value>
+  </data>
+  <data name="&gt;&gt;ButtonSdwigPik.Parent" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="ButtonObmPrnaLew.Text" xml:space="preserve">
+    <value>Обмен право на лево</value>
+  </data>
+  <data name="TabControl1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="DataGridViewPikUgod.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="LabelWibrPik.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;OtmetkaPrDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>OtmetkaPrDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;ToolStripLabelGr.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn51.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Piketaj</value>
+  </data>
+  <data name="Klimat.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn19.HeaderText" xml:space="preserve">
+    <value>Key</value>
+  </data>
+  <data name="&gt;&gt;ButtonIzmOtm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NameTchkDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Имя</value>
+  </data>
+  <data name="ToolStripUprKorrUch.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ButtonIzmOtm.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="$this.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="TextBoxSdwig.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;Klimat.Parent" xml:space="preserve">
+    <value>TabControl1</value>
+  </data>
+  <data name="DataGridViewPikUgod.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="Piketaj1.Width" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="&gt;&gt;ButtonInversij.Name" xml:space="preserve">
+    <value>ButtonInversij</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn41.HeaderText" xml:space="preserve">
+    <value>Tip_i</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn46.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn27.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn27</value>
+  </data>
+  <data name="&gt;&gt;StGolEkwDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>NamePiket</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Корректировка профиля.</value>
+  </data>
+  <data name="DataGridViewPikUgod.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1351, 24</value>
+  </data>
+  <data name="&gt;&gt;ButtonObmPrnaLew.Name" xml:space="preserve">
+    <value>ButtonObmPrnaLew</value>
+  </data>
+  <data name="LabelWibrPik.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;PiketajDataGridViewKlimzon.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NapPriGolDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn31.HeaderText" xml:space="preserve">
+    <value>Piket</value>
+  </data>
+  <data name="Param3DataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Отм пер3</value>
+  </data>
+  <data name="Profil.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;UgolPoworotDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>UgolPoworotDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="TminDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Tмин.</value>
+  </data>
+  <data name="Profil.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn56.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="ToolStripUprKorrUch.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn33.HeaderText" xml:space="preserve">
+    <value>Key</value>
+  </data>
+  <data name="UgolPoworotDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="TabControl1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TextBoxIzmOtm.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="NameUch.Text" xml:space="preserve">
+    <value>Участок</value>
+  </data>
+  <data name="&gt;&gt;TexspDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>TexspDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="Param4DataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;TminDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Klimat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TmaxDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="ToolStripButtonAllOk.ToolTipText" xml:space="preserve">
+    <value>Учесть корректировки профиля и расстановки</value>
+  </data>
+  <data name="DataGridViewProfil.ColumnHeadersHeight" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn21.HeaderText" xml:space="preserve">
+    <value>NameGirlT</value>
+  </data>
+  <data name="&gt;&gt;PiketajDataGridViewKlimzon.Name" xml:space="preserve">
+    <value>PiketajDataGridViewKlimzon</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButtonAllOk.Name" xml:space="preserve">
+    <value>ToolStripButtonAllOk</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn13.HeaderText" xml:space="preserve">
+    <value>Napor</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn35.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewComboBoxPiketaj.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UIdTchk1.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="&gt;&gt;DsProfilA.Type" xml:space="preserve">
+    <value>OperBD.dsProfil, OperBD, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBegSdwig.Name" xml:space="preserve">
+    <value>TextBoxBegSdwig</value>
+  </data>
+  <data name="TabControl1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="TextBoxSdwig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>167, 0</value>
+  </data>
+  <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 13</value>
+  </data>
+  <data name="&gt;&gt;ButtonIzmOtm.Parent" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn53.HeaderText" xml:space="preserve">
+    <value>DiamPrwd</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="OtmetkaPrDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>ОтметкаПр</value>
+  </data>
+  <data name="Param2DataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Отм пер2</value>
+  </data>
+  <data name="&gt;&gt;StGolUslDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn32.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn47.HeaderText" xml:space="preserve">
+    <value>SigSrG</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn45.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="Param4DataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Отм пер4</value>
+  </data>
+  <data name="OtmetkaLwDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="ToolStripButtonAllOk.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewProfil.Parent" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripLabelGr.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;ToolStripLabelPikBeg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UgolPoworotDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Угол поворота</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Param1DataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Отм пер1</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn42.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn37.HeaderText" xml:space="preserve">
+    <value>GirlT</value>
+  </data>
+  <data name="ToolStripButtonAllOk.Text" xml:space="preserve">
+    <value>Принять все</value>
+  </data>
+  <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="TabControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1641, 782</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn8.HeaderText" xml:space="preserve">
+    <value>StGolUsl</value>
+  </data>
+  <data name="KlimatGridView.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;KlimatGridView.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn33.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonIzmOtm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 23</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn30.HeaderText" xml:space="preserve">
+    <value>Sled</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripLabelWibrPiket.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSdwig.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;NameFileUch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Otmetka1.Width" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn49.HeaderText" xml:space="preserve">
+    <value>Jung</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn43.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn43.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn41.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn41</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn9.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn9</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="ToolStripSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn18.HeaderText" xml:space="preserve">
+    <value>Piketaj</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Label1.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn57.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn45.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn45</value>
+  </data>
+  <data name="ToolStripLabelPikEnd.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 22</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn39.HeaderText" xml:space="preserve">
+    <value>massGirl</value>
+  </data>
+  <data name="&gt;&gt;LabelWibrPik.Name" xml:space="preserve">
+    <value>LabelWibrPik</value>
+  </data>
+  <data name="TextBoxBegSdwig.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonInversij.HelpString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;IdTipSoor1.Name" xml:space="preserve">
+    <value>IdTipSoor1</value>
+  </data>
+  <data name="TextBoxSdwig.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="Klimat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn24.HeaderText" xml:space="preserve">
+    <value>NameGirlT</value>
+  </data>
+  <data name="ButtonInversij.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1073, 3</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn40.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxIzmOtm.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripUprKorrUch.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn17.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TabControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;Param2DataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TextBoxIzmOtm.Parent" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="&gt;&gt;ButtonInversij.Parent" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn14.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn14</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn36.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataWDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>DataWDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="ToolStripSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="ButtonIzmOtm.HelpString" xml:space="preserve">
+    <value>Введите величину изменения отметки и нажмите кнопку</value>
+  </data>
+  <data name="&gt;&gt;OpisDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>OpisDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="KlimatGridView.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="DataGridViewPikUgod.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolStripLabelGr.Name" xml:space="preserve">
+    <value>ToolStripLabelGr</value>
+  </data>
+  <data name="TminDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="Profil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 22</value>
+  </data>
+  <data name="TextBoxSdwig.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn28.HeaderText" xml:space="preserve">
+    <value>Tip_op</value>
+  </data>
+  <data name="&gt;&gt;StGolEkwDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>StGolEkwDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="NameFileUch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="&gt;&gt;TmaxDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn36.HeaderText" xml:space="preserve">
+    <value>Girl</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn42.HeaderText" xml:space="preserve">
+    <value>Wis_op0</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn23.HeaderText" xml:space="preserve">
+    <value>Piketaj</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn43.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn43</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewPikUgod.Parent" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="Klimat.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Klimat.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonSdwigPik.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn32.HeaderText" xml:space="preserve">
+    <value>Piketaj</value>
+  </data>
+  <data name="&gt;&gt;ButtonObmPrnaLew.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxSdwig.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ButtonObmPrnaLew.HelpString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;TexspDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonIzmOtm.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn37.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UIdUch1.Width" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="TgolDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="$this.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;Profil.Name" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="ToolStripUprKorrUch.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn40.Width" type="System.Int32, mscorlib">
+    <value>83</value>
+  </data>
+  <data name="TipMestaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Тип места</value>
+  </data>
+  <data name="ButtonSdwigPik.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 23</value>
+  </data>
+  <data name="Profil.Text" xml:space="preserve">
+    <value>Профиль</value>
+  </data>
+  <data name="&gt;&gt;ToolStripLabel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="OtmetkaLwDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>ОтметкаЛв</value>
+  </data>
+  <data name="&gt;&gt;OtmetkaLwDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn47.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn54.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBegSdwig.Parent" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn46.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn46</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn5.HeaderText" xml:space="preserve">
+    <value>OtmetkaPr</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn55.HeaderText" xml:space="preserve">
+    <value>Tekpl</value>
+  </data>
+  <data name="ToolStripButtonSohrDwg.ToolTipText" xml:space="preserve">
+    <value>Указывает учитываються ли изменения  в источниках данных</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn34.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PiketUgodBindingSource.Name" xml:space="preserve">
+    <value>PiketUgodBindingSource</value>
+  </data>
+  <data name="ButtonSdwigPik.HelpString" xml:space="preserve">
+    <value>Введите величину сдвига и нажмите кнопку</value>
+  </data>
+  <data name="TextBoxBegSdwig.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Piketaj1.HeaderText" xml:space="preserve">
+    <value>Пикетаж</value>
+  </data>
+  <data name="&gt;&gt;UgolPoworotDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>OperBD.MaskedTextBoxColumn, OperBD, Version=4.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn15.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn6.HeaderText" xml:space="preserve">
+    <value>UgolPoworota</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn31.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn31</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn3.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn3</value>
+  </data>
+  <data name="TextBoxIzmOtm.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 20</value>
+  </data>
+  <data name="ButtonSdwigPik.Text" xml:space="preserve">
+    <value>Сдвинуть пикетаж на</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn44.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TgolDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>TgolDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="TextBoxIzmOtm.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="HelpProvider1.HelpNamespace" xml:space="preserve">
+    <value>\\SERV4\Shares\ACad\Общие\Support\gWL11-13\Help\Form\FrmKorrProfilWlUch.htm</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn46.Width" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="ToolStripSeparator7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="Label1.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;Param3DataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn4.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn4</value>
+  </data>
+  <data name="ToolStripLabelWibrPiket.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 22</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;Piketaj1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn17.HeaderText" xml:space="preserve">
+    <value>Sled</value>
+  </data>
+  <data name="ToolStripButtonAllOk.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAeCAYAAABNChwpAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAABxFJREFUWEe1lXlQlHUcxv2jyy61vGoaNcvQJm00zMZJcZw08wwSMzStRCWP1DzJ
+        C1REFEJBzlFEFFjxSAVNWAXzKAdGQYUQjwhBBTmW3QX23qfv9/e+77KLazNO0w4P774z+H6e5/l+f6/t
+        6IMn0Z5T1diTHIfoUH+hsOA5CAuag583zMS6wMWIDg/EzvBVSEsKgWpvJFKTtsE39X1MOuKJyceGYFRq
+        X5KH8zNdAf8mo8mE7RFbUHMlANab84TMN+bCWDIbhmJ/6AtnQnt5BqrPf4nCw964mOaD1PCJiNnsDW/1
+        QGzWzMOKv6age7zLc11uHqvSvFCEBy1FWuJ8GCqD0Xx9GqqyvfAw9zPoLvmg/oIPNPlT0ZDvh5pzX6BS
+        PRa3jo9A2dFhuK76AOMz38XGugD8WOaLbrEuz3a5eUT5eenICOmHhBA/RG3yR23BLDy8NBWqTT2AilUw
+        3VqBpstfofqsN6pyJ+KuejwqssfiTuZIFB8YLOBX9r6HyYffweb7AVh0dTK6RLowXG4e0anj+7F+3lBs
+        Xe0HTdly6C9PR8rqrgQcDVvJTJRneqH8xAgBvZc3CXdzxgkTd9Xj8OfBIcJA/m4PTFC9heCq2VhQ+Dk6
+        hDsxElWnkahSIyFdjfg0NWLTchCfqsaew2eRfa4I5ZXV2B4WiIJj/rCULUPG+u44HTcA9hI/lGcNw42j
+        H8Je9RMeXvCl2hk8HlWnJ5CpUShWeQoDuVFvYsS+d7C+3B/z8iehY2gbAy4fu12+2MHf4iI3ICMhAPa/
+        1uDE1l5YOqUDbMV+KD3siZglncQiGq5Mx52sUSJ9xanPUHFyNMqOfIyilP74I9EDaatexbDk3lh1exYC
+        Lo7HSyFOBhKcDDBQiH6x8tRZiN7yg4DzQ9fMeBnHtg9E/W9eCAvogGsHhqLxwkTc/MUL1w8Nhfn2Ityk
+        kRSnexJ8AAr39kdOeA9EBXTE0ISeWFnyDb47MwYvrHU2QNUrHwlOyelLVeXfCF3vCq+suIN1czyQsuYV
+        HAztA93FT5FH44hf1hmG0oUozWBwfxQk9UNe1FtIXtEdiUu6YqXPi/CM6YmlRTMwLXs0nlntzgCnFgYA
+        q9WGyC3LoCmY44A3NtTBZrOj5GoBZk/ohtNRvYTCvu+EltL5qD4zGvm7+iJ2yRvwH9MJwTO7ImFxZ2z+
+        +jms8G6PQZGv08toON7e9hqeWeZkIJ4NyKlZNhtgaGnBgaQg7FzeW8B1Oq2AW6x2WOl6r7KcTsU0TB3e
+        Xpi4kTEIJyN6YcmkZzFx8PMovfYHtgV+CZ8hT2PyJ30QEfMt3tvUDT6q4Rib8hHazW9jQIHbCc4GWDpt
+        PfTaRpiMRgG1UCtmiw0mulosdtTV1mC+nxciF3ZBUmB3rJ7WGYdCesJ3pAdMZhsMRquQkb7zvce6Lmg3
+        l4ABshQDcek5cnI76EfAWmUT4zATkMUP4gcayQjf68jgsL5P4cPer2D5XF/ERQRB39SMFpMVeoMVuhYL
+        dM0W+m5BM923kKGjOedb4axYOvOKgaDogwjeeQgbYg5hU+wRGWzD8dwiHDtTKHQ8txBZZ68i52IJfi+8
+        jWtlVSi9cx8lt+/hyp8VOFdwE6fOX0dm3lXx7zLzinDit2to1FugaTLjx43RbQ3kUHJKLxJLDfCsBZyv
+        coWiVhNXaxNJmkl8FaJ0TZRSLxKboSVQI4mBGr0ZDToz6oVMmL5oQ1sD2RJYXjABFwYI6qidZkm1irmS
+        CcVAM0GbCMpglpbq1jZZCE5pCazAJQMm1GnN+GphkKuBmP3ZUnqC8gicZSITPHOl/v+iOi0bMLkxsI8a
+        IDgnt4jl4uRS5WLhuHaX1JKk5LRolJql5eopcaOcXCOSm1Avg+u0RtQ2ujEQLRtgsJlmocCV6g1UvTJr
+        ARZw2nI2IOA8c65egrMa9CYJLmqXRfBajdG9AeWYtR2BgFN6d5U+qRhe2+jOQMqvrbWTuHYGK0unJJfS
+        ywun1C62nZdOWTgpOYsXjpNz7ayHBK9x2wAZYLAw4Zi5lFxUr8CpdqV6CS4ZUI6aRq5dbLxceR1BazUE
+        F3qMgaiUk46Ztx2BlNzittInVU0DGSA9YmBHsmRA2XapdkrPcPou1a5su9mRXtn2BmXpKLVj4+XkPHcp
+        uYlkQPXjDDi2nWvnq2PuBCdJ73SGy285GS7NXVK9PHNp7gRmsQE5OcutgYjdWY7kbUcg0jdb3Vb6pKqu
+        N+JBveFRA+GyAZFaJKf/uXjTqQHHwinJ+RXr2HhWa+21Ijlvu7RwonqRnKonsCK3BhyVy1d+2Qi4XL3Y
+        eII6jhuJwRJcOW5cuyucK6+WDTwQDbgZgcMASxw1XjqunpNLR00cN4JKcjpqipxn7kguw+nK1bPu17lr
+        YFcmQuNUWLB2B6YuCBZ/8H+r1UA7/APyjyldzAGWhAAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn55.Width" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;UIdUch1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn56.HeaderText" xml:space="preserve">
+    <value>WesPogon</value>
+  </data>
+  <data name="&gt;&gt;ButtonObmPrnaLew.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn51.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn51</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn22.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataWDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn48.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn48</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn40.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn40</value>
+  </data>
+  <data name="KlimatGridView.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1077, 701</value>
+  </data>
+  <data name="TextBoxBegSdwig.Location" type="System.Drawing.Point, System.Drawing">
+    <value>296, 3</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn13.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn55.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn24.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripLabelGr.Text" xml:space="preserve">
+    <value>Границы участка</value>
+  </data>
+  <data name="Profil.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="StGolUslDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="DataGridViewProfil.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ButtonSdwigPik.Name" xml:space="preserve">
+    <value>ButtonSdwigPik</value>
+  </data>
+  <data name="ButtonInversij.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 23</value>
+  </data>
+  <data name="&gt;&gt;KlimatGridView.Parent" xml:space="preserve">
+    <value>Klimat</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewComboBoxPiketaj.HeaderText" xml:space="preserve">
+    <value>Пикетаж(м.)</value>
+  </data>
+  <data name="&gt;&gt;NameUch.Name" xml:space="preserve">
+    <value>NameUch</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSdwig.Name" xml:space="preserve">
+    <value>TextBoxSdwig</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn11.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn11</value>
+  </data>
+  <data name="Label1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn41.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="ButtonIzmOtm.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="UIdTchk1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn18.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn18</value>
+  </data>
+  <data name="&gt;&gt;Piketaj1.Name" xml:space="preserve">
+    <value>Piketaj1</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn25.HeaderText" xml:space="preserve">
+    <value>NameGirlT</value>
+  </data>
+  <data name="&gt;&gt;ToolStripLabelWibrPiket.Name" xml:space="preserve">
+    <value>ToolStripLabelWibrPiket</value>
+  </data>
+  <data name="&gt;&gt;Param2DataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>Param2DataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="PiketajDataGridViewKlimzon.HeaderText" xml:space="preserve">
+    <value>Пикетаж</value>
+  </data>
+  <data name="&gt;&gt;TextBoxIzmOtm.Name" xml:space="preserve">
+    <value>TextBoxIzmOtm</value>
+  </data>
+  <data name="&gt;&gt;PiketUgodBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonIzmOtm.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="LabelWibrPik.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn48.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ButtonSdwigPik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn26.HeaderText" xml:space="preserve">
+    <value>Name_mark</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Otmetka</value>
+  </data>
+  <data name="ToolStripLabelPikBeg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 22</value>
+  </data>
+  <data name="TextBoxIzmOtm.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="StGolUslDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Ст. гол. усл.</value>
+  </data>
+  <data name="ToolStripSeparator6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn53.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn42.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="&gt;&gt;NapPriGolDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>NapPriGolDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn52.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewProfil.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Param2DataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn30.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripUprKorrUch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1642, 25</value>
+  </data>
+  <data name="&gt;&gt;ToolStripUprKorrUch.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn8.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn8</value>
+  </data>
+  <data name="UIdUch1.HeaderText" xml:space="preserve">
+    <value>UIdUch</value>
+  </data>
+  <data name="&gt;&gt;TminDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>TminDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+    <value>OtmetkaLw</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn49.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewPikUgod.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn26.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn36.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn36</value>
+  </data>
+  <data name="&gt;&gt;Param4DataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>Param4DataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButtonSohrDwg.Name" xml:space="preserve">
+    <value>ToolStripButtonSohrDwg</value>
+  </data>
+  <data name="OtmetkaPrDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn50.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn47.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn47</value>
+  </data>
+  <data name="&gt;&gt;ClsZonKlimatBindingSource.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="TextBoxSdwig.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="DataGridViewTextBoxColumn12.HeaderText" xml:space="preserve">
+    <value>Tmax</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn32.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn32</value>
+  </data>
+  <data name="DataGridViewProfil.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSdwig.Parent" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="ButtonSdwigPik.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 0</value>
+  </data>
+  <data name="ButtonObmPrnaLew.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 23</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn52.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn52</value>
+  </data>
+  <data name="TabControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 25</value>
+  </data>
+  <data name="&gt;&gt;NaporVetraDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn24.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn24</value>
+  </data>
+  <data name="DataGridViewProfil.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn55.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn55</value>
+  </data>
+  <data name="&gt;&gt;NapPriGolDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn51.Width" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;ToolStripUprKorrUch.Name" xml:space="preserve">
+    <value>ToolStripUprKorrUch</value>
+  </data>
+  <data name="TextBoxBegSdwig.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 20</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>FrmKorrProfilWlUch</value>
+  </data>
+  <data name="TmaxDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Tмакс</value>
+  </data>
+  <data name="&gt;&gt;Klimat.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ButtonInversij.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="Profil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1633, 756</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn56.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Klimat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1633, 756</value>
+  </data>
+  <data name="ToolStripButtonSohrDwg.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;ButtonIzmOtm.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="ToolStripButtonAllOk.Size" type="System.Drawing.Size, System.Drawing">
+    <value>99, 22</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn33.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn33</value>
+  </data>
+  <data name="ButtonInversij.Text" xml:space="preserve">
+    <value>Инверсия</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewPikUgod.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelWibrPik.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn52.HeaderText" xml:space="preserve">
+    <value>Sprwd</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn53.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn53</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn49.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn49</value>
+  </data>
+  <data name="TextBoxBegSdwig.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="KlimatGridView.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 6</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn15.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn15</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn10.HeaderText" xml:space="preserve">
+    <value>Tgol</value>
+  </data>
+  <data name="IdTipSoor1.HeaderText" xml:space="preserve">
+    <value>Тип пересечения</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewProfil.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelWibrPik.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="UIdUch1.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="NaporVetraDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Напор ветра</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn14.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn53.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="ButtonObmPrnaLew.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;Klimat.Name" xml:space="preserve">
+    <value>Klimat</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn25.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn25</value>
+  </data>
+  <data name="&gt;&gt;TabControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn30.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn30</value>
+  </data>
+  <data name="$this.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="LabelWibrPik.Size" type="System.Drawing.Size, System.Drawing">
+    <value>18, 13</value>
+  </data>
+  <data name="&gt;&gt;OtmetkaPrDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Profil.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;KlimatGridView.Name" xml:space="preserve">
+    <value>KlimatGridView</value>
+  </data>
+  <data name="&gt;&gt;ButtonInversij.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="Klimat.Text" xml:space="preserve">
+    <value>Климат</value>
+  </data>
+  <data name="&gt;&gt;LabelWibrPik.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="ToolStripLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>92, 22</value>
+  </data>
+  <data name="&gt;&gt;DsProfilA.Name" xml:space="preserve">
+    <value>DsProfilA</value>
+  </data>
+  <data name="TextBoxBegSdwig.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="ToolStripLabelWibrPiket.Text" xml:space="preserve">
+    <value>ToolStripLabel1</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn35.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn35</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn50.HeaderText" xml:space="preserve">
+    <value>Alfa</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn57.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripUprKorrUch.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn42.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn42</value>
+  </data>
+  <data name="TextBoxBegSdwig.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn56.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn56</value>
+  </data>
+  <data name="ToolStripButtonSohrDwg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>146, 22</value>
+  </data>
+  <data name="&gt;&gt;TipDataGridViewComboBoxColumn.Name" xml:space="preserve">
+    <value>TipDataGridViewComboBoxColumn</value>
+  </data>
+  <data name="DataWDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;NaporVetraDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>NaporVetraDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="StGolEkwDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Ст. гол. экв</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator2.Name" xml:space="preserve">
+    <value>ToolStripSeparator2</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn51.HeaderText" xml:space="preserve">
+    <value>Ppogon</value>
+  </data>
+  <data name="ToolStripUprKorrUch.Text" xml:space="preserve">
+    <value>Управление коррекцией участка</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn22.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn22</value>
+  </data>
+  <data name="&gt;&gt;TipMestaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>TipMestaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="TextBoxIzmOtm.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1348, 3</value>
+  </data>
+  <data name="IdTipSoor1.Width" type="System.Int32, mscorlib">
+    <value>119</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn39.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn50.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn50</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewPikUgod.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;OpisDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn13.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn13</value>
+  </data>
+  <data name="Param1DataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;ToolStripLabelPikEnd.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ButtonObmPrnaLew.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="TextBoxIzmOtm.Location" type="System.Drawing.Point, System.Drawing">
+    <value>944, 0</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn43.HeaderText" xml:space="preserve">
+    <value>Wis_op1</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn40.HeaderText" xml:space="preserve">
+    <value>UserTipOp</value>
+  </data>
+  <data name="ButtonObmPrnaLew.Location" type="System.Drawing.Point, System.Drawing">
+    <value>540, 0</value>
+  </data>
+  <data name="ButtonIzmOtm.Text" xml:space="preserve">
+    <value>Изменить отметку на</value>
+  </data>
+  <data name="Label1.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ButtonSdwigPik.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator3.Name" xml:space="preserve">
+    <value>ToolStripSeparator3</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn23.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn23</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn5.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn5</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn54.HeaderText" xml:space="preserve">
+    <value>WesPogon</value>
+  </data>
+  <data name="Param3DataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="DataGridViewComboBoxPiketaj.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="TabControl1.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn54.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="UIdTchk1.HeaderText" xml:space="preserve">
+    <value>UIdTchk</value>
+  </data>
+  <data name="TextBoxIzmOtm.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn10.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn10</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn35.HeaderText" xml:space="preserve">
+    <value>MarkaT</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripSeparator5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn6.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn6</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn37.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn37</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn48.Width" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="TipMestaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn29.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;LabelWibrPik.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TexspDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Tср.эксп.</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn22.HeaderText" xml:space="preserve">
+    <value>Tip</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn20.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn20</value>
+  </data>
+  <data name="ButtonObmPrnaLew.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;Otmetka1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn16.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn16</value>
+  </data>
+  <data name="StGolEkwDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn44.HeaderText" xml:space="preserve">
+    <value>Wis_op2</value>
+  </data>
+  <data name="Klimat.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn28.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;PolzDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>PolzDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;Otmetka1.Name" xml:space="preserve">
+    <value>Otmetka1</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn14.HeaderText" xml:space="preserve">
+    <value>NaporPrGol</value>
+  </data>
+  <data name="ButtonInversij.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn57.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn57</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn19.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn26.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn26</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn34.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn34</value>
+  </data>
+  <data name="&gt;&gt;UIdTchk1.Name" xml:space="preserve">
+    <value>UIdTchk1</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator6.Name" xml:space="preserve">
+    <value>ToolStripSeparator6</value>
+  </data>
+  <data name="$this.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn54.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn54</value>
+  </data>
+  <data name="Klimat.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="TextBoxIzmOtm.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ToolStripUprKorrUch.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataWDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>DataW</value>
+  </data>
+  <data name="&gt;&gt;ToolStripLabelPikBeg.Name" xml:space="preserve">
+    <value>ToolStripLabelPikBeg</value>
+  </data>
+  <data name="&gt;&gt;OtmetkaLwDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>OtmetkaLwDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;ButtonObmPrnaLew.Parent" xml:space="preserve">
+    <value>Profil</value>
+  </data>
+  <data name="&gt;&gt;PolzDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="TextBoxSdwig.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;TextBoxSdwig.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripLabelPikBeg.Text" xml:space="preserve">
+    <value>Начальный пикет</value>
+  </data>
+  <data name="&gt;&gt;TextBoxBegSdwig.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ToolStripUprKorrUch.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn50.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1642, 833</value>
+  </data>
+  <data name="&gt;&gt;Label1.Name" xml:space="preserve">
+    <value>Label1</value>
+  </data>
+  <data name="ToolStripLabel2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator7.Name" xml:space="preserve">
+    <value>ToolStripSeparator7</value>
+  </data>
+  <data name="OpisDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Описание пересечения</value>
+  </data>
+  <data name="Otmetka1.HeaderText" xml:space="preserve">
+    <value>Отметка</value>
+  </data>
+  <data name="&gt;&gt;TipMestaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn18.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewPikUgod.Size" type="System.Drawing.Size, System.Drawing">
+    <value>228, 720</value>
+  </data>
+  <data name="ButtonInversij.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="ToolStripButtonSohrDwg.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wgAADsIBFShKgAAAAgNJREFUOE+lkutLk2EYxvePhJaHShFBUTEPiCieQOmDiEZgrEbpYGiCQxkqA80I
+        RUkUEZ0YRMS+DDI70MkTmzJnDc8iU8QT2mAEItnle90wHwTDyBduXnie5/rd133Q4ZKfAJqHFs9E08A8
+        zD1emDpmYXjqRlnTFIrMk8iuGkNaxWekGEaQrHecBfw+/vPXODw6hj9whN2fh/Bt/8LSRgA3cxr/DeBZ
+        9kvmTNMoHGNbIrYN+3Aj23IxgJkpds0doP3VstgmsNexhutZ9QrAms8T0zYzU5xXM46kcjsmvfvoeL2i
+        AeoUgA07T8yaaZuZKab1rzN74jgys1YB2O2gmBZzH49LODXrrJlnzEzxe9cOLH1ziMioVgCOiuIFX0CE
+        Q+/WYf+yieiCFrRp9tkwxnP7Kt5MbKGm6wfC000KwDlTXNLgEvHMkh+Db32o7fYivtQm1l9+3IBOp5P7
+        yjYPwlKNCsAluWudxgvtknb5t9oWcL/VLU2Mvd2JFq3uqs7vAtE/ceNayiMF4KiYMSjmY2O7B4Ua+NaD
+        YQGEJumRbvyG1IcfBHI12aAAXM8R57aIWTNrLLY4tfNPiCvpR1SeVeu6WWzHFD6THSDwFMDdpmUG62NJ
+        PKM4Or9ZxBxb8H8l7g5CEu8pAOfM3WanSeeS8CFHxW4zM2umbWamOCShXAH+/wNOANABIDUxWnDPAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn47.Width" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;NameFileUch.Name" xml:space="preserve">
+    <value>NameFileUch</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewPikUgod.Name" xml:space="preserve">
+    <value>DataGridViewPikUgod</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn17.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn17</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn38.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;KlimatGridView.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridView, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ToolStripButtonAllOk.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn11.HeaderText" xml:space="preserve">
+    <value>Tmin</value>
+  </data>
+  <data name="Profil.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;Param4DataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewComboBoxPiketaj.Name" xml:space="preserve">
+    <value>DataGridViewComboBoxPiketaj</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn41.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;UIdUch1.Name" xml:space="preserve">
+    <value>UIdUch1</value>
+  </data>
+  <data name="&gt;&gt;ButtonIzmOtm.Name" xml:space="preserve">
+    <value>ButtonIzmOtm</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn12.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn12</value>
+  </data>
+  <data name="DataGridViewProfil.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;TextBoxBegSdwig.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButtonAllOk.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn45.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn45.HeaderText" xml:space="preserve">
+    <value>Wis_opT</value>
+  </data>
+  <data name="Klimat.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;Profil.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;ToolStripLabelPikEnd.Name" xml:space="preserve">
+    <value>ToolStripLabelPikEnd</value>
+  </data>
+  <data name="&gt;&gt;TabControl1.Name" xml:space="preserve">
+    <value>TabControl1</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn49.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn38.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn38</value>
+  </data>
+  <data name="DataGridViewPikUgod.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;ClsZonKlimatBindingSource.Name" xml:space="preserve">
+    <value>ClsZonKlimatBindingSource</value>
+  </data>
+  <data name="ButtonSdwigPik.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;NameTchkDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>NameTchkDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;ToolStripSeparator1.Name" xml:space="preserve">
+    <value>ToolStripSeparator1</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn34.HeaderText" xml:space="preserve">
+    <value>EndPiket</value>
+  </data>
+  <data name="&gt;&gt;ToolStripButtonSohrDwg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NameUch.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 22</value>
+  </data>
+  <data name="Label1.Text" xml:space="preserve">
+    <value>Пикетаж угодий</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewProfil.Name" xml:space="preserve">
+    <value>DataGridViewProfil</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn7.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn7</value>
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="NapPriGolDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Напор ветра при гол.</value>
+  </data>
+  <data name="DataGridViewProfil.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1315, 720</value>
+  </data>
+  <data name="ButtonSdwigPik.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;Profil.Parent" xml:space="preserve">
+    <value>TabControl1</value>
+  </data>
+  <data name="LabelWibrPik.HelpKeyword" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;Param1DataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>Param1DataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="KlimatGridView.HelpString" type="System.Resources.ResXNullRef, System.Windows.Forms">
+    <value />
+  </data>
+  <data name="&gt;&gt;DataGridViewTextBoxColumn39.Name" xml:space="preserve">
+    <value>DataGridViewTextBoxColumn39</value>
+  </data>
+  <data name="KlimatGridView.ShowHelp" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ToolStripUprKorrUch.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ButtonSdwigPik.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="DataGridViewTextBoxColumn27.HeaderText" xml:space="preserve">
+    <value>Name_markT</value>
+  </data>
+  <data name="KlimatGridView.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="DataGridViewProfil.Location" type="System.Drawing.Point, System.Drawing">
+    <value>17, 24</value>
+  </data>
+  <data name="&gt;&gt;TgolDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="LabelWibrPik.Location" type="System.Drawing.Point, System.Drawing">
+    <value>250, 6</value>
+  </data>
+  <data name="&gt;&gt;StGolUslDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>StGolUslDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="$this.HelpNavigator" type="System.Windows.Forms.HelpNavigator, System.Windows.Forms">
+    <value>AssociateIndex</value>
+  </data>
+  <data name="&gt;&gt;HelpProvider1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.HelpProvider, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;TipDataGridViewComboBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewComboBoxColumn, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <metadata name="PiketUgodBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>323, 9</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ToolStripUprKorrUch.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>498, 24</value>
+  </metadata>
+  <metadata name="HelpProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 54</value>
+  </metadata>
+  <metadata name="DsProfilA.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>231, 13</value>
+  </metadata>
+  <metadata name="DataGridViewComboBoxPiketaj.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="ClsZonKlimatBindingSource.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>44, 9</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>ru-RU</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>74</value>
+  </metadata>
+</root>

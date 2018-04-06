@@ -1,0 +1,94 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+BazfunNet
+</name>
+</assembly>
+<members>
+<member name="M:BazfunNet.dwgSlowar.WseZapisIsSlowar(System.Collections.Generic.List{System.String})">
+	<summary>
+ извлекаем все записи в словаре класса
+ </summary>
+	<param name="iSpNameZap">Список имен записей.  </param>
+	<returns> Возвращаем коллекцию всех записей в строковом представление</returns>
+	<remarks></remarks>
+</member><member name="M:BazfunNet.dwgSlowar.ZapisW_SlowarStr(System.String,System.String[])">
+	<summary>
+ записывает в словарь массив строк
+ </summary>
+	<param name="nameZap"> Имя записи </param>
+	<param name="msStr"> Записываемый массив строк </param>
+	<returns>Возвращает истину в случае удачной записи </returns>
+	<remarks></remarks>
+</member><member name="M:BazfunNet.dwgSlowar.ZapisIzSlovarStr(System.String)">
+	<summary>
+ чтение из словаря массива строк
+ </summary>
+	<param name="NameZap"> Имя записи </param>
+	<returns> Возвращает массив строк сохраняемый в записи</returns>
+	<remarks></remarks>
+</member><member name="T:BazfunNet.dwgSlowarMas">
+	<summary>
+ Класс для записи,чтения из словаря коллекции строк
+ </summary>
+	<remarks></remarks>
+</member><member name="P:BazfunNet.myKontur.GrTchk">
+	<summary>
+ Задает и получает список граничных точек контура
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BazfunNet.myPolyline3d.DistanceGV(BazfunNet.myPolyline3d)">
+	<summary>
+ находит минимальное по расстоянию смещение данной полилинии с заданой
+ </summary>
+	<param name="iCurve"> заданая полилиния </param>
+	<returns>Возвращает массив d(0) - минимальное расстояние d(1) смещение по горизонтали d(2) смещение по вертикали </returns>
+	<remarks></remarks>
+</member><member name="P:BazfunNet.My.Resources.Resources.ResourceManager">
+	<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member><member name="P:BazfunNet.My.Resources.Resources.Culture">
+	<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member><member name="T:BazfunNet.My.Resources.Resources">
+	<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member><member name="M:BazfunNet.Otlad.Primitiw(System.Object)">
+	<summary>
+ выбирает все примитивы из заданого файла  чертежа и формирует список их клонов
+ </summary>
+	<param name="NameF"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:BazfunNet.Otlad.ImportBlockIzFile(System.String)">
+	<summary>
+ Импорт блоков из файла
+ </summary>
+	<param name="NameF"> Путь к файлу </param>
+	<remarks></remarks>
+</member><member name="M:BazfunNet.Kommand.ListDwg">
+	<summary>
+ Ввозвращает колекцию имен листов, выводит в файл протокола отчет в виде "Имя" "Тип" "Имя блока"
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:BazfunNet.prbOtrezok">
+	<summary>
+ Отрезок упорядоченый по X координате
+ </summary>
+	<remarks></remarks>
+</member><member name="T:BazfunNet.clsXDATA">
+	<summary>
+ запись чтение расширеных данных к примитиву
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

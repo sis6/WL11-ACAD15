@@ -1,0 +1,47 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+wzaimdwg
+</name>
+</assembly>
+<members>
+<member name="M:wzaimdwg.PoSpPoint3dProf.Ugol(System.Collections.Generic.List{Autodesk.AutoCAD.Geometry.Point3d},System.Int32)">
+	<summary>
+ Определяет угол в плане в I точке полилинии
+ </summary>
+	<param name="iSp"> список точек  </param>
+	<param name="i"> номер точке</param>
+	<returns>угол в радианах </returns>
+	<remarks></remarks>
+</member><member name="T:wzaimdwg.PoSpPoint3dProf">
+	<summary>
+ По списку Point3D строит модель профиля в требуемом формате
+ </summary>
+	<remarks></remarks>
+</member><member name="T:wzaimdwg.docPointPolyline">
+	<summary>
+ Выводит в Word- документ таблицу точек полилинии
+ </summary>
+	<remarks></remarks>
+</member><member name="T:wzaimdwg.modImport">
+	<summary>
+ по точкам полученным при анализе полилинии строит иодель участка профиля
+ </summary>
+	<remarks></remarks>
+</member><member name="P:wzaimdwg.My.Resources.Resources.ResourceManager">
+	<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member><member name="P:wzaimdwg.My.Resources.Resources.Culture">
+	<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member><member name="T:wzaimdwg.My.Resources.Resources">
+	<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member>
+</members>
+</doc>

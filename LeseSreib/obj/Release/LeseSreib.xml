@@ -1,0 +1,73 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+LeseSreib
+</name>
+</assembly>
+<members>
+<member name="F:LeseSreib.FrmKorr.wPikBeg">
+	<summary>
+  Вспогательные переменные: начальный и конечный пикетаж участка, текуший пикет и и средняя отметка участка профиля  
+ </summary>
+	<remarks></remarks>
+</member><member name="F:LeseSreib.FrmKorr.wElemRastUch">
+	<summary>
+ ДатаСет данных о опорах и проводах используемых на участке
+ </summary>
+	<remarks></remarks>
+</member><member name="P:LeseSreib.FrmKorr.IzmUch">
+	<summary>
+ Задает и читает изменяемый участок расстановки 
+ </summary>
+	<value>
+	</value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:LeseSreib.FrmKorr">
+	<summary>
+ Форма используеться для корректировки данных участка профиля
+ </summary>
+	<remarks></remarks>
+</member><member name="P:LeseSreib.My.Resources.Resources.ResourceManager">
+	<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member><member name="P:LeseSreib.My.Resources.Resources.Culture">
+	<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member><member name="T:LeseSreib.My.Resources.Resources">
+	<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member><member name="M:LeseSreib.clsLeseSrejb.Save">
+	<summary>
+  сохранение всей модели и данных о времени и пользователях последних изменений
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LeseSreib.clsLeseSrejb.SaveTr">
+	<summary>
+ сохранени модели трассы 
+ </summary>
+	<remarks></remarks>
+</member><member name="M:LeseSreib.clsLeseSrejb.SaveRasst">
+	<summary>
+ сохранени модели только расстановки 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:LeseSreib.clsLeseSrejb">
+	<summary>
+ класс обеспечивающий сохранение считанной модели в словаре чертежа
+ </summary>
+	<remarks></remarks>
+</member><member name="T:LeseSreib.FrmUprKorr">
+	<summary>
+ Форма для выбора участка. Корректирвка параметров участка
+ Корректирвка данных участка
+ </summary>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

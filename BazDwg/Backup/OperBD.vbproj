@@ -1,0 +1,287 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{9C85D010-5D8C-4156-9C24-1E97057CF901}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>OperBD.My.MyApplication</StartupObject>
+    <RootNamespace>OperBD</RootNamespace>
+    <AssemblyName>OperBD</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>OperBD.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>OperBD.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="clsTipStol.vb">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="dsProfil.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>dsProfil.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsRasst.Designer.vb">
+      <DependentUpon>dsRasst.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="dsRasst.vb">
+      <DependentUpon>dsRasst.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dsUpr.Designer.vb">
+      <DependentUpon>dsUpr.xsd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="dsUpr.vb">
+      <DependentUpon>dsUpr.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPoisk.Designer.vb">
+      <DependentUpon>FrmPoisk.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPoisk.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPoiskOb.Designer.vb">
+      <DependentUpon>FrmPoiskOb.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPoiskOb.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmUch.Designer.vb">
+      <DependentUpon>FrmUch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmUch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWibUch.Designer.vb">
+      <DependentUpon>frmWibUch.vb</DependentUpon>
+    </Compile>
+    <Compile Include="frmWibUch.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Sw_UchPrfBD.vb" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmPoisk.resx">
+      <DependentUpon>FrmPoisk.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPoiskOb.resx">
+      <DependentUpon>FrmPoiskOb.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmUch.resx">
+      <DependentUpon>FrmUch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWibUch.resx">
+      <DependentUpon>frmWibUch.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\clsPrf.clsPeresech.datasource" />
+    <None Include="My Project\DataSources\clsPrf.clsPiket.datasource" />
+    <None Include="My Project\DataSources\clsPrf.clsPlanUgT.datasource" />
+    <None Include="My Project\DataSources\clsPrf.clsZonKlimat.datasource" />
+    <None Include="My Project\DataSources\dsProfil.TipSoorDataTable.datasource" />
+    <None Include="My Project\DataSources\frmfileExc.wlOpTrass.datasource" />
+    <None Include="My Project\DataSources\modRasstOp.ClszonMechusl.datasource" />
+    <None Include="My Project\DataSources\modRasstOp.wlDefParam.datasource" />
+    <None Include="My Project\DataSources\modRasstOp.wlOp.datasource" />
+    <None Include="My Project\DataSources\modRasstOp.wlOpRasst.datasource" />
+    <None Include="My Project\DataSources\modRasstOp.wlOpTrass.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\clsPrf\clsPrf.vbproj">
+      <Project>{C12A74B4-6B78-47F4-9F86-BB28BD224423}</Project>
+      <Name>clsPrf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeseSreib\LeseSreib.vbproj">
+      <Project>{6922005A-E5F0-49D6-817C-6DBBCA2D4C0E}</Project>
+      <Name>LeseSreib</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\modRasstOp\modRasstOp.vbproj">
+      <Project>{1B9AD9AF-D8B5-4C09-95B9-CDF294E06141}</Project>
+      <Name>modRasstOp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\saveHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\openHS.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\ImportXML.bmp" />
+    <None Include="dsProfil.xsc">
+      <DependentUpon>dsProfil.xsd</DependentUpon>
+    </None>
+    <None Include="dsProfil.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsProfil.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsProfil.xss">
+      <DependentUpon>dsProfil.xsd</DependentUpon>
+    </None>
+    <None Include="dsRasst.xsc">
+      <DependentUpon>dsRasst.xsd</DependentUpon>
+    </None>
+    <None Include="dsRasst.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsRasst.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsRasst.xss">
+      <DependentUpon>dsRasst.xsd</DependentUpon>
+    </None>
+    <None Include="dsUpr.xsc">
+      <DependentUpon>dsUpr.xsd</DependentUpon>
+    </None>
+    <None Include="dsUpr.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>dsUpr.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="dsUpr.xss">
+      <DependentUpon>dsUpr.xsd</DependentUpon>
+    </None>
+    <None Include="Resources\ImportXML1.bmp" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

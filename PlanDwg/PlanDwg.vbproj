@@ -1,0 +1,240 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{72E54215-5FDA-434A-A826-B343670EF0DC}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PlanDwg</RootNamespace>
+    <AssemblyName>PlanDwg</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\WL11-ACAD15\ISP\</OutputPath>
+    <DocumentationFile>PlanDwg.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DefineConstants>ARX_APP = true</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>PlanDwg.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="accoremgd">
+      <HintPath>..\..\..\Program Files\Autodesk\AutoCAD 2015\accoremgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acdbmgd">
+      <HintPath>..\..\..\Program Files\Autodesk\AutoCAD 2015\acdbmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="acmgd">
+      <HintPath>..\..\..\Program Files\Autodesk\AutoCAD 2015\acmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="docExcelRasp.vb" />
+    <Compile Include="dwgopor3D.vb" />
+    <Compile Include="dwgOpRasstNaPlane.vb" />
+    <Compile Include="dwgPlan.vb" />
+    <Compile Include="dwgPlanList.vb" />
+    <Compile Include="dwgPlanPk.vb" />
+    <Compile Include="dwgPolyLineTrass.vb" />
+    <Compile Include="dwgPow.vb" />
+    <Compile Include="FrmParamPln.Designer.vb">
+      <DependentUpon>FrmParamPln.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmParamPln.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWiborListSlojBlock.Designer.vb">
+      <DependentUpon>FrmWiborListSlojBlock.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWiborListSlojBlock.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWiwRezGabarit.Designer.vb">
+      <DependentUpon>FrmWiwRezGabarit.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWiwRezGabarit.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWiwRezGabaritTros.Designer.vb">
+      <DependentUpon>FrmWiwRezGabaritTros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWiwRezGabaritTros.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWiwRezRasp.Designer.vb">
+      <DependentUpon>FrmWiwRezRasp.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWiwRezRasp.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZadatSdwig3D.Designer.vb">
+      <DependentUpon>FrmZadatSdwig3D.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZadatSdwig3D.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmZadatSdwig3DRez.Designer.vb">
+      <DependentUpon>FrmZadatSdwig3DRez.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmZadatSdwig3DRez.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="PolylinePlanTrass.vb" />
+    <Compile Include="Prolet3D.vb" />
+    <Compile Include="RaspProvodTros.vb" />
+    <Compile Include="FrmOformList.Designer.vb">
+      <DependentUpon>FrmOformList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOformList.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmParamPln.resx">
+      <DependentUpon>FrmParamPln.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWiborListSlojBlock.resx">
+      <DependentUpon>FrmWiborListSlojBlock.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWiwRezGabarit.resx">
+      <DependentUpon>FrmWiwRezGabarit.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWiwRezGabaritTros.resx">
+      <DependentUpon>FrmWiwRezGabaritTros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWiwRezRasp.resx">
+      <DependentUpon>FrmWiwRezRasp.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZadatSdwig3D.resx">
+      <DependentUpon>FrmZadatSdwig3D.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmZadatSdwig3DRez.resx">
+      <DependentUpon>FrmZadatSdwig3DRez.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOformList.resx">
+      <DependentUpon>FrmOformList.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\modRasstOp.DFun.datasource" />
+    <None Include="My Project\DataSources\SdwigPoProlety.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WL_11-13_Code\clsPrf\AA_clsPrf.vbproj">
+      <Project>{c12a74b4-6b78-47f4-9f86-bb28bd224423}</Project>
+      <Name>AA_clsPrf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WL_11-13_Code\modRasstOp\AA_modRasstOp.vbproj">
+      <Project>{1b9ad9af-d8b5-4c09-95b9-cdf294e06141}</Project>
+      <Name>AA_modRasstOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WL_11-13_Code\Rashet\AA_Rashet.vbproj">
+      <Project>{1387936d-76bf-4f7c-bd92-6b63a80f51a7}</Project>
+      <Name>AA_Rashet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WL_11-13_Code\WiwodDok\AA_WiwodDok.vbproj">
+      <Project>{b0e2e5b3-17ed-4c72-a474-1fb24435371e}</Project>
+      <Name>AA_WiwodDok</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BazDwg\BazDwg.vbproj">
+      <Project>{D9A3CBF9-078F-45A4-8F01-95F156F2C293}</Project>
+      <Name>BazDwg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeseSreib\B_LeseSreib.vbproj">
+      <Project>{6922005a-e5f0-49d6-817c-6dbbca2d4c0e}</Project>
+      <Name>B_LeseSreib</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,181 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+bPolyLineIPoint
+</name>
+</assembly>
+<members>
+<member name="T:bPolyLineIPoint.SlojIgeDwg">
+	<summary>
+ Образ слоя в чертеже по штриховки строиться контур определяеться номерт ИГЭ и граничнвые скважины
+ </summary>
+	<remarks></remarks>
+</member><member name="P:bPolyLineIPoint.RazrezSlojIgeDwg.YnizDwg">
+	<summary>
+ координата нижней точки в чертеже
+ </summary>
+	<value></value>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:bPolyLineIPoint.RazrezSlojIgeDwg">
+	<summary>
+ Разрез слоя   в чертеже, по  заданой координате Ч 
+ </summary>
+	<remarks></remarks>
+</member><member name="P:bPolyLineIPoint.My.Resources.Resources.ResourceManager">
+	<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member><member name="P:bPolyLineIPoint.My.Resources.Resources.Culture">
+	<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member><member name="T:bPolyLineIPoint.My.Resources.Resources">
+	<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member><member name="M:bPolyLineIPoint.ObrazGeoloGii.GetSpisokNaimenowanij">
+	<summary>
+ Список всех наименований Игэ.
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.ObrazGeoloGii.SpisokSlojGeoDwgWTochke(Autodesk.AutoCAD.Geometry.Point3d)">
+	<summary>
+ Находит слои Игэ расположеные под заданой точкой разрез по X
+ </summary>
+	<param name="iPoint"> заданая точка чертежа </param>
+	<returns>  Список образ разрезов слоев ИГэ в точке </returns>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.ObrazGeoloGii.#ctor(System.Collections.Generic.List{Autodesk.AutoCAD.DatabaseServices.Entity},System.Collections.Generic.List{Autodesk.AutoCAD.DatabaseServices.Entity},System.Collections.Generic.List{bPolyLineIPoint.PostroenijSkwajEntity})">
+	<summary>
+ Построение по примитивам представляющем геологию модели образа геологии
+ </summary>
+	<param name="SpEntHatcH"> Список штриховок в слое Гео_штрих </param>
+	<param name="SpMtext"> Список мультитекстов слоя гео условные  </param>
+	<param name="iSpObraz"> список  образов скважин созданых из примитивов чертежа  </param>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.AlgDjarvis.GetPoint2dColl(bPolyLineIPoint.AlgDjarvis)">
+	<summary>
+ Получение граничного контура с уточнением по слою расположеному ниже
+ </summary>
+	<param name="iNijnOgr"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.AlgDjarvis.ZamenitWerhiNiz(System.Collections.Generic.List{Autodesk.AutoCAD.Geometry.Point2d},System.Collections.Generic.List{Autodesk.AutoCAD.Geometry.Point2d})">
+	<summary>
+ заменяет верхнею  и  нижнею границу и создает контур  верхняя граница по убыванию
+ </summary>
+	<param name="iWerh"> верхняя граница по убыванию  </param>
+	<param name="iniz"> нижняя граница по возрастанию </param>
+	<remarks> верхняя граница по убыванию: нижняя граница по возрастанию  </remarks>
+</member><member name="M:bPolyLineIPoint.AlgDjarvis.SozdatPoWerhNizu">
+	<summary>
+ пересоздает по новой контур
+ </summary>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.AlgDjarvis.GetWerhNijGraniza">
+	<summary>
+ возвращает верхнею границу упорядоченую  по убывынию x
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.AlgDjarvis.GetNijnijGraniza">
+	<summary>
+ возвращает нижнею границу упорядоченую по возрастанию x 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.ObrazSkwajn.SlojBeg">
+	<summary>
+ Слои начало которых совладает с  скважиной
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.ObrazSkwajn.SlojEnd">
+	<summary>
+ Слои конец которых совпадает со скважиной
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:bPolyLineIPoint.ObrazSkwajn">
+	<summary>
+ Образ скважины в чертеже (имя береться из надписи в подвале профиля ) положение центра и глубина из анализа полилиний представляющую скважину.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.PostroenijSkwajEntity.AddMtext(Autodesk.AutoCAD.DatabaseServices.MText)">
+	<summary>
+ Выбор мультитекста в котором записана или отметка слоя или глубина.
+ </summary>
+	<param name="el"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.PostroenijSkwajEntity.GetSpPrim">
+	<summary>
+ Возвращает список примитивовов представляющих скважину
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.PostroenijSkwajEntity.GetSpObrazowKons">
+	<summary>
+ список натсс представляющий консистенции
+ </summary>
+	<remarks></remarks>
+</member><member name="T:bPolyLineIPoint.PostroenijSkwajEntity">
+	<summary>
+ находит группы близких полилиний и линий и по ним определяет параметры  скважины
+ </summary>
+	<remarks></remarks>
+</member><member name="T:bPolyLineIPoint.KommandNew.ComparatorPoMtext">
+	<summary>
+ компаратор упорядочивает по возрастанию X , при близких X по Возрастанию У 
+ </summary>
+	<remarks> Для mtext  </remarks>
+</member><member name="T:bPolyLineIPoint.KommandNew.ComparatorSlojIgeDwg">
+	<summary>
+ для упорядочивания образа слоев по началу
+ </summary>
+	<remarks></remarks>
+</member><member name="T:bPolyLineIPoint.KommandNew.ComparatorSlojIgeDwgEnd">
+	<summary>
+ упорядочивание образов слоев по конечной границы
+ </summary>
+	<remarks></remarks>
+</member><member name="T:bPolyLineIPoint.KommandNew.ComparatorSlojGeoY">
+	<summary>
+ Упорядочивание образов разрезов слоев в чертеже.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:bPolyLineIPoint.KommandNew.ComparatorObrazSkwajnPoX">
+	<summary>
+ упорядочивание образов скважин по X 
+ </summary>
+	<remarks></remarks>
+</member><member name="T:bPolyLineIPoint.KommandNew.ComparatorSkwajn">
+	<summary>
+ Упорядочивание построеных по примитивам скважин.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.KommandNew.PeresechenieLineHatch(bPolyLineIPoint.SlojIgeDwg,Autodesk.AutoCAD.Geometry.Point3d)">
+	<summary>
+ находит пересечения со штриховкой представляющей геологический слой 
+ прямо проходящей через заданную точку параллейно оси OX
+ </summary>
+	<param name="iHatchIdentfikator"> обертка штриховка(HatchIdentifikator) приведеная  представляющая геологический слой c определенным идентификатором слоя </param>
+	<param name="iPoint"> заданая точка </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:bPolyLineIPoint.KommandNew.PeresechenieLineHatch(Autodesk.AutoCAD.DatabaseServices.Hatch,Autodesk.AutoCAD.Geometry.Point3d)">
+	<summary>
+ находит пересечения со штриховкой представляющей геологический слой 
+ прямо проходящей через заданную точку параллейно оси OX
+ </summary>
+	<param name="iHatch"> штриховка представляющая геологический слой </param>
+	<param name="iPoint"> заданая точка </param>
+	<returns></returns>
+	<remarks> для произвольной штриховки </remarks>
+</member>
+</members>
+</doc>

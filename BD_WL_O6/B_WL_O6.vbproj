@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>
+    </SchemaVersion>
+    <ProjectGuid>{0ED1B137-4074-45EC-8525-F8DEE60A5423}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>BD_WL_O6</RootNamespace>
+    <AssemblyName>BD_WL_O6</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>Windows</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>..\..\..\WL11-ACAD15\ISP\</OutputPath>
+    <DocumentationFile>BD_WL_O6.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>BD_WL_O6.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>On</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DannSlow_06.vb" />
+    <Compile Include="FormProsmotr06.Designer.vb">
+      <DependentUpon>FormProsmotr06.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FormProsmotr06.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmOpora.designer.vb">
+      <DependentUpon>FrmOpora.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmOpora.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProwod.designer.vb">
+      <DependentUpon>FrmProwod.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProwod.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sw_Wl06.vb" />
+    <Compile Include="DsPrf_06.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsPrf_06.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsPrf_06.vb">
+      <DependentUpon>DsPrf_06.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsRass_06.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DsRass_06.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DsRass_06.vb">
+      <DependentUpon>DsRass_06.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="TipElWl_06.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TipElWl_06.xsd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormProsmotr06.resx">
+      <DependentUpon>FormProsmotr06.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmOpora.resx">
+      <DependentUpon>FrmOpora.vb</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProwod.resx">
+      <DependentUpon>FrmProwod.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="DsPrf_06.xsc">
+      <DependentUpon>DsPrf_06.xsd</DependentUpon>
+    </None>
+    <None Include="DsPrf_06.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsPrf_06.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsPrf_06.xss">
+      <DependentUpon>DsPrf_06.xsd</DependentUpon>
+    </None>
+    <None Include="DsRass_06.xsc">
+      <DependentUpon>DsRass_06.xsd</DependentUpon>
+    </None>
+    <None Include="DsRass_06.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DsRass_06.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="DsRass_06.xss">
+      <DependentUpon>DsRass_06.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\DataSources\DsRass_06.datasource" />
+    <None Include="My Project\DataSources\DsRass_06.MechUslDataTable.datasource" />
+    <None Include="My Project\DataSources\DsRass_06.ParamUchNDataTable.datasource" />
+    <None Include="My Project\DataSources\DsRass_06.rastOpNDataTable.datasource" />
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="TipElWl_06.xsc">
+      <DependentUpon>TipElWl_06.xsd</DependentUpon>
+    </None>
+    <None Include="TipElWl_06.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>TipElWl_06.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TipElWl_06.xss">
+      <DependentUpon>TipElWl_06.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\WL_11-13_Code\clsPrf\AA_clsPrf.vbproj">
+      <Project>{c12a74b4-6b78-47f4-9f86-bb28bd224423}</Project>
+      <Name>AA_clsPrf</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WL_11-13_Code\modRasstOp\AA_modRasstOp.vbproj">
+      <Project>{1b9ad9af-d8b5-4c09-95b9-cdf294e06141}</Project>
+      <Name>AA_modRasstOp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BazDwg\BazDwg.vbproj">
+      <Project>{D9A3CBF9-078F-45A4-8F01-95F156F2C293}</Project>
+      <Name>BazDwg</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WL_11-Brics_Code\OperDann\AA_OperBD.vbproj">
+      <Project>{9c85d010-5d8c-4156-9c24-1e97057cf901}</Project>
+      <Name>AA_OperBD</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

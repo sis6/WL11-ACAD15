@@ -1,0 +1,213 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+modRasstOp
+</name>
+</assembly>
+<members>
+<member name="T:modRasstOp.DFun">
+	<summary>
+ представление функциональной зависимости дискретным значением точек
+ </summary>
+	<remarks></remarks>
+</member><member name="T:modRasstOp.Smeshenie">
+	<summary>
+ для передачи минимального смещения между проводами
+ </summary>
+	<remarks>Strela - наибольшее из двух стред провеса Cosnaklona - наименьший из двух </remarks>
+</member><member name="M:modRasstOp.RaspProvodTrosKoeff.Kw(System.Double)">
+	<summary>
+ Возвращает значение коэффициэнта по ветру для расчета допутимого горизонтального растояния между проводами
+ </summary>
+	<param name="iP4P1"> отношение ветровой нагрузки к весу провода</param>
+	<returns></returns>
+	<remarks> ПуЭ 7 табл 2.5.12</remarks>
+</member><member name="M:modRasstOp.RaspProvodTrosKoeff.Kg(System.Double,System.Double)">
+	<summary>
+ Возвращает значение коэффициэнта по гололеду для расчета допутимого вертикального растояния между проводами
+ </summary>
+	<param name="iP2P1"> отношение гололедной нагрузки к весу провода</param>
+	<param name="iStrela">Стрела провис </param>
+	<returns></returns>
+	<remarks>ПуЭ 7 табл 2.5.13 </remarks>
+</member><member name="M:modRasstOp.RaspProvodTrosKoeff.MinRastGroz(System.Int32)">
+	<summary>
+ наименьшее изоляционное расстояние между проводами по грозовому перенапряжению
+ </summary>
+	<param name="Unom">номинальное напряжение </param>
+	<returns></returns>
+	<remarks> ПуЭ 7 табл 2.5.18</remarks>
+</member><member name="M:modRasstOp.RaspProvodTrosKoeff.MinRastWnutrPereNapr(System.Int32)">
+	<summary>
+ наименьшее изоляционное расстояние между проводами по внутреннему перенапряжению
+ </summary>
+	<param name="Unom">номинальное напряжение </param>
+	<returns></returns>
+	<remarks> ПуЭ 7 табл 2.5.18</remarks>
+</member><member name="M:modRasstOp.RaspProvodTrosKoeff.MinRastMaxRabNapr(System.Int32)">
+	<summary>
+ наименьшее изоляционное расстояние между проводами по наибольшему рабочему напряжению
+ </summary>
+	<param name="Unom">номинальное напряжение </param>
+	<returns></returns>
+	<remarks> ПуЭ 7 табл 2.5.18</remarks>
+</member><member name="M:modRasstOp.RaspProvodTrosKoeff.UstDmenDbol(System.Double,System.Double)">
+	<summary>
+ реализация таблицы 2.5.14 п 2.5.90
+ </summary>
+	<param name="iDmen"></param>
+	<param name="iDbol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.RaspProvodTrosKoeff.UstDbolDbmen(System.Double,System.Double)">
+	<summary>
+ реализация таблицы 2.5.15 п 2.5.90
+ </summary>
+	<param name="iDmen"></param>
+	<param name="iDbol"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.wlOpRasst.#ctor(modRasstOp.wlOpRasst)">
+	<summary>
+ Конструктор копии
+ </summary>
+	<param name="iOp"></param>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.wlOpRasst.UstWRasst(modRasstOp.wlOpRasst,modRasstOp.wlOpRasst)">
+	<summary>
+ Включение опоры в расстановку
+ </summary>
+	<param name="ipOp"> предыдущая опора   </param>
+	<param name="ipOPs"> последующая </param>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.wlOpRasst.WstWRasstProm(modRasstOp.wlOpRasst)">
+	<summary>
+ Вставляет опору в расстановку между соседними опорами
+ </summary>
+	<param name="ipOp">опора предшествующая вставляемой </param>
+	<remarks> Пикетаж должен быть болше пред , но меньше следующей   </remarks>
+</member><member name="M:modRasstOp.wlOpRasst.UstPoOpore(modRasstOp.wlOpRasst)">
+	<summary>
+ для первой опоры участка, если есть предшествующий 
+ </summary>
+	<param name="iOp">последняя опора предшествующего участка </param>
+	<remarks>Последняя опора предшествующего участка и первая этого должны совпадать </remarks>
+</member><member name="M:modRasstOp.wlRasst.OprRast(System.Int32)">
+	<summary>
+ Добавляет опоры участка трассы    в расстановку
+ </summary>
+	<param name="IndRst"> номер участка трассы  </param>
+	<returns></returns>
+	<remarks> приватная </remarks>
+</member><member name="M:modRasstOp.wlRasst.OprRast">
+	<summary>
+ Формирует по участкам включенным в трассу  растановку. расчитывает расстояние опора начало трассы 
+ </summary>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.wlRasst.wibratOporu(System.Double)">
+	<summary>
+ находим ближайшую к точке профиля опору
+ </summary>
+	<param name="iR"> заданое расстояние отначала трассы </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.wlRasst.SledAnk(modRasstOp.wlOpRasst)">
+	<summary>
+ независимо от типа заданной опоры ищем следующую за ней анкерную
+ </summary>
+	<param name="iOp"> заданая опора</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.wlRasst.PredAnk(modRasstOp.wlOpRasst)">
+	<summary>
+ ищем предыдущую анкерную опору
+ </summary>
+	<param name="iOp">заданая опора </param>
+	<returns></returns>
+	<remarks> Ecли заданная опора анкерная, то она предыдущая </remarks>
+</member><member name="M:modRasstOp.wlRasst.DobOp(System.Double)">
+	<summary>
+ добавляет  в растановку промежуточную опору в заданой точке анкерного участка
+ </summary>
+	<param name="ir"> растояние от начала трасы </param>
+	<returns>
+	</returns>
+	<remarks></remarks>
+</member><member name="P:modRasstOp.My.Resources.Resources.ResourceManager">
+	<summary>
+  Возвращает кэшированный экземпляр ResourceManager, использованный этим классом.
+</summary>
+</member><member name="P:modRasstOp.My.Resources.Resources.Culture">
+	<summary>
+  Перезаписывает свойство CurrentUICulture текущего потока для всех
+  обращений к ресурсу с помощью этого класса ресурса со строгой типизацией.
+</summary>
+</member><member name="T:modRasstOp.My.Resources.Resources">
+	<summary>
+  Класс ресурса со строгой типизацией для поиска локализованных строк и т.д.
+</summary>
+</member><member name="T:modRasstOp.FrmProsmotr">
+	<summary>
+ форма для просмотра модели всей трассы ВЛ и расстановки на ней
+ </summary>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.tshprolet3D.ProviProwod3d(System.Int32)">
+	<summary>
+ Координаты провисания провода в N равномерно распределенных точках
+ </summary>
+	<param name="N"> колмчествво точек </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.tshprolet3D.ProviProwod3d(System.Double)">
+	<summary>
+ координата провода в точке пролета 
+ </summary>
+	<param name="aL"> расстояние от начала пролета </param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.wlUch.DobOp(modRasstOp.wlOp)">
+	<summary>
+ добавление опоры в расстановку c проверкой пикетажа , при создание
+ </summary>
+	<param name="iop"></param>
+	<remarks> не влияет на признак изменения </remarks>
+</member><member name="M:modRasstOp.wlUch.wibratOporuDo(System.Double)">
+	<summary>
+ Возвращает ближайшую опору с пикетажем меньше заданого
+ </summary>
+	<param name="iPiketaj"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.wlUch.wibratOporuPosle(System.Double)">
+	<summary>
+ возвращает ближайшую опору с пикетажем больше заданого 
+ </summary>
+	<param name="iPiketaj"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.wlUch.Add(modRasstOp.wlOp,System.Object,System.Object)">
+	<summary>
+ обавление опоры в расстановку без  проверки пикетажа при корректировки
+ </summary>
+	<param name="iop"></param>
+	<param name="Before"></param>
+	<param name="After"></param>
+	<remarks></remarks>
+</member><member name="M:modRasstOp.wlUch.IzmPiketaj(modRasstOp.wlOpRasst,System.Double)">
+	<summary>
+ Изменение пикетажа опоры 
+ </summary>
+	<param name="wop"></param>
+	<param name="ipiketaj"></param>
+	<remarks> меняеться в пределах от предыдущей до последующей </remarks>
+</member><member name="M:modRasstOp.wlUch.#ctor(System.Boolean)">
+	<summary>
+ Конструктор параметр True - данные участка отличны от сохраненых в словаре
+ </summary>
+	<param name="iPrIzm"> Признак что данные отличны от сохраненых в словаре  </param>
+	<remarks></remarks>
+</member>
+</members>
+</doc>

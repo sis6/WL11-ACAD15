@@ -1,0 +1,12 @@
+C:\VSP\WL11-ACAD15\LeseGeoIzDwg\obj\Debug\GeoIogijDwgLese.vbprojResolveAssemblyReference.cache
+C:\VSP\WL11-ACAD15\LeseGeoIzDwg\obj\Debug\LeseGeoIzDwg.FrmGeologijIzdwg.resources
+C:\VSP\WL11-ACAD15\LeseGeoIzDwg\obj\Debug\LeseGeoIzDwg.frmFileParamGeo.resources
+C:\VSP\WL11-ACAD15\LeseGeoIzDwg\obj\Debug\LeseGeoIzDwg.Resources.resources
+C:\VSP\WL11-ACAD15\LeseGeoIzDwg\obj\Debug\GeoIogijDwgLese.vbproj.GenerateResource.Cache
+C:\VSP\WL11-ACAD15\LeseGeoIzDwg\obj\Debug\GeoIogijDwgLese.vbproj.CoreCompileInputs.cache
+C:\VSP\WL11-ACAD15\LeseGeoIzDwg\obj\Debug\LeseGeoIzDwg.dll
+C:\VSP\WL11-ACAD15\LeseGeoIzDwg\obj\Debug\LeseGeoIzDwg.xml
+C:\VSP\WL11-ACAD15\LeseGeoIzDwg\obj\Debug\LeseGeoIzDwg.pdb
+C:\WL11-ACAD15\ISP\LeseGeoIzDwg.dll
+C:\WL11-ACAD15\ISP\LeseGeoIzDwg.pdb
+C:\WL11-ACAD15\ISP\LeseGeoIzDwg.xml
