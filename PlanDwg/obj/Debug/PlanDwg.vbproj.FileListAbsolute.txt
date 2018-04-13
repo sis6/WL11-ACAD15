@@ -211,9 +211,9 @@ C:\VSP\WL11-ACAD15\PlanDwg\obj\Debug\PlanDwg.Resources.resources
 C:\VSP\WL11-ACAD15\PlanDwg\obj\Debug\PlanDwg.FrmOformList.resources
 C:\VSP\WL11-ACAD15\PlanDwg\obj\Debug\PlanDwg.vbproj.GenerateResource.Cache
 C:\VSP\WL11-ACAD15\PlanDwg\obj\Debug\PlanDwg.vbproj.CoreCompileInputs.cache
-C:\VSP\WL11-ACAD15\PlanDwg\obj\Debug\PlanDwg.dll
-C:\VSP\WL11-ACAD15\PlanDwg\obj\Debug\PlanDwg.xml
-C:\VSP\WL11-ACAD15\PlanDwg\obj\Debug\PlanDwg.pdb
 C:\WL11-ACAD15\ISP\PlanDwg.dll
 C:\WL11-ACAD15\ISP\PlanDwg.pdb
 C:\WL11-ACAD15\ISP\PlanDwg.xml
+C:\VSP\WL11-ACAD15\PlanDwg\obj\Debug\PlanDwg.dll
+C:\VSP\WL11-ACAD15\PlanDwg\obj\Debug\PlanDwg.xml
+C:\VSP\WL11-ACAD15\PlanDwg\obj\Debug\PlanDwg.pdb

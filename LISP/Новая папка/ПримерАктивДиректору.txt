@@ -1,0 +1,245 @@
+001
+using System;
+002
+using System.Collections.Generic;
+003
+using System.Linq;
+004
+using System.Text;
+005
+using System.Xml.Linq;
+006
+using System.DirectoryServices.AccountManagement;
+007
+using System.DirectoryServices.ActiveDirectory;
+008
+using System.Runtime.InteropServices;
+009
+using AdminCAD.Configuration;
+010
+ 
+011
+namespace AdminCAD.DirectoryServices {
+012
+    /// <summary>
+013
+    /// Статический класс, предоставляющий некоторую информацию о текущем пользователе домена
+014
+    /// </summary>
+015
+    public static class CurrentDomainUser {
+016
+ 
+017
+        /// <summary>
+018
+        /// Имя текущего доменного пользователя
+019
+        /// </summary>
+020
+        public static string GetCurrentUserName() {
+021
+            return UserPrincipal.Current.Name;
+022
+        }
+023
+ 
+024
+        /// <summary>
+025
+        /// Отчество текущего доменного пользователя
+026
+        /// </summary>
+027
+        public static string GetCurrentUserMiddleName() { return UserPrincipal.Current.MiddleName; }
+028
+ 
+029
+        /// <summary>
+030
+        /// Фамилия текущего доменного пользователя
+031
+        /// </summary>
+032
+        /// <returns>Фамилия</returns>
+033
+        public static string GetCurrentUserSurname() {
+034
+            return UserPrincipal.Current.Surname;
+035
+        }
+036
+ 
+037
+        /// <summary>
+038
+        /// Примечание, относящееся к текущему доменному пользователю
+039
+        /// </summary>
+040
+        public static string GetCurrentUserDescription() { return UserPrincipal.Current.Description; }
+041
+ 
+042
+        /// <summary>
+043
+        /// Отображаемое имя текущего доменного пользователя
+044
+        /// </summary>
+045
+        public static string GetCurrentUserDisplayName() { return UserPrincipal.Current.DisplayName; }
+046
+ 
+047
+        /// <summary>
+048
+        /// Адрес электронной почты текущего доменного пользователя
+049
+        /// </summary>
+050
+        public static string GetCurrentUserEmailAddress() { return UserPrincipal.Current.EmailAddress; }
+051
+ 
+052
+        /// <summary>
+053
+        /// Перечень доменных групп, в состав которых входит текущий доменный пользователь
+054
+        /// </summary>
+055
+        public static string[] GetCurrentUserDomainGroups() { return UserPrincipal.Current.GetGroups().Select(n => n.Name).ToArray(); }
+056
+ 
+057
+        /// <summary>
+058
+        /// Получить полный перечень доменных групп, имеющихся в составе определённого домена
+059
+        /// </summary>
+060
+        /// <param name="DomainName">Имя домена, для которого следует получить перечень всех его доменных групп</param>
+061
+        /// <returns>Имена доменных групп, входящих в состав указанного домена</returns>
+062
+        public static IEnumerable<string> GetDomainGroups(string DomainName) {
+063
+            using (var context = new PrincipalContext(ContextType.Domain, DomainName))
+064
+            using (var queryFilter = new GroupPrincipal(context))
+065
+            using (var searcher = new PrincipalSearcher(queryFilter)) {
+066
+                foreach (var result in searcher.FindAll()) {
+067
+                    yield return result.SamAccountName;
+068
+                    result.Dispose();
+069
+                }
+070
+            }
+071
+        }
+072
+ 
+073
+        /// <summary>
+074
+        /// Получить имена всех доменных групп, входящих в состав текущего домена
+075
+        /// </summary>
+076
+        /// <returns>Имена всех доменных групп текущего домена</returns>
+077
+        public static IEnumerable<string> GetDomainGroups() {
+078
+            return GetDomainGroups(Domain.GetCurrentDomain().Name);
+079
+        }
+080
+ 
+081
+        /// <summary>
+082
+        /// Обладает ли текущий пользователь правами администратора для данной локальной машины
+083
+        /// </summary>
+084
+        /// <returns>true - да, false - нет.</returns>
+085
+        [DllImport("shell32.dll")]
+086
+        public static extern bool IsUserAnAdmin();
+087
+ 
+088
+        /// <summary>
+089
+        /// Является ли текущий пользователь членом указанной доменной группы
+090
+        /// </summary>
+091
+        /// <param name="groupName">Имя доменной группы, членство которой проверяется</param>
+092
+        /// <returns>true - является, false - нет.</returns>
+093
+        public static Boolean IsMemberOfGroup(string groupName){
+094
+            return GetCurrentUserDomainGroups().Select(n => n.ToUpper()).Contains(groupName.ToUpper());
+095
+        }
+096
+ 
+097
+        /// <summary>
+098
+        /// Является ли текущий пользователь руководителем указанной доменной группы
+099
+        /// </summary>
+100
+        /// <param name="groupName">Имя проверяемой доменной группы</param>
+101
+        /// <param name="config">Объект, хранящий в себе настройки Системы</param>
+102
+        /// <returns>true - является, false - нет.</returns>
+103
+        public static bool IsTeamManagerOfGroup(string groupName, CommonSettings config) {
+104
+            bool isTargetGroupMember = IsMemberOfGroup(groupName);
+105
+            bool isTeamManagerGroupMember = IsMemberOfGroup(config.TeamGroupName);
+106
+            return isTargetGroupMember && isTeamManagerGroupMember;
+107
+        }
+108
+ 
+109
+        /// <summary>
+110
+        /// Является ли пользователь администратором CAD указанной Системы
+111
+        /// </summary>
+112
+        /// <param name="config">Объект, хранящий в себе настройки Системы</param>
+113
+        /// <returns>true - является, false - нет.</returns>
+114
+        public static bool IsAdminCAD(CommonSettings config) {
+115
+            string domain = config.DomainName;
+116
+            string adminCadLogin = config.AdminCadLogin;
+117
+            string currentDomainName = Environment.UserDomainName;
+118
+            string currentLogin = GetCurrentUserDisplayName();
+119
+            return (domain.ToUpper() == currentDomainName.ToUpper()) && (adminCadLogin.ToUpper() == currentLogin.ToUpper());
+120
+        }
+121
+    }
+122
+}
+__________________

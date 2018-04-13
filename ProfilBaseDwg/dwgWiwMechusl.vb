@@ -128,24 +128,28 @@ Public Class dwgWiwMechusl
 
             SledZon = CType(tmechUsl.Sled, modRasstOp.DannZonMechusl)
 
-            Try
-                GrZon = SledZon.RastOtnachala
-            Catch ex As Exception
+			' Try
+			'GrZon = SledZon.RastOtnachala
+			' Catch ex As Exception
+			If SledZon Is Nothing Then
 Sled:           If I < WiwTrassa.MaxNumUchTr Then
-                    I += 1
-                    WiwTrassa.NumUch = I
-                    If CType(WiwTrassa.UchTr, modRasstOp.wlUch).BegMechUslZon IsNot Nothing Then
-                        SledZon = CType(WiwTrassa.UchTr, modRasstOp.wlUch).BegMechUslZon
-                        GrZon = SledZon.RastOtnachala
-                    Else
-                        GoTo sled
-                    End If
+					I += 1
+					WiwTrassa.NumUch = I
+					If CType(WiwTrassa.UchTr, modRasstOp.wlUch).BegMechUslZon IsNot Nothing Then
+						SledZon = CType(WiwTrassa.UchTr, modRasstOp.wlUch).BegMechUslZon
+						GrZon = SledZon.RastOtnachala
+					Else
+						GoTo Sled
+					End If
 
-                Else
-                    GrZon = WiwTrassa.Dlina
-                End If
-            End Try
-            DwgBegZon = WiwTrassa.DwgXpoRast(tmechUsl.RastOtnachala)
+				Else
+					GrZon = WiwTrassa.Dlina
+				End If
+			Else
+				GrZon = SledZon.RastOtnachala
+			End If
+			'   End Try
+			DwgBegZon = WiwTrassa.DwgXpoRast(tmechUsl.RastOtnachala)
             DwgGrZon = WiwTrassa.DwgXpoRast(GrZon)
             Obraz.Add(BazDwg.MakeEntities.CreateLine(DwgBegZon, osZon, DwgGrZon, osZon))
             WiwGrZon(DwgBegZon)

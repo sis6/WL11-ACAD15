@@ -235,10 +235,10 @@ C:\VSP\WL11-ACAD15\GeologijDwg\obj\Debug\GeologijDwg.FrmSloiigeSkwajn.resources
 C:\VSP\WL11-ACAD15\GeologijDwg\obj\Debug\GeologijDwg.Resources.resources
 C:\VSP\WL11-ACAD15\GeologijDwg\obj\Debug\GeologijDwg.vbproj.GenerateResource.Cache
 C:\VSP\WL11-ACAD15\GeologijDwg\obj\Debug\GeologijDwg.vbproj.CoreCompileInputs.cache
-C:\VSP\WL11-ACAD15\GeologijDwg\obj\Debug\GeologijDwg.dll
-C:\VSP\WL11-ACAD15\GeologijDwg\obj\Debug\GeologijDwg.xml
-C:\VSP\WL11-ACAD15\GeologijDwg\obj\Debug\GeologijDwg.pdb
 C:\WL11-ACAD15\ISP\GeologijDwg.dll.config
 C:\WL11-ACAD15\ISP\GeologijDwg.dll
 C:\WL11-ACAD15\ISP\GeologijDwg.pdb
 C:\WL11-ACAD15\ISP\GeologijDwg.xml
+C:\VSP\WL11-ACAD15\GeologijDwg\obj\Debug\GeologijDwg.dll
+C:\VSP\WL11-ACAD15\GeologijDwg\obj\Debug\GeologijDwg.xml
+C:\VSP\WL11-ACAD15\GeologijDwg\obj\Debug\GeologijDwg.pdb

@@ -270,9 +270,9 @@ Public Class dwgOpRasstNaPlane
                 Else
                     lnaWiw = lDlPoPiket
                 End If
-                coll.Add(dbPrim.CreateText(New Point3d(lX, lY, 0), Format(lnaWiw, "#.#"), 5))
-                '    coll.Add(dbPrim.CreateText(New Point3d(lX, lY, 0), Format(.RastOtNachala - iOpPred.wOpRasst.RastOtNachala, "#.#"), 5))
-            End If
+				coll.Add(dbPrim.CreateText(New Point3d(lX, lY, 0), Format(lnaWiw, "#.#"), 5))
+				'    coll.Add(dbPrim.CreateText(New Point3d(lX, lY, 0), Format(.RastOtNachala - iOpPred.wOpRasst.RastOtNachala, "#.#"), 5))
+			End If
         End With
 
     End Sub

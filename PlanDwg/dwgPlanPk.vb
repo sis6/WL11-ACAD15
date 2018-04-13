@@ -168,9 +168,9 @@ Public Class dwgPlanPk
             ColOtmPl.Add(dbPrim.CreateText(New Point3d(Xdwg, Ydwg, 0), Format(.Otm, "#.##"), 3))
             If .EstPeresech Then
                 Dim lobj As ObjectId = dwgText.CreateMText(New Point3d(Xdwg + 1, Ydwg - 1, 0), ClsPiket.StrPiketaj(.Piketaj), 10, 3)
-                ColIdPeresech.Add(MakeEntities.CreateLeader(New Point3d(Xdwg, Ydwg, 0), 4, lobj))
-                ' colPeresech.Add(GlobParam.clstxt.CreateText(New Point3d(Xdwg + 1, Ydwg - 4, 0), clsPiket.StrPiketaj(.Piketaj), 3))
-                ColIdPeresech.Add(lobj)
+				ColIdPeresech.Add(MakeEntities.CreateLeader(New Point3d(Xdwg, Ydwg, 0), 4, lobj))
+				' colPeresech.Add(GlobParam.clstxt.CreateText(New Point3d(Xdwg + 1, Ydwg - 4, 0), clsPiket.StrPiketaj(.Piketaj), 3))
+				ColIdPeresech.Add(lobj)
             End If
 
         End With

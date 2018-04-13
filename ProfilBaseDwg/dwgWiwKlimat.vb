@@ -132,24 +132,28 @@ Public Class dwgWiwKlimat
         Do Until tKlimat Is Nothing
             SledZon = CType(tKlimat.Sled, clsPrf.clsZonKlimat)
 
-            Try
-                GrZon = SledZon.RastOtnachala
-            Catch ex As Exception
+			' Try
+			'GrZon = SledZon.RastOtnachala
+			'   Catch ex As Exception
+			If SledZon Is Nothing Then
 Sled:           If I < WiwTrassa.MaxNumUchTr Then
-                    I += 1
-                    WiwTrassa.NumUch = I
-                    If WiwTrassa.UchTr.BegKlimZon IsNot Nothing Then
-                        SledZon = WiwTrassa.UchTr.BegKlimZon
-                        GrZon = SledZon.RastOtnachala
-                    Else
-                        GoTo Sled
-                    End If
+					I += 1
+					WiwTrassa.NumUch = I
+					If WiwTrassa.UchTr.BegKlimZon IsNot Nothing Then
+						SledZon = WiwTrassa.UchTr.BegKlimZon
+						GrZon = SledZon.RastOtnachala
+					Else
+						GoTo Sled
+					End If
 
-                Else
-                    GrZon = WiwTrassa.Dlina
-                End If
-            End Try
-            DwgBegZon = WiwTrassa.DwgXpoRast(tKlimat.RastOtnachala)
+				Else
+					GrZon = WiwTrassa.Dlina
+				End If
+			Else
+				GrZon = SledZon.RastOtnachala
+			End If
+			'   End Try
+			DwgBegZon = WiwTrassa.DwgXpoRast(tKlimat.RastOtnachala)
             DwgGrZon = WiwTrassa.DwgXpoRast(GrZon)
             Obraz.Add(BazDwg.MakeEntities.CreateLine(DwgBegZon, osZon, DwgGrZon, osZon))
             WiwGrZon(DwgBegZon)

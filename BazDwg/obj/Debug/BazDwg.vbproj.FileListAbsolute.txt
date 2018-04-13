@@ -36,12 +36,6 @@ C:\VSP\WL_11-Brics_Code\BazDwg\obj\Debug\BazDwg.dll
 C:\VSP\WL_11-Brics_Code\BazDwg\obj\Debug\BazDwg.xml
 C:\VSP\WL_11-Brics_Code\BazDwg\obj\Debug\BazDwg.pdb
 C:\VSP\WL_11-Brics_Code\BazDwg\obj\Debug\BazDwg.vbprojResolveAssemblyReference.cache
-C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.Resources.resources
-C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.vbproj.GenerateResource.Cache
-C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.vbproj.CoreCompileInputs.cache
-C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.dll
-C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.xml
-C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.pdb
 C:\WL11-ACAD15\BazDwg.dll.config
 C:\WL11-ACAD15\BazDwg.dll
 C:\WL11-ACAD15\BazDwg.pdb
@@ -50,4 +44,9 @@ C:\WL11-ACAD15\ISP\BazDwg.dll.config
 C:\WL11-ACAD15\ISP\BazDwg.dll
 C:\WL11-ACAD15\ISP\BazDwg.pdb
 C:\WL11-ACAD15\ISP\BazDwg.xml
-C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.vbprojResolveAssemblyReference.cache
+C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.Resources.resources
+C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.vbproj.GenerateResource.Cache
+C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.vbproj.CoreCompileInputs.cache
+C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.dll
+C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.xml
+C:\VSP\WL11-ACAD15\BazDwg\obj\Debug\BazDwg.pdb

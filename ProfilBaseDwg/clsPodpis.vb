@@ -24,7 +24,7 @@ Imports BazDwg
 Public Class clsPodpis
     Private DlinaZagH As Double
     Private Const OtstupX As Double = 20, OtstupY As Double = 10
-	Private Const DlinaZagX As Double = 49.5
+	Private Const DlinaZagX As Double = 50.0
 	Public Const ShirinaNadpisi As Double = 80
     Public Const OsY As Double = DlinaZagX + OtstupX
     Public Const NadProfilem As Double = 190

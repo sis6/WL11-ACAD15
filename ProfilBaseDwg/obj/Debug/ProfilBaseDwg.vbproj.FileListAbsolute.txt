@@ -186,6 +186,11 @@ C:\VSP\WL_11-Brics_Code\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.dll
 C:\VSP\WL_11-Brics_Code\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.xml
 C:\VSP\WL_11-Brics_Code\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.pdb
 C:\VSP\WL_11-Brics_Code\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.vbprojResolveAssemblyReference.cache
+C:\WL11-ACAD15\ISP\ProfilBaseDwg.dll.config
+C:\WL11-ACAD15\ISP\ProfilBaseDwg.dll
+C:\WL11-ACAD15\ISP\ProfilBaseDwg.pdb
+C:\WL11-ACAD15\ISP\ProfilBaseDwg.xml
+C:\WL11-ACAD15\ISP\az-Cyrl\ProfilBaseDwg.resources.dll
 C:\VSP\WL11-ACAD15\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.vbprojResolveAssemblyReference.cache
 C:\VSP\WL11-ACAD15\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.frmParam.resources
 C:\VSP\WL11-ACAD15\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.frmWwdGrList.resources
@@ -193,12 +198,7 @@ C:\VSP\WL11-ACAD15\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.Resources.resources
 C:\VSP\WL11-ACAD15\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.frmWwdGrList.az-Cyrl.resources
 C:\VSP\WL11-ACAD15\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.vbproj.GenerateResource.Cache
 C:\VSP\WL11-ACAD15\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.vbproj.CoreCompileInputs.cache
+C:\VSP\WL11-ACAD15\ProfilBaseDwg\obj\Debug\az-Cyrl\ProfilBaseDwg.resources.dll
 C:\VSP\WL11-ACAD15\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.dll
 C:\VSP\WL11-ACAD15\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.xml
 C:\VSP\WL11-ACAD15\ProfilBaseDwg\obj\Debug\ProfilBaseDwg.pdb
-C:\WL11-ACAD15\ISP\ProfilBaseDwg.dll.config
-C:\WL11-ACAD15\ISP\ProfilBaseDwg.dll
-C:\WL11-ACAD15\ISP\ProfilBaseDwg.pdb
-C:\WL11-ACAD15\ISP\ProfilBaseDwg.xml
-C:\WL11-ACAD15\ISP\az-Cyrl\ProfilBaseDwg.resources.dll
-C:\VSP\WL11-ACAD15\ProfilBaseDwg\obj\Debug\az-Cyrl\ProfilBaseDwg.resources.dll
