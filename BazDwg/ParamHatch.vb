@@ -55,12 +55,12 @@ Public Class ParamHatch
             Return wPatternAngle
         End Get
     End Property
-    ReadOnly Property LineWeight As LineWeight
-        Get
-            Return wLineWeight
-        End Get
-    End Property
-    ReadOnly Property StrOpis() As String
+	ReadOnly Property LineWeight As LineWeight
+		Get
+			Return wLineWeight
+		End Get
+	End Property
+	ReadOnly Property StrOpis() As String
         Get
             Return wPatternName & " " & Format(wPatternScale, "f2") & " " & Format(wPatternAngle, "f2") & " " & CStr(wLineWeight)
         End Get

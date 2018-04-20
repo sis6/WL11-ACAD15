@@ -144,8 +144,8 @@ Public Class dwgObrazOporRasst
         colEnt.Add(dbPrim.CreateLine(XmShir, otmwer2, XpShir, otmwer2))
         ' colEnt.Add(dbPrim.CreateLine(X, otmwer2, X, otmwerT)) 'Вывели тело опоры от   второй до тоса
         colEnt.Add(dbPrim.CreateLine(XmShir, otmwerT, XpShir, otmwerT))
-        colEnt.Add(dbPrim.CreateTextV(New Point3d(X - 1, otm + 0.4 * (otmSer - otm), 0), Op.StrPiketajOp(), DwgTr.WisTextP)) 'пикетаж на тело опоры
-        Select Case Op.Tip
+		colEnt.Add(dbPrim.CreateTextV(New Point3d(X - 1, otm + 0.4 * (otmSer - otm), 0), Op.StrPiketajOp(), DwgTr.WisTextP)) 'пикетаж на тело опоры
+		Select Case Op.Tip
             Case 1
                 colEnt.Add(Znaki.CreateTregW(X, otmwerT, 2, 3))
             Case 0

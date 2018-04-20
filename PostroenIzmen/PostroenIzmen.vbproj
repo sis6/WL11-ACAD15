@@ -33,10 +33,11 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\..\WL11-ACAD15\ISP\</OutputPath>
     <DocumentationFile>PostroenIzmen.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
+    <DefineConstants>ARX_APP = true</DefineConstants>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -124,21 +125,21 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\WL_11-13_Code\clsPrf\A_clsPrf.vbproj">
+    <ProjectReference Include="..\..\WL_11-13_Code\clsPrf\AA_clsPrf.vbproj">
       <Project>{c12a74b4-6b78-47f4-9f86-bb28bd224423}</Project>
-      <Name>A_clsPrf</Name>
+      <Name>AA_clsPrf</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\WL_11-13_Code\modRasstOp\A_modRasstOp.vbproj">
+    <ProjectReference Include="..\..\WL_11-13_Code\modRasstOp\AA_modRasstOp.vbproj">
       <Project>{1b9ad9af-d8b5-4c09-95b9-cdf294e06141}</Project>
-      <Name>A_modRasstOp</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\LeseSreib\LeseSreib.vbproj">
-      <Project>{6922005a-e5f0-49d6-817c-6dbbca2d4c0e}</Project>
-      <Name>LeseSreib</Name>
+      <Name>AA_modRasstOp</Name>
     </ProjectReference>
     <ProjectReference Include="..\..\WL_11-Brics_Code\OperDann\AA_OperBD.vbproj">
       <Project>{9c85d010-5d8c-4156-9c24-1e97057cf901}</Project>
-      <Name>A_OperBD</Name>
+      <Name>AA_OperBD</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeseSreib\B_LeseSreib.vbproj">
+      <Project>{6922005a-e5f0-49d6-817c-6dbbca2d4c0e}</Project>
+      <Name>B_LeseSreib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

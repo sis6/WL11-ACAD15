@@ -809,7 +809,7 @@ Public Module Kommand
 #Region "выбраные наборы"
 	Public Sub SearchAndInsert(
 		ByVal lis As List(Of Point3d),
-		ByVal insert As Point3d, ByVal dc As ComparatorPoint)
+		ByVal insert As Point3d, ByVal dc As ComparatorPointPoX)
 
 
 
@@ -857,7 +857,7 @@ Public Module Kommand
 
 	Function WibratAllPoint(ByVal NameSl As String) As List(Of Point3d) ' по по линиям и легким полилиниям выбирает все граничные точки и упорядочивает их
 		Dim lSpTchk As New List(Of Point3d)
-		Dim lComparator As New ComparatorPoint
+		Dim lComparator As New ComparatorPointPoX
 
 		Dim acDocEd As Editor = Application.DocumentManager.MdiActiveDocument.Editor
 		'' Создание массива из TypedValue дляопределения условий фильтра  
@@ -873,7 +873,7 @@ Public Module Kommand
 		'' Если статус запроса ОК, объекты были выбраны  
 		If acSSPrompt.Status = PromptStatus.OK Then
 			Dim acSSet As SelectionSet = acSSPrompt.Value
-			Application.ShowAlertDialog("Kommand:WibratAllPoint " & "Количество выбранных объектов: " &
+			SystemKommand.SoobEditor("Kommand:WibratAllPoint На слое  " & NameSl & "  количество выбранных объектов: " &
 										acSSet.Count.ToString())
 			Dim lspent As List(Of Entity) = GetEntity(acSSet.GetObjectIds)
 			For Each el As Entity In lspent
@@ -924,7 +924,7 @@ Public Module Kommand
 		'' Если статус запроса ОК, объекты были выбраны  
 		If acSSPrompt.Status = PromptStatus.OK Then
 			Dim acSSet As SelectionSet = acSSPrompt.Value
-			Application.ShowAlertDialog("Количество выбранных объектов: " &
+			SystemKommand.SoobEditor("WibratAllOtrezki  На слое " & NameSl & " Количество выбранных объектов: " &
 										acSSet.Count.ToString())
 			Dim lspent As List(Of Entity) = GetEntity(acSSet.GetObjectIds)
 			For Each el As Entity In lspent
@@ -966,14 +966,17 @@ Public Module Kommand
 
 	End Function
 
-	Function WibranNab() As List(Of Point3d)
+	Function WibranNab(Optional iPriglaschenie As String = "Выберите примитивы") As List(Of Point3d)
 		Dim lSpisok As New List(Of Point3d)
 		Dim acDoc As Document = Application.DocumentManager.MdiActiveDocument
 		Dim acCurDb As Database = acDoc.Database
 		Dim acDocEd As Editor = acDoc.Editor
-		'' Получение набора предварительного выбора (PickFirst)  
+		'' Получение набора предварительного выбора (PickFirst) 
+		Dim opts As New PromptSelectionOptions
+		opts.MessageForAdding = iPriglaschenie
 		Dim acSSPrompt As PromptSelectionResult
-		acSSPrompt = acDocEd.SelectImplied()
+		'acSSPrompt = acDocEd.SelectImplied()
+		acSSPrompt = acDocEd.GetSelection(opts)
 		Dim acSSet As SelectionSet = Nothing
 
 		'' Если статус запроса OK, объекты были выбраны перед запуском команды 

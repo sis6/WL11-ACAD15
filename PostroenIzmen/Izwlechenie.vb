@@ -33,14 +33,14 @@ Public Module Izwlechenie
 
             Dim pl3d As Polyline3d = CType(el, Polyline3d)
 
-            '   pl3d.
-            For Each lobj As ObjectId In pl3d
+
+			For Each lobj As ObjectId In pl3d
                 Dim lvt3 As PolylineVertex3d = CType(ta.GetObject(lobj, OpenMode.ForRead), PolylineVertex3d)
                 lSpTchk.Add(lvt3.Position)
 
-                ' lvt3.
 
-            Next
+
+			Next
         End Using
 
         Return lSpTchk

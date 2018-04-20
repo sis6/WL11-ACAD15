@@ -23,21 +23,21 @@ Imports _AcWnd = Bricscad.Windows
 Imports DBTransMan = Teigha.DatabaseServices.TransactionManager
 #End If
 
-Public Class ComparatorPoint
-    'для упорядочивания точек из Autocad
-    Implements IComparer(Of Point3d)
+Public Class ComparatorPointPoX
+	'для упорядочивания точек из Autocad
+	Implements IComparer(Of Point3d)
 
-    Public Function Compare(ByVal x As Point3d, ByVal y As Point3d) As Integer Implements System.Collections.Generic.IComparer(Of Point3d).Compare
+	Public Function Compare(ByVal x As Point3d, ByVal y As Point3d) As Integer Implements System.Collections.Generic.IComparer(Of Point3d).Compare
 
 
-        If Math.Abs(x.X - y.X) < 0.1 Then Return 0
-        If x.X > y.X Then
-            Return 1
-        Else
-            Return -1
-        End If
+		If Math.Abs(x.X - y.X) < 0.1 Then Return 0
+		If x.X > y.X Then
+			Return 1
+		Else
+			Return -1
+		End If
 
-    End Function
+	End Function
 End Class
 Public Class ComparatorPoint2dPoX
     'для упорядочивания точек из Autocad

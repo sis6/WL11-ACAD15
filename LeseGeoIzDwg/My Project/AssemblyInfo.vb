@@ -8,8 +8,8 @@ Imports System.Runtime.InteropServices
 
 ' Проверьте значения атрибутов сборки
 
-<Assembly: AssemblyTitle("PolyLineIPoint")> 
-<Assembly: AssemblyDescription("для импорта из 3Dобъектов")> 
+<Assembly: AssemblyTitle("LeseGeoIzDwg")>
+<Assembly: AssemblyDescription("Чтение данных геологии из чертежа")>
 <Assembly: AssemblyCompany("Южэнергосетьпроект")> 
 <Assembly: AssemblyProduct("PolyLineIPoint")> 
 <Assembly: AssemblyCopyright("Copyright © Южэнергосетьпроект 2014")> 
@@ -31,5 +31,5 @@ Imports System.Runtime.InteropServices
 ' используя "*", как показано ниже:
 ' <Assembly: AssemblyVersion("1.0.*")> 
 
-<Assembly: AssemblyVersion("4.0.0.18")>
-<Assembly: AssemblyFileVersion("4.0.0.18")>
+<Assembly: AssemblyVersion("4.0.0.20")>
+<Assembly: AssemblyFileVersion("4.0.0.20")>

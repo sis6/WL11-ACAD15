@@ -1,7 +1,6 @@
 ﻿Public Class FrmGeologijIzdwg
-    'Public SpSkwajn As List(Of SkwajIzDwgPoMText)
-    'Public SpIge As List(Of HatchIdentifikator)
-    Public SpSkwajPoobrazu As List(Of PostroenijSkwajEntity)
+
+	Public SpSkwajPoobrazu As List(Of PostroenijSkwajEntity)
     Private wObrazgeologii As ObrazGeoloGii
     Public Sub ZadatModelGeologii(iGeologij As ObrazGeoloGii)
         wObrazgeologii = iGeologij

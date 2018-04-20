@@ -18,7 +18,6 @@
     </StartWorkingDirectory>
   </PropertyGroup>
   <PropertyGroup>
-    <ReferencePath>
-    </ReferencePath>
+    <ReferencePath>C:\WL11-ACAD15\ISP\</ReferencePath>
   </PropertyGroup>
 </Project>

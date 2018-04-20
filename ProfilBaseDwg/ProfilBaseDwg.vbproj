@@ -30,10 +30,11 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\..\WL11-ACAD15\ISP\</OutputPath>
     <DocumentationFile>ProfilBaseDwg.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
     <Prefer32Bit>false</Prefer32Bit>
+    <DefineConstants>ARX_APP = true</DefineConstants>
   </PropertyGroup>
   <PropertyGroup>
     <OptionExplicit>On</OptionExplicit>
@@ -152,25 +153,25 @@
       <Project>{c12a74b4-6b78-47f4-9f86-bb28bd224423}</Project>
       <Name>AA_clsPrf</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\WL_11-13_Code\modRasstOp\A_modRasstOp.vbproj">
+    <ProjectReference Include="..\..\WL_11-13_Code\modRasstOp\AA_modRasstOp.vbproj">
       <Project>{1b9ad9af-d8b5-4c09-95b9-cdf294e06141}</Project>
-      <Name>A_modRasstOp</Name>
+      <Name>AA_modRasstOp</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\WL_11-13_Code\Rashet\A_Rashet.vbproj">
+    <ProjectReference Include="..\..\WL_11-13_Code\Rashet\AA_Rashet.vbproj">
       <Project>{1387936d-76bf-4f7c-bd92-6b63a80f51a7}</Project>
-      <Name>A_Rashet</Name>
+      <Name>AA_Rashet</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WL_11-Brics_Code\OperDann\AA_OperBD.vbproj">
+      <Project>{9c85d010-5d8c-4156-9c24-1e97057cf901}</Project>
+      <Name>AA_OperBD</Name>
     </ProjectReference>
     <ProjectReference Include="..\BazDwg\BazDwg.vbproj">
       <Project>{d9a3cbf9-078f-45a4-8f01-95f156f2c293}</Project>
       <Name>BazDwg</Name>
     </ProjectReference>
-    <ProjectReference Include="..\LeseSreib\LeseSreib.vbproj">
+    <ProjectReference Include="..\LeseSreib\B_LeseSreib.vbproj">
       <Project>{6922005a-e5f0-49d6-817c-6dbbca2d4c0e}</Project>
-      <Name>LeseSreib</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\WL_11-Brics_Code\OperDann\AA_OperBD.vbproj">
-      <Project>{9c85d010-5d8c-4156-9c24-1e97057cf901}</Project>
-      <Name>A_OperBD</Name>
+      <Name>B_LeseSreib</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

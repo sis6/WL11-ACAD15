@@ -65,7 +65,7 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\..\..\WL11-ACAD15\ISP\</OutputPath>
     <DocumentationFile>LeseSreib.xml</DocumentationFile>
     <NoWarn>42017,42018,42019,42032,42036,42353,42354,42355</NoWarn>
     <WarningsAsErrors>41999,42016,42020,42021,42022</WarningsAsErrors>

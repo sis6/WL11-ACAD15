@@ -3,7 +3,7 @@ Imports Autodesk.AutoCAD.DatabaseServices
 #Else
 Imports Teigha.DatabaseServices
 #End If
-
+Imports BazDwg
 
 Public Class ParamLine
     Private wLinetype As String
@@ -52,19 +52,20 @@ Public Class fizMechParam
         Figrad = Double.NaN
     End Sub
 End Class
+
 Public Class fizMechIge
-    Private IndexOpisanie As Integer
-    Private wNormFizMech, wNesSposobFizMech, wDeformFizMech As New fizMechParam
-    Private wNormJun As Double
-    Private wRo, wRc As Double
-    Private StrojGruppa As String
+	Private IndexOpisanie As Integer
+	Private wNormFizMech, wNesSposobFizMech, wDeformFizMech As New fizMechParam
+	Private wNormJun As Double
+	Private wRo, wRc As Double
+	Private StrojGruppa As String
 
 End Class
 Public Class ParamIge
-    Inherits BazDwg.ParamHatch
+	Inherits ParamHatch
 
-    Private wIndexIge As String
-    Private wStrWozrast As String
+	Private wIndexIge As String
+	Private wStrWozrast As String
     Public ReadOnly Property IndexIge() As String
         Get
             Return wIndexIge
@@ -99,10 +100,11 @@ Public Class ParamIge
         wIndexIge = iIndexIge
         wStrWozrast = iWozrast
     End Sub
-    Sub New()
-        MyBase.New(modelGeo.TipOpred.NamePatternIgePodefault, modelGeo.TipOpred.ScaleDefault, _
-                  modelGeo.TipOpred.AngleDefault, CType(modelGeo.TipOpred.LineWeightDefault, LineWeight))
-        wIndexIge = modelGeo.TipOpred.IndexIgePoDefault
-        wStrWozrast = modelGeo.TipOpred.WozwrastPoDefault
-    End Sub
+	Sub New()
+		MyBase.New(modelGeo.TipOpred.NamePatternIgePodefault, modelGeo.TipOpred.ScaleDefault,
+				  modelGeo.TipOpred.AngleDefault, CType(modelGeo.TipOpred.LineWeightDefault, LineWeight))
+		wIndexIge = modelGeo.TipOpred.IndexIgePoDefault
+		wStrWozrast = modelGeo.TipOpred.WozwrastPoDefault
+	End Sub
+
 End Class
