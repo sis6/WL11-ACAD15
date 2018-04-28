@@ -6,14 +6,14 @@
 (setq polzOvl "u_ovl")
 (setq lUser (getenv "USERNAME"))
 
-(setq LProgFiles (getenv "AppData"))
+(setq LProgFiles "C:\\Настройки ACad\\Programms_ugesp")
 
 (princ (strcat "\n AppData " LProgFiles))
 
 
 
 
-(setq KatAppPolz (strcat LProgFiles "\\Autodesk\\ApplicationPlugins\\WL11-ACAD15"))
+(setq KatAppPolz (strcat LProgFiles "\\WL11-ACAD15"))
 (princ (strcat "\n KatPolz " KatAppPolz))
 
 (setq KatAppDistrib (strcat "//VHOST3/Shares/WL_11-13/Distrib/WL11-ACAD15"))

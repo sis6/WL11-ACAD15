@@ -196,9 +196,9 @@ Public Class SystemKommand
 
 		Dim llock = Application.DocumentManager.MdiActiveDocument.LockDocument()
 		'   Dim llock = lacDoc.LockDocument()
-		'   lacDoc.Database.SaveAs(lName, True, DwgVersion.Current, lacDoc.Database.SecurityParameters)
-		'  lacDoc.SendStringToExecute("_QSAVE ", True, False, False)
-		'   llock.Dispose()
+		lacDoc.Database.SaveAs(lName, True, DwgVersion.Current, lacDoc.Database.SecurityParameters)
+		'lacDoc.SendStringToExecute("_QSAVE ", True, False, False)
+		llock.Dispose()
 		'     lacDoc.Database.Save()
 
 

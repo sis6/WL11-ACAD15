@@ -19,10 +19,10 @@
 (setq AppLspProv "\\ProwObnowA.lsp")
 
 
-(setq LProgFiles (getenv "AppData"))
+(setq LProgFiles "C:\\Настройки ACad\\Programms_ugesp")
 (princ (strcat "\n AppData " LProgFiles))
 ;(alert "pfuh")
-(setq KatAppPolz (strcat LProgFiles "\\Autodesk\\ApplicationPlugins\\WL11-ACAD15"))
+(setq KatAppPolz (strcat LProgFiles "\\WL11-ACAD15"))
 (princ (strcat "\n KatPolz " KatAppPolz))
 ;(alert "pfuh")
  (setq PutLspZagr  (Strcat katAppPolz ApplspZagr  ))

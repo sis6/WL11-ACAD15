@@ -1,4 +1,4 @@
-					;this file will run once when the program starts.
+﻿					;this file will run once when the program starts.
 					;please do not edit. For custom actions on starting the program please create a file on_start.lsp.
 (setq NameGruppTiz "TIZ_PROFIL")
 (setq NameGruppTiz3d "TIZ_PLAN_3D")
@@ -12,12 +12,12 @@
 (setq lUser (getenv "USERNAME"))
 (princ lUser)
 (princ "\n")
-(setq LProgFiles (getenv "AppData"))
+(setq LProgFiles "C:\\Настройки ACad\\Programms_ugesp")
 
 
 
-(setq KatPril (strcat LProgFiles "\\Autodesk\\ApplicationPlugins\\WL11-ACAD15\\ISP"))
-(setq KatMenu (strcat LProgFiles "\\Autodesk\\ApplicationPlugins\\WL11-ACAD15"))
+(setq KatPril (strcat LProgFiles "\\WL11-ACAD15\\ISP"))
+(setq KatMenu (strcat LProgFiles "\\WL11-ACAD15"))
 (setq NetSborka (strcat katPril "\\CommandUpr.dll"))
 (princ katPril)
 (princ (strcat "\n Kat menu "  katMenu))
@@ -70,7 +70,7 @@
   (if (= lprow nil)
     (progn
       (princ (strcat "\n ZagrNameGrupp "  NameGrupp))
-      (command "menuload" (FileMenu NameGrupp))
+      (command "_menuload" (FileMenu NameGrupp))
 	 (setq  lwsp  (pozmenu NameGrupp))
 	  (princ (strcat "\n Pozmenu menucmd   "  lwsp))
      (menucmd lwsp )
