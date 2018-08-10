@@ -726,5 +726,38 @@ Public Class DwgRasstNaPolyline
 
 
 	End Sub
+	Public Function KoorOporPoPolylineWDoc() As List(Of String)
 
+		Dim lObjSwajzRasstPolyline As SwajzPolylineRasst = NajtiSwajzPolylineRasst()
+		If lObjSwajzRasstPolyline Is Nothing Then Return Nothing
+
+		Dim lSpPointPolyline As List(Of Point3d) = lObjSwajzRasstPolyline.WsePointLwPolylineOpor() 'Нашли все точки полилинии на которых стоит опора.
+
+		Dim lSpStrokKoor As New List(Of String)
+
+
+
+		For i = 0 To lSpPointPolyline.Count - 1
+			Dim wT As Point3d = lSpPointPolyline(i)
+			Dim wOpRasst As modRasstOp.wlOpRasst = CType(lObjSwajzRasstPolyline.Opori(i + 1), modRasstOp.wlOpRasst)
+
+			With wOpRasst
+
+
+				lSpStrokKoor.Add(" X " & Format(wT.Y, "f2") & " Y " & Format(wT.X, "f2"))
+
+			End With
+
+
+
+
+		Next
+
+
+
+		Return lSpStrokKoor
+
+
+
+	End Function
 End Class
