@@ -29,6 +29,7 @@ Public Class DljaInit
 	Implements IExtensionApplication
 	Const NameCui As String = "\EW_Loc.cuix"
 	'CommandUprLoc.dll
+
 	Private Sub LoadMyCui(cuiFile As String)
 		Dim doc As Document = Application.DocumentManager.MdiActiveDocument
 		Dim mainCui As String = Application.GetSystemVariable("MENUNAME") + ".cuix"
@@ -69,17 +70,21 @@ Public Class DljaInit
 
 
 	End Sub
-
+	Function GetBase() As String
+		Dim Dl = My.Application.Info.DirectoryPath.Length
+		Return Strings.Left(My.Application.Info.DirectoryPath, Dl - 4)
+	End Function
 	Public Sub Initialize() Implements IExtensionApplication.Initialize
 
-		My.Settings.BasePapkaLocal = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
-
+		Dim sAd = Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData)
 		Dim ltekpapka = Environment.CurrentDirectory
-		My.Settings.BasePapkaLocal = Environment.CurrentDirectory
-		WiwodDok.DocWordBase.BasePapka = My.Settings.BasePapkaGlobal
-		LeseSreib.UstBasePapKu(My.Settings.BasePapkaGlobal)
-		OperBD.My.MySettings.Default.BasePapka = My.Settings.BasePapkaGlobal
-		ProfilBaseDwg.My.MySettings.Default.BasePapkaGlobal = My.Settings.BasePapkaGlobal
+		BazDwg.SystemKommand.SoobEditor(" sAd " & sAd & "  ltek  " & ltekpapka & "  user " & Environment.UserName)
+		Dim s = GetBase()
+		'MsgBox(s)
+		WiwodDok.DocWordBase.BasePapka = s                   'My.Settings.BasePapkaGlobal
+		LeseSreib.UstBasePapKu(s)            'My.Settings.BasePapkaGlobal
+		OperBD.My.MySettings.Default.BasePapka = s                  'My.Settings.BasePapkaGlobal
+		ProfilBaseDwg.My.MySettings.Default.BasePapkaGlobal = s               'My.Settings.BasePapkaGlobal
 
 
 		Dim lname = My.Application.Culture.Name
@@ -88,11 +93,11 @@ Public Class DljaInit
 		My.Application.Culture.NumberFormat.NumberGroupSeparator = ""
 		Dim lDecSep = My.Application.Culture.NumberFormat.NumberDecimalSeparator
 		Dim lGroupSep = My.Application.Culture.NumberFormat.NumberGroupSeparator
-		BazDwg.SystemKommand.SoobEditor(vbCr & " Inizialize  ldec " & lDecSep & "lGroup  " & lGroupSep & "Kult " & lname & vbCr)
+		BazDwg.SystemKommand.SoobEditor(" Inizialize  ldec " & lDecSep & "lGroup  " & lGroupSep & "Kult " & lname)
 
-		BazDwg.SystemKommand.SoobEditor(vbCr & Me.ToString & " приложение  " & My.Application.Info.AssemblyName & vbCr _
+		BazDwg.SystemKommand.SoobEditor(Me.ToString & " приложение  " & My.Application.Info.AssemblyName & "  " _
 										& "загрузка  из " & My.Application.Info.DirectoryPath & "  базовая папка  " & LeseSreib.BasePapka)
-		LoadMyCui(My.Settings.BasePapkaGlobal & NameCui)
+		LoadMyCui(s & NameCui)                     'My.Settings.BasePapkaGlobal
 
 	End Sub
 
