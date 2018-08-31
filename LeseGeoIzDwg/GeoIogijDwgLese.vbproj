@@ -52,16 +52,20 @@
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="accoremgd">
-      <HintPath>..\..\..\Program Files\Autodesk\AutoCAD 2015\accoremgd.dll</HintPath>
+    <Reference Include="AcCoreMgd">
+      <HintPath>..\..\..\ObjectARX 2015\inc\AcCoreMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="acdbmgd">
-      <HintPath>..\..\..\Program Files\Autodesk\AutoCAD 2015\acdbmgd.dll</HintPath>
+    <Reference Include="AcCui">
+      <HintPath>..\..\..\ObjectARX 2015\inc\AcCui.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="acmgd">
-      <HintPath>..\..\..\Program Files\Autodesk\AutoCAD 2015\acmgd.dll</HintPath>
+    <Reference Include="AcDbMgd">
+      <HintPath>..\..\..\ObjectARX 2015\inc\AcDbMgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcMgd">
+      <HintPath>..\..\..\ObjectARX 2015\inc\AcMgd.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="System" />

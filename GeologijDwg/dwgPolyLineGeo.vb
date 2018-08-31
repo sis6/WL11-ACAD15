@@ -23,7 +23,7 @@ Imports System.Collections.Generic
 Imports BazDwg
 Imports modelGeo
 Imports Autodesk.AutoCAD.Colors
-Imports Autodesk.AutoCAD.ApplicationServices.Core
+'Imports Autodesk.AutoCAD.ApplicationServices.Core
 
 Public Class SwajzPolylineTrassa
 	Private wPolyline As Polyline   'полилиния на которую выноситься профиль и расстановка
