@@ -370,8 +370,8 @@ Public Class clsKommand
         If gRasst Is Nothing Then
 
             If MsgBox("Трасса не представлена в чертеже." & vbCr & "Загрузить участок по умолчанию<OK>", MsgBoxStyle.OkCancel) = MsgBoxResult.Ok Then
-                Dim wLStr() = {My.Settings.BasePapkaGlobal & "\DANN\exspшаблон11.xls"}
-                clsKommand0.ZagruzkaTrassRasstIzExcel(wLStr)
+				Dim wLStr() = {My.Settings.BasePapkaGlobal & "\DANN\default11.xls"}
+				clsKommand0.ZagruzkaTrassRasstIzExcel(wLStr)
 
 			Else
                 Return
