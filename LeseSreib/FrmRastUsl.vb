@@ -37,11 +37,42 @@ Public Class FrmRastUsl
     Private Sub ButtonOK_Click(sender As Object, e As EventArgs) Handles ButtonOK.Click
         UslRaschetaClsBindingSource.EndEdit()
         Dim lsysKomand As New BazDwg.SystemKommand
-        lsysKomand.Lock()
-        For Each el As UslRaschetaCls In UslRaschetaClsBindingSource
+		lsysKomand.Lock()
+
+		For Each el As UslRaschetaCls In UslRaschetaClsBindingSource
             ' wSlowarSDann.Slowar.ZapisW_SlowarStr(el.NameUsl, el.StrPred)
             wSlowarSDann.SetZapis(el.NameUsl, el.StrPred)
         Next
         lsysKomand.Dispose()
     End Sub
+
+	Private Sub DataGridViewRastUsl_UserDeletedRow(sender As Object, e As DataGridViewRowEventArgs) Handles DataGridViewRastUsl.UserDeletedRow
+		'Dim l = CType(e.Row, DataGridViewRow).Cells.Item(1)
+		'Dim lb = CType(UslRaschetaClsBindingSource.Current, UslRaschetaCls)
+		'UslRaschetaClsBindingSource.Remove(lb)
+		''	Dim lI = l.Value
+		'MessageBox.Show(lb.ToString())
+	End Sub
+
+
+
+	Private Sub DataGridViewRastUsl_RowsRemoved(sender As Object, e As DataGridViewRowsRemovedEventArgs) Handles DataGridViewRastUsl.RowsRemoved
+
+	End Sub
+
+	Private Sub DataGridViewRastUsl_UserDeletingRow(sender As Object, e As DataGridViewRowCancelEventArgs) Handles DataGridViewRastUsl.UserDeletingRow
+		Dim l = CType(e.Row, DataGridViewRow).Cells.Item(0)
+		'Dim lb = CType(UslRaschetaClsBindingSource.Current, UslRaschetaCls)
+		'UslRaschetaClsBindingSource.Remove(lb)
+		''	Dim lI = l.Value
+		Dim lsysKomand As New BazDwg.SystemKommand
+		'MessageBox.Show(l.Value.ToString)
+		lsysKomand.Lock()
+
+
+
+		wSlowarSDann.DeleteZapis(l.Value.ToString)
+
+		lsysKomand.Dispose()
+	End Sub
 End Class

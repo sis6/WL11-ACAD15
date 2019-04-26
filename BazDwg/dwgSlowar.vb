@@ -107,50 +107,81 @@ Public Class dwgSlowar
         End Using
         Return Md
     End Function
-    ''' <summary>
-    ''' чтение из словаря чертежа записи
-    ''' </summary>
-    ''' <param name="NameZap"> имя записи </param>
-    ''' <returns> возвращает считанные данные </returns>
-    ''' <remarks></remarks>
-    Public Function ZapisIsSlowar(ByVal NameZap As String) As TypedValue()
-        Dim pDict As DBDictionary     'Autodesk.AutoCAD.DatabaseServices.DBObject
-        Dim ZapId As ObjectId
-        Dim Zap As Xrecord
-        Dim Md() As TypedValue = Nothing
+	''' <summary>
+	''' чтение из словаря чертежа записи
+	''' </summary>
+	''' <param name="NameZap"> имя записи </param>
+	''' <returns> возвращает считанные данные </returns>
+	''' <remarks></remarks>
+	Public Function ZapisIsSlowar(ByVal NameZap As String) As TypedValue()
+		Dim pDict As DBDictionary     'Autodesk.AutoCAD.DatabaseServices.DBObject
+		Dim ZapId As ObjectId
+		Dim Zap As Xrecord
+		Dim Md() As TypedValue = Nothing
 
 
-        Dim tm As DBTransMan = wDatabaseDwg.TransactionManager
-        Using ta As Transaction = tm.StartTransaction()
-            pDict = CType(ta.GetObject(wDatabaseDwg.NamedObjectsDictionaryId, OpenMode.ForRead), DBDictionary) 'открываем глобальный словаррь
+		Dim tm As DBTransMan = wDatabaseDwg.TransactionManager
+		Using ta As Transaction = tm.StartTransaction()
+			pDict = CType(ta.GetObject(wDatabaseDwg.NamedObjectsDictionaryId, OpenMode.ForRead), DBDictionary) 'открываем глобальный словаррь
 
-            If pDict.Contains(NameSlw) Then
-                pDict = CType(pDict.GetAt(NameSlw).GetObject(OpenMode.ForRead), DBDictionary) 'открываем словарь класса
+			If pDict.Contains(NameSlw) Then
+				pDict = CType(pDict.GetAt(NameSlw).GetObject(OpenMode.ForRead), DBDictionary) 'открываем словарь класса
 
-                If pDict.Contains(NameZap) Then 'проверяем наличие записи
-                    ZapId = pDict.GetAt(NameZap) 'извлекаем запись
-                    Zap = CType(ZapId.GetObject(OpenMode.ForRead), Xrecord)
-                    Md = LeseXrecord(Zap)
-                Else
-                    SystemKommand.SoobEditor(Me.ToString & " ZapisIsSlowar: Zapis_c_name " & NameZap & " не найдена в словаре " & NameSlw)
-                    '  Kommand.SoobTxtWindAcad(Me.ToString & "ZapisIsSlowar: Zapis_c_name" & NameZap & " не найдена")
-                End If
-            Else
-                SystemKommand.SoobEditor(Me.ToString & " ZapisIsSlowar Словарь " & NameSlw & " отсутствует словарь " & NameSlw)
-            End If
+				If pDict.Contains(NameZap) Then 'проверяем наличие записи
+					ZapId = pDict.GetAt(NameZap) 'извлекаем запись
 
-            ta.Commit()
-        End Using
-        Return Md
-    End Function
+					Zap = CType(ZapId.GetObject(OpenMode.ForRead), Xrecord)
+					Md = LeseXrecord(Zap)
+				Else
+					SystemKommand.SoobEditor(Me.ToString & " ZapisIsSlowar: Zapis_c_name " & NameZap & " не найдена в словаре " & NameSlw)
+					'  Kommand.SoobTxtWindAcad(Me.ToString & "ZapisIsSlowar: Zapis_c_name" & NameZap & " не найдена")
+				End If
+			Else
+				SystemKommand.SoobEditor(Me.ToString & " ZapisIsSlowar Словарь " & NameSlw & " отсутствует словарь " & NameSlw)
+			End If
+
+			ta.Commit()
+		End Using
+		Return Md
+	End Function
+	Public Sub RemoveIsSlowar(ByVal NameZap As String)
+		Dim pDict As DBDictionary     'Autodesk.AutoCAD.DatabaseServices.DBObject
+		Dim ZapId As ObjectId
+		Dim Zap As Xrecord
+		Dim Md() As TypedValue = Nothing
+
+
+		Dim tm As DBTransMan = wDatabaseDwg.TransactionManager
+		Using ta As Transaction = tm.StartTransaction()
+			pDict = CType(ta.GetObject(wDatabaseDwg.NamedObjectsDictionaryId, OpenMode.ForWrite), DBDictionary) 'открываем глобальный словаррь
+
+			If pDict.Contains(NameSlw) Then
+				pDict = CType(pDict.GetAt(NameSlw).GetObject(OpenMode.ForWrite), DBDictionary) 'открываем словарь класса
+
+				If pDict.Contains(NameZap) Then 'проверяем наличие записи
+					ZapId = pDict.Remove(NameZap) 'удаляем запись
+
+
+				Else
+					SystemKommand.SoobEditor(Me.ToString & " ZapisIsSlowar: Zapis_c_name " & NameZap & " не найдена в словаре " & NameSlw)
+					'  Kommand.SoobTxtWindAcad(Me.ToString & "ZapisIsSlowar: Zapis_c_name" & NameZap & " не найдена")
+				End If
+			Else
+				SystemKommand.SoobEditor(Me.ToString & " ZapisIsSlowar Словарь " & NameSlw & " отсутствует словарь " & NameSlw)
+			End If
+
+			ta.Commit()
+		End Using
+
+	End Sub
 #Region "Wse Zapici"
-    ''' <summary>
-    ''' извлекаем все записи в словаре класса
-    ''' </summary>
-    ''' <param name="iSpNameZap">Список имен записей.  </param>
-    ''' <returns> Возвращаем коллекцию всех записей в строковом представление</returns>
-    ''' <remarks></remarks>
-    Public Function WseZapisIsSlowar(ByVal iSpNameZap As List(Of String)) As Collection
+	''' <summary>
+	''' извлекаем все записи в словаре класса
+	''' </summary>
+	''' <param name="iSpNameZap">Список имен записей.  </param>
+	''' <returns> Возвращаем коллекцию всех записей в строковом представление</returns>
+	''' <remarks></remarks>
+	Public Function WseZapisIsSlowar(ByVal iSpNameZap As List(Of String)) As Collection
 
         Dim pDict As DBDictionary     'Autodesk.AutoCAD.DatabaseServices.DBObject
         Dim Md As New Collection

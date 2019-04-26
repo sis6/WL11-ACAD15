@@ -270,22 +270,34 @@ Public Class dwgObrazOporRasst
         BazDwg.MakeNeGraf.DeleteIzGroup(wNameGrupp)
         BazDwg.MakeNeGraf.DeleteGroup(wNameGrupp)
     End Sub
-    ''' <summary>
-    ''' Возвращает и записывает данные ассоциированные с опорой
-    ''' </summary>
-    ''' <value></value>
-    ''' <returns> массив строк в которые записаны данные </returns>
-    ''' <remarks>для обычных расчетов  важны только приведеные центры, остальное параметры расчетных режимов  </remarks>
-    Property StrDan() As String()
-        Get
-            '  Return BazfunNet.CreateEntities.MakeNeGraf.ChitXdataIzGroup(wNameGrupp)
-            Dim Slowar As New LeseSreib.clsLeseSreibUsl(wRasst)   ' в этом словаре расчетные условия  
-            Return Slowar.GetZapis(Op.NumName)
-        End Get
-        Set(ByVal imasStr As String())
-            Dim Slowar As New LeseSreib.clsLeseSreibUsl(wRasst)
-            Slowar.SetZapis(Op.NumName, imasStr)
-            ' BazfunNet.CreateEntities.MakeNeGraf.DobWGroupXdata(wNameGrupp, imasStr)
-        End Set
-    End Property
+	''' <summary>
+	''' Возвращает и записывает данные ассоциированные с опорой
+	''' </summary>
+	''' <value></value>
+	''' <returns> массив строк в которые записаны данные </returns>
+	''' <remarks>для обычных расчетов  важны только приведеные центры, остальное параметры расчетных режимов  </remarks>
+	Property StrDan() As String()
+		Get
+			'  Return BazfunNet.CreateEntities.MakeNeGraf.ChitXdataIzGroup(wNameGrupp)
+			Dim Slowar As New LeseSreib.clsLeseSreibUsl(wRasst)   ' в этом словаре расчетные условия  
+			Return Slowar.GetZapis(Op.NumName)
+		End Get
+		Set(ByVal imasStr As String())
+			Dim Slowar As New LeseSreib.clsLeseSreibUsl(wRasst)
+			Slowar.SetZapis(Op.NumName, imasStr)
+			' BazfunNet.CreateEntities.MakeNeGraf.DobWGroupXdata(wNameGrupp, imasStr)
+		End Set
+	End Property
+	Property StrDanW() As String()
+		Get
+			'  Return BazfunNet.CreateEntities.MakeNeGraf.ChitXdataIzGroup(wNameGrupp)
+			Dim Slowar As New LeseSreib.clsLeseSreibUsl(wRasst)   ' в этом словаре расчетные условия  
+			Return Slowar.GetZapis(Op.NumName & "W")
+		End Get
+		Set(ByVal imasStr As String())
+			Dim Slowar As New LeseSreib.clsLeseSreibUsl(wRasst)
+			Slowar.SetZapis(Op.NumName & "W", imasStr)
+			' BazfunNet.CreateEntities.MakeNeGraf.DobWGroupXdata(wNameGrupp, imasStr)
+		End Set
+	End Property
 End Class

@@ -177,7 +177,10 @@ Public Class clsLeseSreibUsl
     Function GetZapis(ByVal NameZap As String) As String()
         Return wGlSl.ZapisIzSlovarStr(NameZap)
     End Function
-    Sub SetZapis(ByVal NameZap As String, ByVal masStr As String())
-        wGlSl.ZapisW_SlowarStr(NameZap, masStr)
-    End Sub
+	Sub SetZapis(ByVal NameZap As String, ByVal masStr As String())
+		wGlSl.ZapisW_SlowarStr(NameZap, masStr)
+	End Sub
+	Sub DeleteZapis(ByVal NameZap As String)
+		wGlSl.RemoveIsSlowar(NameZap)
+	End Sub
 End Class
