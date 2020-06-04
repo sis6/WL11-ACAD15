@@ -466,15 +466,23 @@ Public Class FrmKorrRasstWlUch
 
     End Sub
 
-    Private Sub RastOpDataGridView_DataError(sender As Object, e As DataGridViewDataErrorEventArgs) Handles RastOpDataGridView.DataError
-        clsPrf.Obrabot(sender, e)
+	Private Sub RastOpDataGridView_DataError(sender As Object, e As DataGridViewDataErrorEventArgs) Handles RastOpDataGridView.DataError
+		If e.ColumnIndex = 3 Then
+			'RastOpDataGridView.CurrentRow.Cells(e.ColumnIndex).Value = "DefProw"
+			e.Cancel = True
+		Else
+			clsPrf.Obrabot(sender, e)
+		End If
 
-    
+
+		'RastOpDataGridView.CurrentRow.Cells(e.ColumnIndex).Value = "u"
+		'	MsgBox(Me.ToString() & "  " & e.ColumnIndex)
 
 
 
-    End Sub
-    Private Sub RastOpDataGridView_DefaultValuesNeeded(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewRowEventArgs) Handles RastOpDataGridView.DefaultValuesNeeded
+
+	End Sub
+	Private Sub RastOpDataGridView_DefaultValuesNeeded(ByVal sender As Object, ByVal e As System.Windows.Forms.DataGridViewRowEventArgs) Handles RastOpDataGridView.DefaultValuesNeeded
         Dim lRastOprow As dsRasst.rastOpNRow = CType(CType(RastOpNBindingSource.Current, DataRowView).Row, dsRasst.rastOpNRow)
         'If e.Row.Index = 0 Then
         '    '   MsgBox(Me.ToString & "  RastOpDataGridView_DefaultValuesNeeded  " & RastOpNBindingSource.Count & " " & RastOpDataGridView.RowCount)
